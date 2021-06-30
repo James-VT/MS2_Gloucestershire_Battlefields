@@ -5,22 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <header>
-
+        <!--Below are Bootstrap5 navbar classes used to build the header of the page, and can be found here: https://getbootstrap.com/docs/5.0/components/navbar/#nav -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Gloucestershire Battlefields</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Donate</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
-    <div class="map-container">
+    <div class="map-container content-section">
         Google maps will be embedded here, with the default view centered on somewhere like Gloucester
     </div>
-    <div class="battle-brief">
+    <div class="battle-brief content-section">
         This information will contain the barebones facts of the battle - its name, who fought in it, the date, casualties etc.
     </div>
-    <div class="battle-detailed">
+    <div class="battle-detailed content-section">
         This div will contain the narrative of the battle. It will open upon the user either clicking the map icon or the battle's name in the buttons below.
     </div>
-    <div class="battlefield-button-container">
+    <div class="battlefield-button-container content-section">
         This will show a collection of buttons each bearing the name of a battle/battlefield. Clicking one of these will focus the map onto the battlefield and open the above divs which will contain the information and narrative of the battle.
     </div>
     <footer>
