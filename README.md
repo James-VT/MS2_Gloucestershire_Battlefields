@@ -14,7 +14,12 @@ The primary aim of the Gloucestershire Battlefields website is information - for
 1. Learn the history of a specific battlefield. They have probably landed on the site due to searching for a specific one.
 2. Expand their curiosity beyond just one battle. Seeing the simple and intuitive interactivity of the website, they may decide to learn about some other nearby battlefields, as well.
 3. Learn the specific location of a battlefield, perhaps with a view to visiting.
-4. 
+4. Learn about the organisation behind the website and the raising of awareness of the battlefields themselves.
+5. Donate to the charity.
+
+### A returning user will want to:
+
+### A site owner will want to:
 
 # Technologies used
 ## Bootstrap
