@@ -31,6 +31,9 @@ The primary aim of the Gloucestershire Battlefields website is information - for
 * [CSS3](https://en.wikipedia.org/wiki/CSS#CSS_3) was used for the styling of the site.
 * [JavaScript](https://en.wikipedia.org/wiki/JavaScript) was used for the interactivity of the site.
 
+## Balsamiq
+Balsamiq was used to create the wireframes for this project. [Balsamiq](https://balsamiq.com/)
+
 ## Bootstrap
 Bootstrap 5 was used for some HTML component templates and CSS styling. [Bootstrap 5.](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
 
@@ -67,3 +70,9 @@ The colour palette for this site was chosen using Coolors. [Coolors](https://coo
 * flintaxe.jpg is taken from Wikimedia Commons, and is open-source. [Link](https://commons.wikimedia.org/wiki/File:Feuersteinaxt.jpg) Attribution: Dr. Henning Krämer, Geesthacht  - de:User:Hinnerk, CC BY-SA 3.0 <http://creativecommons.org/licenses/by-sa/3.0/>, via Wikimedia Commons
 
 * stoneage.jpg is taken from Wikimedia Commons, and is open-source. [Link](https://commons.wikimedia.org/wiki/File:Stone-age-painting.jpg) Attribution: Gugatchitchinadze, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons
+
+### Wireframes
+
+![Wireframes](assets/milestone2wireframes.pdf)
+
+The wireframes developed for this project can be found [here](assets/milestone2wireframes.pdf).
