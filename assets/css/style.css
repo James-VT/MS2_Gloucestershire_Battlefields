@@ -10,9 +10,11 @@ div {
 .button {
     align-items: center;
     text-align: center;
-    margin: 0 10vw;
+    /* margin: 0 10vw; */
 }
 
 .button-row {
-    margin: 0 16px;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
