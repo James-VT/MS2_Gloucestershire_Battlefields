@@ -24,6 +24,24 @@ The primary aim of the Gloucestershire Battlefields website is information - for
 9. Present images to the visitor appropriate to the battlefield selected.
 10. Raise revenue via donations.
 
+# The Five Planes of User Experience Development
+As part of the planning for this project, I have run through the stages of User Experience Design, as proposed by Jesse James Garrett.
+
+## The Strategy plane
+Beginning with the strategy plane, considered who might use this website and why; both site visitors and site owners. The goal of the site owners is to raise awareness of battlefields and sites of historical military significance within Gloucestershire and the surrounding area, and potentially to generate some revenue via donations. Visitors come to the site because they want to learn about specific battlefields and parts of history.
+
+## The Scope Plane
+The project's scope is chiefly threefold: the primary objective is the exchange of information about Gloucestershire's battlefields between site owner and site user. The second is the raising of revenue for the charity via donations, but this is achieved off the back of the first objective. The third is the relaying of information about the charity themselves.
+
+## The Structure Plane
+My wireframes can be found below. These have been constructed with the idea that mobile design should come first, and that the main aim from the point of the view of the site owner is the relaying of information in an interactive fashion that presents the basic facts, a narrative of the events, and the location on a map.
+
+## The Skeleton Plane
+The site's information is structured in such a way as to make the map primary; it is the first thing a user will see upon loading the page, and the cascading information resulting from clicking a button or location of a battle appears underneath the map itself. The difference at smaller screen sizes may be (depending on the precise size) the changing of the layout of the buttons. 
+
+## The Surface Plane
+TODO
+
 # Technologies used
 
 ## Languages:
@@ -73,6 +91,5 @@ The colour palette for this site was chosen using Coolors. [Coolors](https://coo
 
 ### Wireframes
 
-![Wireframes](assets/milestone2wireframes.pdf)
 
-The wireframes developed for this project can be found [here](assets/milestone2wireframes.pdf).
+The wireframes developed for this project can be found [here](assets/milestone2wireframes.pdf). They were built using Balsamiq (credit in Technologies section).
