@@ -43,20 +43,35 @@
         This div will contain the narrative of the battle. It will open upon the user either clicking the map icon or the battle's name in the buttons below.
     </div>
     <div class="battlefield-button-container content-section">
-        This will show a collection of buttons each bearing the name of a battle/battlefield. Clicking one of these will focus the map onto the battlefield and open the above divs which will contain the information and narrative of the battle.
-        <div class="button-row row-one">
-          <button class="button">Battle of Tewkesbury</button>
-          <button class="button">Battle of Crickley Hill</button>
-          <button class="button">Beverstone Castle</button>
+      <!--The container, row, col-6 and col-md-4 classes below are all Bootstrap components to bestow the format I want of three buttons in two lines at larger sizes, but two buttons in three lines at smaller sizes.-->
+      This will show a collection of buttons each bearing the name of a battle/battlefield. Clicking one of these will focus the map onto the battlefield and open the above divs which will contain the information and narrative of the battle.
+      <div class="container">
+        <div class="row button-row">
+          <div class="col-6 col-md-4">
+            <button class="button">Battle of Tewkesbury</button>
+          </div>
+          <div class="col-6 col-md-4">
+            <button class="button">Battle of Crickley Hill</button>
+          </div>
+          <div class="col-6 col-md-4">
+            <button class="button">Beverstone Castle</button>
+          </div>
+          <div class="col-6 col-md-4">
+            <button class="button">The Storming of Cirencester</button>
+          </div>
+          <div class="col-6 col-md-4">
+            <button class="button">Battle of Deorham</button>
+          </div>
+          <div class="col-6 col-md-4">
+            <button class="button">Berkely Castle</button>
+          </div>
         </div>
-        <div class="button-row row-two">
-          <button class="button">The Storming of Cirencester</button>
-          <button class="button">Battle of Deorham</button>
-          <button class="button">Berkely Castle</button>
-        </div>
+      </div>
     </div>
     <footer>
         
     </footer>
+
+    <script src="assets/js/battlefields.js"></script>
 </body>
 </html>
