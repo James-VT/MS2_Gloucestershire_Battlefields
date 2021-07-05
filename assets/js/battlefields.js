@@ -1,7 +1,7 @@
 // The below is to test whether this file in linked properly to the index.html file
 // and its button elements
 
-let button = document.getElementsByClassName("button");
+let button = document.getElementById("tewkesbury-button");
 
 function buttonTest() {
     console.log("button clicked");
