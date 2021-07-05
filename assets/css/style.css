@@ -10,6 +10,11 @@ div {
 .button {
     align-items: center;
     text-align: center;
+    width: 100%;
+    margin: 20px auto;
+    background-color: #cc0000;
+    border-radius: 8px;
+    color: white;
     /* margin: 0 10vw; */
 }
 
