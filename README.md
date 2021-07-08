@@ -71,7 +71,7 @@ The icons for social media links were taken from FontAwesome. [FontAwesome](http
 The colour palette for this site was chosen using Coolors. [Coolors](https://coolors.co/)
 
 ## JQuery
-JQuery is used in this project to provide the option of simplifying JavaScript code. [JQuery](https://jquery.com/download/#using-jquery-with-a-cdn)
+JQuery is used in this project via CDN to provide the option of simplifying JavaScript code. [JQuery](https://jquery.com/download/#using-jquery-with-a-cdn)
 
 # Image credits
 * beverstonetoday.jpg is taken from Wikimedia commons, and is open-source. [Link](https://commons.wikimedia.org/wiki/File:Beverston_castle.jpg) The original uploader was Anlace at English Wikipedia., CC BY-SA 2.5 <https://creativecommons.org/licenses/by-sa/2.5>, via Wikimedia Commons
