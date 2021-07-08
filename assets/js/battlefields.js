@@ -16,5 +16,4 @@ $(document).ready(function() {
     $("#tewkesbury-button").click(function() {
         $(".battle-title").text(`Battle of Tewkesbury`);
     })
-    
-})
+});
