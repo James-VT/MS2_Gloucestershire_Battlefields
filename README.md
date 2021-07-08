@@ -13,16 +13,16 @@ The primary aim of the Gloucestershire Battlefields website is information - for
 
 ## User stories
 ### A visitor to the site will want to:
-1. Learn the history of a specific battlefield. They have probably landed on the site due to searching for a specific one.
-2. Learn the specific location of a battlefield, perhaps with a view to visiting.
-3. Learn about the organisation behind the website and the raising of awareness of the battlefields themselves.
-4. Read about a new battlefield, different to the one for which they first visited the site.
-5. Donate to the charity that owns the site.
+1. Learn the history, location and other details of a specific battlefield.
+2. Select a specific battlefield on the map or from the button menu in order to see information about it appear on the page.
+3. Contact the organisation behind the website, and receive confirmation that their correspondence has been sent.
+4. Test their knowledge with a quiz on the subject that feeds back their score.
+5. Donate to the charity that owns the site, and receive confirmation when this is sent.
 
 ### A site owner will want to:
-6. Relay information about the battlefields the charity looks after and promotes.
+6. Relay information about the battlefields the charity promotes, as chosen by the visitor.
 7. Visually display the locations of battlefields on the interactive map.
-8. Relay information about their charity, and the work they do.
+8. Provide the opportunity for visitors to contact the charity via an interactive feedback form.
 9. Present images to the visitor appropriate to the battlefield selected.
 10. Raise revenue via donations.
 
