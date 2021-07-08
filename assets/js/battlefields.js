@@ -12,7 +12,9 @@ button.addEventListener('click', buttonTest);
 // The (document).ready below is to make sure the page has loaded properly before any JQuery/JavaScript is used
 
 $(document).ready(function() {
+
     $("#tewkesbury-button").click(function() {
-        $(".battle-title").innerHTML
+        $(".battle-title").text(`Battle of Tewkesbury`);
     })
+    
 })
