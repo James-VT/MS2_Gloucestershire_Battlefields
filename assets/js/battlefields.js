@@ -14,6 +14,20 @@ button.addEventListener('click', buttonTest);
 $(document).ready(function() {
 
     $("#tewkesbury-button").click(function() {
-        $(".battle-title").text(`Battle of Tewkesbury`);
+        $(".battle-title").text(`Battle of Tewkesbury ${data}`);
     })
 });
+
+var xhr = new XMLHttpRequest();
+var data;
+
+xhr.open("GET", "https://en.wikipedia.org/wiki/Battle_of_Tewkesbury#Background");
+xhr.send();
+
+xhr.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        data = this.responseText;
+        console.log(data);
+    };
+}
+
