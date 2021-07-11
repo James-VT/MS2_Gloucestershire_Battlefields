@@ -18,13 +18,35 @@ $(document).ready(function() {
     })
 });
 
-// The code below is an attempt to make Google Maps API work
+/** The code below is an attempt to make Google Maps API work - credit goes to Eamonn Smyth, a fellow student at Code Institute, for his excellent guide from which much code is taken for this section */
+/** The function below creates the map */
+function myMap() {
 
-let map;
+    /** The below code is to define the map's properties */
+    const mapProperties = {
 
-function initMap() {
-  map = new google.maps.Map(document.getElementById("map"), {
-    center: { lat: -34.397, lng: 150.644 },
-    zoom: 8,
-  });
+        /**The centre property below is where we centre our map - in our case, the city of Gloucester
+         * We're using the .LatLng constructor here */
+        center: new google.maps.LatLng(51.864445, -2.244444),
+
+        /**The zoom property is set to 8 as we're covering a fairly small area for this site */
+        zoom: 5,
+    };
+
+    /** This is what creates the map itself - it goes in the div with the ID of "map" 
+     * then it checks the properties variable object for the nod of what we want in it */
+    const map = new google.maps.Map(document.getElementById("map"), mapProperties);
 }
+
+/** And here we call the map itself */
+myMap()
+
+// let map;
+
+// function initMap() {
+//   map = new google.maps.Map(document.getElementById("map"), {
+//     center: { lat: -34.397, lng: 150.644 },
+//     zoom: 8,
+//   });
+// }
+
