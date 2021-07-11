@@ -18,6 +18,8 @@ $(document).ready(function() {
     })
 });
 
+// The code below is an attempt to make Google Maps API work
+
 let map;
 
 function initMap() {
