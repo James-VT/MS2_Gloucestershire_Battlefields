@@ -18,7 +18,7 @@ $(document).ready(function() {
     })
 });
 
-const properties = {"lat": 12, "lng":100}
+const properties = {"lat": 51.864445, "lng":-2.244444}
 
 /** The code below is an attempt to make Google Maps API work - credit goes to Eamonn Smyth, a fellow student at Code Institute, for his excellent guide from which much code is taken for this section */
 /** The function below creates the map */
