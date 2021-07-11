@@ -32,7 +32,7 @@ function myMap() {
         center: properties,
 
         /**The zoom property is set to 8 as we're covering a fairly small area for this site */
-        zoom: 5,
+        zoom: 8,
     };
 
     /** This is what creates the map itself - it goes in the div with the ID of "map" 
