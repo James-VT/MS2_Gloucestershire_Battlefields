@@ -18,6 +18,8 @@ $(document).ready(function() {
     })
 });
 
+const properties = {"lat": 12, "lng":100}
+
 /** The code below is an attempt to make Google Maps API work - credit goes to Eamonn Smyth, a fellow student at Code Institute, for his excellent guide from which much code is taken for this section */
 /** The function below creates the map */
 function myMap() {
@@ -27,7 +29,7 @@ function myMap() {
 
         /**The centre property below is where we centre our map - in our case, the city of Gloucester
          * We're using the .LatLng constructor here */
-        center: new google.maps.LatLng(51.864445, -2.244444),
+        center: properties,
 
         /**The zoom property is set to 8 as we're covering a fairly small area for this site */
         zoom: 5,
