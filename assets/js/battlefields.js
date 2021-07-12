@@ -38,6 +38,15 @@ function myMap() {
     /** This is what creates the map itself - it goes in the div with the ID of "map" 
      * then it checks the properties variable object for the nod of what we want in it */
     const map = new google.maps.Map(document.getElementById("map"), mapProperties);
+
+    /** Below we're adding some markers. Here are the coordinates for them */
+    const battleMarks = {"lat": 51.9923, "lng": 2.1580};
+
+    /** Here's where the marker itself is created. It uses the battleMarks variable object above */
+    const marker = new google.maps.Marker({position: battleMarks});
+
+    /** And here's where we put said marker onto the map */
+    marker.setMap(map);
 }
 
 /** And here we call the map itself */
