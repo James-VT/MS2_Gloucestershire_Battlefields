@@ -43,7 +43,9 @@ function myMap() {
     const battleMarks = [{"lat": 51.9923, "lng": -2.1580, "name": "Tewkesbury"},
                          {"lat": 51.8472, "lng": -2.0978, "name": "Crickley Hill"},
                          {"lat": 51.6444, "lng": -2.2011, "name": "Beverston Castle"},
-                         {"lat": 51.951708, "lng": -1.728297, "name": "Stow-on-the-Wold"}];
+                         {"lat": 51.951708, "lng": -1.728297, "name": "Stow-on-the-Wold"},
+                         {"lat": 51.4891, "lng": -2.373706, "name": "Deorham"},
+                         {"lat": 51.688611, "lng": -2.456944, "name": "Berkeley Castle"}];
 
     /** Here's where we loop through the battleMarks objects */
     for(let i=0; i < battleMarks.length; i++) {
