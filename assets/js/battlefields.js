@@ -40,7 +40,7 @@ function myMap() {
     const map = new google.maps.Map(document.getElementById("map"), mapProperties);
 
     /** Below we're adding some markers. Here are the coordinates for them */
-    const battleMarks = {"lat": 51.9923, "lng": 2.1580};
+    const battleMarks = {"lat": 51.9923, "lng": -2.1580};
 
     /** Here's where the marker itself is created. It uses the battleMarks variable object above */
     const marker = new google.maps.Marker({position: battleMarks});
