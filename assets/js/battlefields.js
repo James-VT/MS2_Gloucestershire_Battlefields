@@ -39,16 +39,21 @@ function myMap() {
      * then it checks the properties variable object for the nod of what we want in it */
     const map = new google.maps.Map(document.getElementById("map"), mapProperties);
 
-    /** Below we're adding some markers. Here are the coordinates for them */
-    const battleMarks = {"lat": 51.9923, "lng": -2.1580};
+    /** Below we're adding some markers. Here are the coordinates for them, in an array of objects */
+    const battleMarks = [{"lat": 51.9923, "lng": -2.1580, "name": "Tewkesbury"},
+                         {"lat": 51.8472, "lng": -2.0978, "name": "Crickley Hill"},
+                         {"lat": 51.6444, "lng": -2.2011, "name": "Beverston Castle"},
+                         {"lat": 51.951708, "lng": -1.728297, "name": "Stow-on-the-Wold"}];
 
-    /** Here's where the marker itself is created. It uses the battleMarks variable object above */
-    const marker = new google.maps.Marker({position: battleMarks});
+    /** Here's where we loop through the battleMarks objects */
+    for(let i=0; i < battleMarks.length; i++) {
+        const marker = new google.maps.Marker({
+            position: new google.maps.LatLng(battleMarks[i].lat, battleMarks[i].lng),
+            map: map,
+            title: battleMarks[i].name
+        });
 
-    /** And here's where we put said marker onto the map */
-    marker.setMap(map);
+    }
 }
-
 /** And here we call the map itself */
 myMap()
-
