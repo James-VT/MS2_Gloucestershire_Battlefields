@@ -55,6 +55,12 @@ function myMap() {
             title: battleMarks[i].name
         });
 
+        /** This is where we add event listeners to our markers */
+        marker.addListener("click", () => {
+            map.setZoom(9);
+            map.setCenter(marker.getPosition());
+            console.log("marker listener successful")
+        });
     }
 }
 /** And here we call the map itself */
