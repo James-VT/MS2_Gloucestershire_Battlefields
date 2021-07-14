@@ -27,6 +27,10 @@ const properties = {"lat": 51.864445, "lng":-2.244444}
  */
 /** The function below creates the map */
 
+function tewkesburyBattleInfo() {
+    document.getElementById("battle-title").innerHTML(`Battle of Tewkesbury`)
+}
+
 function myMap() {
 
     /** The below code is to define the map's properties */
@@ -67,6 +71,7 @@ function myMap() {
         });
         /** This is where the code I got from Eamonn Smyth ends. */
 
+
         /** This is where we add event listeners to our markers */
 
         marker.addListener("click", () => {
@@ -78,9 +83,7 @@ function myMap() {
     }
 }
 
-function tewkesburyBattleInfo() {
-    document.getElementById(".battle-title").innerHTML(`Battle of Tewkesbury`)
-}
+
 
 /** And here we call the map itself */
 
