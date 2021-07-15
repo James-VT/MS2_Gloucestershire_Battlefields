@@ -9,7 +9,7 @@ function buttonTest() {
 
 button.addEventListener('click', buttonTest);
 
-// The (document).ready below is to make sure the page has loaded properly before any JQuery/JavaScript is used
+/** The (document).ready below is to make sure the page has loaded properly before any JQuery/JavaScript is used */
 
 $(document).ready(function() {
 
@@ -27,9 +27,6 @@ const properties = {"lat": 51.864445, "lng":-2.244444}
  */
 /** The function below creates the map */
 
-function tewkesburyBattleInfo() {
-    document.getElementById("battle-title").innerHTML(`Battle of Tewkesbury`)
-}
 
 function myMap() {
 
