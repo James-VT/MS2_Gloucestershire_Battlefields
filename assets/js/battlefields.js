@@ -13,7 +13,7 @@ button.addEventListener('click', buttonTest);
 
 $(document).ready(function() {
 
-    $("#tewkesbury-button").click(function() {
+    $("#tewkesbury-button, marker").click(function() {
         $(".battle-title").text(`Battle of Tewkesbury`);
     })
 });
@@ -78,7 +78,7 @@ function myMap() {
             map.setZoom(9);
             map.setCenter(marker.getPosition());
             console.log("marker listener successful")
-            tewkesburyBattleInfo()
+            $(".battle-title").text(`Battle of Tewkesbury`);
         });
     }
 }
