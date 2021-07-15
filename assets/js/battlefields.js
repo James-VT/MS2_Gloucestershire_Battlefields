@@ -83,8 +83,6 @@ function myMap() {
     }
 }
 
-
-
 /** And here we call the map itself */
 
 myMap()
