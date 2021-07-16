@@ -80,11 +80,11 @@ function myMap() {
     /** Below we're adding some markers. Here are the coordinates for them, in an array of objects */
 
     var battleMarks = [{"lat": 51.9923, "lng": -2.1580, "name": "Battle of Tewkesbury", "date": "4 May 1471"},
-                         {"lat": 51.8472, "lng": -2.0978, "name": "Battle of Crickley Hill",},
-                         {"lat": 51.6444, "lng": -2.2011, "name": "Battle of Beverston Castle"},
-                         {"lat": 51.951708, "lng": -1.728297, "name": "Battle of Stow-on-the-Wold"},
-                         {"lat": 51.4891, "lng": -2.373706, "name": "Battle of Deorham"},
-                         {"lat": 51.688611, "lng": -2.456944, "name": "Battle of Berkeley Castle"}];
+                         {"lat": 51.8472, "lng": -2.0978, "name": "Battle of Crickley Hill", "date": "~3,300 BC"},
+                         {"lat": 51.6444, "lng": -2.2011, "name": "Battle of Beverston Castle", "date": "1644 and 1691"},
+                         {"lat": 51.951708, "lng": -1.728297, "name": "Battle of Stow-on-the-Wold", "date": "21 March 1646"},
+                         {"lat": 51.4891, "lng": -2.373706, "name": "Battle of Deorham", "date": "577 AD"},
+                         {"lat": 51.688611, "lng": -2.456944, "name": "Battle of Berkeley Castle", "date": "1326, 1645"}];
 
     /** Here's where we loop through the battleMarks objects */
 
@@ -105,6 +105,7 @@ function myMap() {
             map.setCenter(marker.getPosition());
             console.log("marker listener successful")
             $(".battle-title").text(`${battleMarks[i].name}`);
+            $(".battle-date").text(`${battleMarks[i].date}`);
         });
     }
 }
