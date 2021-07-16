@@ -9,12 +9,34 @@ function buttonTest() {
 
 button.addEventListener('click', buttonTest);
 
-/** The (document).ready below is to make sure the page has loaded properly before any JQuery/JavaScript is used */
+/** The (document).ready below is to make sure the page has loaded properly before any JQuery is used for the buttons
+ * This is where we build our buttons and what they do
+ */
 
 $(document).ready(function() {
 
     $("#tewkesbury-button").click(function() {
         $(".battle-title").text(`Battle of Tewkesbury`);
+    })
+
+    $("#crickley-button").click(function() {
+        $(".battle-title").text(`Battle of Crickley Hill`);
+    })
+
+    $("#beverston-button").click(function() {
+        $(".battle-title").text(`Battle of Beverston Castle`);
+    })
+
+    $("#stow-button").click(function() {
+        $(".battle-title").text(`Battle of Stow-on-the-Wold`);
+    })
+
+    $("#deorham-button").click(function() {
+        $(".battle-title").text(`Battle of Deorham`);
+    })
+
+    $("#berkeley-button").click(function() {
+        $(".battle-title").text(`Battle of Berkeley Castle`);
     })
 });
 
@@ -51,7 +73,7 @@ function myMap() {
 
     /** Below we're adding some markers. Here are the coordinates for them, in an array of objects */
 
-    const battleMarks = [{"lat": 51.9923, "lng": -2.1580, "name": "Battle of Tewkesbury"},
+    var battleMarks = [{"lat": 51.9923, "lng": -2.1580, "name": "Battle of Tewkesbury"},
                          {"lat": 51.8472, "lng": -2.0978, "name": "Battle of Crickley Hill"},
                          {"lat": 51.6444, "lng": -2.2011, "name": "Battle of Beverston Castle"},
                          {"lat": 51.951708, "lng": -1.728297, "name": "Battle of Stow-on-the-Wold"},
