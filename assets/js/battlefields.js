@@ -13,7 +13,7 @@ button.addEventListener('click', buttonTest);
 
 $(document).ready(function() {
 
-    $("#tewkesbury-button, marker").click(function() {
+    $("#tewkesbury-button").click(function() {
         $(".battle-title").text(`Battle of Tewkesbury`);
     })
 });
