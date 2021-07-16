@@ -51,12 +51,12 @@ function myMap() {
 
     /** Below we're adding some markers. Here are the coordinates for them, in an array of objects */
 
-    const battleMarks = [{"lat": 51.9923, "lng": -2.1580, "name": "Tewkesbury"},
-                         {"lat": 51.8472, "lng": -2.0978, "name": "Crickley Hill"},
-                         {"lat": 51.6444, "lng": -2.2011, "name": "Beverston Castle"},
-                         {"lat": 51.951708, "lng": -1.728297, "name": "Stow-on-the-Wold"},
-                         {"lat": 51.4891, "lng": -2.373706, "name": "Deorham"},
-                         {"lat": 51.688611, "lng": -2.456944, "name": "Berkeley Castle"}];
+    const battleMarks = [{"lat": 51.9923, "lng": -2.1580, "name": "Battle of Tewkesbury"},
+                         {"lat": 51.8472, "lng": -2.0978, "name": "Battle of Crickley Hill"},
+                         {"lat": 51.6444, "lng": -2.2011, "name": "Battle of Beverston Castle"},
+                         {"lat": 51.951708, "lng": -1.728297, "name": "Battle of Stow-on-the-Wold"},
+                         {"lat": 51.4891, "lng": -2.373706, "name": "Battle of Deorham"},
+                         {"lat": 51.688611, "lng": -2.456944, "name": "Battle of Berkeley Castle"}];
 
     /** Here's where we loop through the battleMarks objects */
 
@@ -70,12 +70,13 @@ function myMap() {
 
 
         /** This is where we add event listeners to our markers */
+        /** Much of the inspiration for this code was taken from https://developers.google.com/maps/documentation/javascript/events#maps_event_simple-javascript, but I have changed it as needed */
 
         marker.addListener("click", () => {
             map.setZoom(9);
             map.setCenter(marker.getPosition());
             console.log("marker listener successful")
-            $(".battle-title").text(`Battle of Tewkesbury`);
+            $(".battle-title").text(`${battleMarks[i].name}`);
         });
     }
 }
