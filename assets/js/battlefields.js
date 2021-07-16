@@ -17,26 +17,32 @@ $(document).ready(function() {
 
     $("#tewkesbury-button").click(function() {
         $(".battle-title").text(`Battle of Tewkesbury`);
+        $(".battle-date").text(`4 May 1471`);
     })
 
     $("#crickley-button").click(function() {
         $(".battle-title").text(`Battle of Crickley Hill`);
+        $(".battle-date").text(`~3,300 BC`);
     })
 
     $("#beverston-button").click(function() {
         $(".battle-title").text(`Battle of Beverston Castle`);
+        $(".battle-date").text(`1644 and 1691`);
     })
 
     $("#stow-button").click(function() {
         $(".battle-title").text(`Battle of Stow-on-the-Wold`);
+        $(".battle-date").text(`21 March 1646`);
     })
 
     $("#deorham-button").click(function() {
         $(".battle-title").text(`Battle of Deorham`);
+        $(".battle-date").text(`577 AD`);
     })
 
     $("#berkeley-button").click(function() {
         $(".battle-title").text(`Battle of Berkeley Castle`);
+        $(".battle-date").text(`1326, 1645`)
     })
 });
 
@@ -73,8 +79,8 @@ function myMap() {
 
     /** Below we're adding some markers. Here are the coordinates for them, in an array of objects */
 
-    var battleMarks = [{"lat": 51.9923, "lng": -2.1580, "name": "Battle of Tewkesbury"},
-                         {"lat": 51.8472, "lng": -2.0978, "name": "Battle of Crickley Hill"},
+    var battleMarks = [{"lat": 51.9923, "lng": -2.1580, "name": "Battle of Tewkesbury", "date": "4 May 1471"},
+                         {"lat": 51.8472, "lng": -2.0978, "name": "Battle of Crickley Hill",},
                          {"lat": 51.6444, "lng": -2.2011, "name": "Battle of Beverston Castle"},
                          {"lat": 51.951708, "lng": -1.728297, "name": "Battle of Stow-on-the-Wold"},
                          {"lat": 51.4891, "lng": -2.373706, "name": "Battle of Deorham"},
