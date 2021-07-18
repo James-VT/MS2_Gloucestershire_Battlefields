@@ -15,43 +15,7 @@ button.addEventListener('click', buttonTest);
 
 $(document).ready(function() {
 
-    $("#tewkesbury-button").click(function() {
-        $(".battle-title").text(`Battle of Tewkesbury`);
-        $(".battle-date").text(`4 May 1471`);
-        $(".battle-combatants").text(`The House of York versus the House of Lancaster`);
-        map.setZoom(9);
-        map.setCenter(51.9923, -2.1580);
-    })
-
-    $("#crickley-button").click(function() {
-        $(".battle-title").text(`Battle of Crickley Hill`);
-        $(".battle-date").text(`~3,300 BC`);
-        $(".battle-combatants").text(`Combatants unknown`);
-    })
-
-    $("#beverston-button").click(function() {
-        $(".battle-title").text(`Battle of Beverston Castle`);
-        $(".battle-date").text(`1644`);
-        $(".battle-combatants").text(`Royalists versus Parliament`);
-    })
-
-    $("#stow-button").click(function() {
-        $(".battle-title").text(`Battle of Stow-on-the-Wold`);
-        $(".battle-date").text(`21 March 1646`);
-        $(".battle-combatants").text(`Royalists versus Parliament`);
-    })
-
-    $("#deorham-button").click(function() {
-        $(".battle-title").text(`Battle of Deorham`);
-        $(".battle-date").text(`577 AD`);
-        $(".battle-combatants").text(`West Saxons versus Britons`);
-    })
-
-    $("#nibley-button").click(function() {
-        $(".battle-title").text(`Battle of Nibley Green`);
-        $(".battle-date").text(`20th March 1470`)
-        $(".battle-combatants").text(`Thomas Talbot, 2nd Viscount Lisle versus William Berkeley, 2nd Baron Berkeley`);
-    })
+ 
 });
 
 /** The const below is for the map's centre coordinates. I've called this outside of the function itself as calling it inside failed to work. */
@@ -87,7 +51,7 @@ function myMap() {
 
     /** Below we're adding some markers. Here are the coordinates for them, in an array of objects */
 
-    var battleMarks = [{"lat": 51.9923, "lng": -2.1580,
+    const battleMarks = [{"lat": 51.9923, "lng": -2.1580,
                         "name": "Battle of Tewkesbury", 
                         "date": "4 May 1471", 
                         "combatants": "The House of York versus the House of Lancaster"},
@@ -115,7 +79,7 @@ function myMap() {
     /** Here's where we loop through the battleMarks objects */
 
     for(let i=0; i < battleMarks.length; i++) {
-        var marker = new google.maps.Marker({
+        const marker = new google.maps.Marker({
             position: new google.maps.LatLng(battleMarks[i].lat, battleMarks[i].lng),
             map: map,
             title: battleMarks[i].name
@@ -128,13 +92,68 @@ function myMap() {
 
         marker.addListener("click", () => {
             map.setZoom(9);
-            map.setCenter(marker.getPosition());
-            console.log("marker listener successful")
+            map.panTo(marker.getPosition());
+            console.log(battleMarks.LatLng);
             $(".battle-title").text(`${battleMarks[i].name}`);
             $(".battle-date").text(`${battleMarks[i].date}`);
             $(".battle-combatants").text(`${battleMarks[i].combatants}`);
         });
     }
+    
+    $("#tewkesbury-button").click(function() {
+        $(".battle-title").text(`Battle of Tewkesbury`);
+        $(".battle-date").text(`4 May 1471`);
+        $(".battle-combatants").text(`The House of York versus the House of Lancaster`);
+        map.setZoom(9);
+        let tewksCoords = {"lat": 51.9923, "lng": -2.1580};
+        map.panTo(tewksCoords);
+    })
+
+    $("#crickley-button").click(function() {
+        $(".battle-title").text(`Battle of Crickley Hill`);
+        $(".battle-date").text(`~3,300 BC`);
+        $(".battle-combatants").text(`Combatants unknown`);
+        map.setZoom(9);
+        let crickleyCoords = {"lat": 51.8472, "lng": -2.0978};
+        map.panTo(crickleyCoords);
+    })
+
+    $("#beverston-button").click(function() {
+        $(".battle-title").text(`Battle of Beverston Castle`);
+        $(".battle-date").text(`1644`);
+        $(".battle-combatants").text(`Royalists versus Parliament`);
+        map.setZoom(9);
+        let beverstonCoords = {"lat": 51.6444, "lng": -2.2011};
+        map.panTo(beverstonCoords);
+    })
+
+    $("#stow-button").click(function() {
+        $(".battle-title").text(`Battle of Stow-on-the-Wold`);
+        $(".battle-date").text(`21 March 1646`);
+        $(".battle-combatants").text(`Royalists versus Parliament`);
+        map.setZoom(9);
+        let stowCoords = {"lat": 51.951708, "lng": -1.728297};
+        map.panTo(stowCoords);
+    })
+
+    $("#deorham-button").click(function() {
+        $(".battle-title").text(`Battle of Deorham`);
+        $(".battle-date").text(`577 AD`);
+        $(".battle-combatants").text(`West Saxons versus Britons`);
+        map.setZoom(9);
+        let deorhamCoords = {"lat": 51.4891, "lng": -2.373706};
+        map.panTo(deorhamCoords);
+    })
+
+    $("#nibley-button").click(function() {
+        $(".battle-title").text(`Battle of Nibley Green`);
+        $(".battle-date").text(`20th March 1470`)
+        $(".battle-combatants").text(`Thomas Talbot, 2nd Viscount Lisle versus William Berkeley, 2nd Baron Berkeley`);
+        map.setZoom(9);
+        let nibleyCoords = {"lat": 51.66, "lng": -2.3985};
+        map.panTo(nibleyCoords);
+    })
+
 }
 
 /** And here we call the map itself */
