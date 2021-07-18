@@ -19,6 +19,8 @@ $(document).ready(function() {
         $(".battle-title").text(`Battle of Tewkesbury`);
         $(".battle-date").text(`4 May 1471`);
         $(".battle-combatants").text(`The House of York versus the House of Lancaster`);
+        map.setZoom(9);
+        map.setCenter(51.9923, -2.1580);
     })
 
     $("#crickley-button").click(function() {
@@ -45,10 +47,10 @@ $(document).ready(function() {
         $(".battle-combatants").text(`West Saxons versus Britons`);
     })
 
-    $("#berkeley-button").click(function() {
-        $(".battle-title").text(`Battle of Berkeley Castle`);
-        $(".battle-date").text(`1326, 1645`)
-        $(".battle-combatants").text(`Hugh Despenser versus Baron Berkeley (1326), Royalists verus Parliament (1645)`);
+    $("#nibley-button").click(function() {
+        $(".battle-title").text(`Battle of Nibley Green`);
+        $(".battle-date").text(`20th March 1470`)
+        $(".battle-combatants").text(`Thomas Talbot, 2nd Viscount Lisle versus William Berkeley, 2nd Baron Berkeley`);
     })
 });
 
@@ -85,17 +87,35 @@ function myMap() {
 
     /** Below we're adding some markers. Here are the coordinates for them, in an array of objects */
 
-    var battleMarks = [{"lat": 51.9923, "lng": -2.1580, "name": "Battle of Tewkesbury", "date": "4 May 1471", "combatants": "The House of York versus the House of Lancaster"},
-                         {"lat": 51.8472, "lng": -2.0978, "name": "Battle of Crickley Hill", "date": "~3,300 BC", "combatants": "Combatants unknown"},
-                         {"lat": 51.6444, "lng": -2.2011, "name": "Battle of Beverston Castle", "date": "1644", "combatants": "Royalists versus Parliament"},
-                         {"lat": 51.951708, "lng": -1.728297, "name": "Battle of Stow-on-the-Wold", "date": "21 March 1646", "combatants": "Royalists versus Parliament"},
-                         {"lat": 51.4891, "lng": -2.373706, "name": "Battle of Deorham", "date": "577 AD", "combatants": "West Saxons versus Britons"},
-                         {"lat": 51.688611, "lng": -2.456944, "name": "Battle of Berkeley Castle", "date": "1326, 1645", "combatants": "Hugh Despenser versus Baron Berkeley (1326), Royalists versus Parliament (1645)"}];
+    var battleMarks = [{"lat": 51.9923, "lng": -2.1580,
+                        "name": "Battle of Tewkesbury", 
+                        "date": "4 May 1471", 
+                        "combatants": "The House of York versus the House of Lancaster"},
+                         {"lat": 51.8472, "lng": -2.0978, 
+                         "name": "Battle of Crickley Hill", 
+                         "date": "~3,300 BC", 
+                         "combatants": "Combatants unknown"},
+                         {"lat": 51.6444, "lng": -2.2011, 
+                         "name": "Battle of Beverston Castle", 
+                         "date": "1644", "combatants": 
+                         "Royalists versus Parliament"},
+                         {"lat": 51.951708, "lng": -1.728297,
+                         "name": "Battle of Stow-on-the-Wold", 
+                         "date": "21 March 1646", 
+                         "combatants": "Royalists versus Parliament"},
+                         {"lat": 51.4891, "lng": -2.373706, 
+                         "name": "Battle of Deorham", 
+                         "date": "577 AD", 
+                         "combatants": "West Saxons versus Britons"},
+                         {"lat": 51.66, "lng": -2.3985, 
+                         "name": "Battle of Nibley Green", 
+                         "date": "20th March 1470", 
+                         "combatants": "Thomas Talbot, 2nd Viscount Lisle versus William Berkeley, 2nd Baron Berkeley"}];
 
     /** Here's where we loop through the battleMarks objects */
 
     for(let i=0; i < battleMarks.length; i++) {
-        const marker = new google.maps.Marker({
+        var marker = new google.maps.Marker({
             position: new google.maps.LatLng(battleMarks[i].lat, battleMarks[i].lng),
             map: map,
             title: battleMarks[i].name
