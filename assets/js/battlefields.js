@@ -10,8 +10,6 @@ function buttonTest() {
 button.addEventListener('click', buttonTest);
 
 /** The (document).ready below is to make sure the page has loaded properly before any JQuery is used for the buttons
- * This is where we build our buttons and what they do
- */
 
 $(document).ready(function() {
 
@@ -54,27 +52,34 @@ function myMap() {
     const battleMarks = [{"lat": 51.9923, "lng": -2.1580,
                         "name": "Battle of Tewkesbury", 
                         "date": "4 May 1471", 
-                        "combatants": "The House of York versus the House of Lancaster"},
+                        "combatants": "The House of York versus the House of Lancaster",
+                        "outcome": "Yorkist victory",
+                        "detailed": "The Battle of Tewkesbury, which took place on 4 May 1471, was one of the decisive battles of the Wars of the Roses in England. The forces loyal to the House of Lancaster were completely defeated by those of the rival House of York under their monarch, King Edward IV. The Lancastrian heir to the throne, Edward, Prince of Wales, and many prominent Lancastrian nobles were killed during the battle or executed. The Lancastrian king, Henry VI of England, who was a prisoner in the Tower of London, died or was murdered shortly after the battle. Tewkesbury restored political stability to England until the death of Edward IV in 1483"},
                          {"lat": 51.8472, "lng": -2.0978, 
                          "name": "Battle of Crickley Hill", 
                          "date": "~3,300 BC", 
-                         "combatants": "Combatants unknown"},
+                         "combatants": "Combatants unknown",
+                         "outcome": "Outcome unknown; settlement defences partially levelled"},
                          {"lat": 51.6444, "lng": -2.2011, 
                          "name": "Battle of Beverston Castle", 
-                         "date": "1644", "combatants": 
-                         "Royalists versus Parliament"},
+                         "date": "1644",
+                         "combatants": "Royalists versus Parliament",
+                         "outcome": "Parliamentarian victory; Beverston's defences slighted"},
                          {"lat": 51.951708, "lng": -1.728297,
                          "name": "Battle of Stow-on-the-Wold", 
                          "date": "21 March 1646", 
-                         "combatants": "Royalists versus Parliament"},
+                         "combatants": "Royalists versus Parliament",
+                         "outcome": "Parliamentarian victory"},
                          {"lat": 51.4891, "lng": -2.373706, 
                          "name": "Battle of Deorham", 
                          "date": "577 AD", 
-                         "combatants": "West Saxons versus Britons"},
+                         "combatants": "West Saxons versus Britons",
+                         "outcome": "West Saxon victory"},
                          {"lat": 51.66, "lng": -2.3985, 
                          "name": "Battle of Nibley Green", 
                          "date": "20th March 1470", 
-                         "combatants": "Thomas Talbot, 2nd Viscount Lisle versus William Berkeley, 2nd Baron Berkeley"}];
+                         "combatants": "Thomas Talbot, 2nd Viscount Lisle versus William Berkeley, 2nd Baron Berkeley",
+                         "outcome": "William Berkely, 2nd Baron Berkeley, victorious"}];
 
     /** Here's where we loop through the battleMarks objects */
 
@@ -97,13 +102,22 @@ function myMap() {
             $(".battle-title").text(`${battleMarks[i].name}`);
             $(".battle-date").text(`${battleMarks[i].date}`);
             $(".battle-combatants").text(`${battleMarks[i].combatants}`);
+            $(".battle-outcome").text(`${battleMarks[i].outcome}`)
         });
     }
     
+    /** This is where we build our buttons I've used panTo instead of setCentre as I prefer the */
+
     $("#tewkesbury-button").click(function() {
         $(".battle-title").text(`Battle of Tewkesbury`);
         $(".battle-date").text(`4 May 1471`);
         $(".battle-combatants").text(`The House of York versus the House of Lancaster`);
+        $(".battle-outcome").text(`Yorkist victory`);
+        $(".battle-detailed").text(`The Battle of Tewkesbury, which took place on 4 May 1471, was one of the decisive battles of the Wars 
+        of the Roses in England. The forces loyal to the House of Lancaster were completely defeated by those of the rival House of York under 
+        their monarch, King Edward IV. The Lancastrian heir to the throne, Edward, Prince of Wales, and many prominent Lancastrian nobles were 
+        killed during the battle or executed. The Lancastrian king, Henry VI of England, who was a prisoner in the Tower of London, died or was 
+        murdered shortly after the battle. Tewkesbury restored political stability to England until the death of Edward IV in 1483`),
         map.setZoom(9);
         let tewksCoords = {"lat": 51.9923, "lng": -2.1580};
         map.panTo(tewksCoords);
@@ -113,6 +127,7 @@ function myMap() {
         $(".battle-title").text(`Battle of Crickley Hill`);
         $(".battle-date").text(`~3,300 BC`);
         $(".battle-combatants").text(`Combatants unknown`);
+        $(".battle-outcome").text(`Outcome unknown; settlement defences partially levelled`)
         map.setZoom(9);
         let crickleyCoords = {"lat": 51.8472, "lng": -2.0978};
         map.panTo(crickleyCoords);
@@ -122,6 +137,7 @@ function myMap() {
         $(".battle-title").text(`Battle of Beverston Castle`);
         $(".battle-date").text(`1644`);
         $(".battle-combatants").text(`Royalists versus Parliament`);
+        $(".battle-outcome").text(`Parliamentarian victory; Beverston's defences slighted`)
         map.setZoom(9);
         let beverstonCoords = {"lat": 51.6444, "lng": -2.2011};
         map.panTo(beverstonCoords);
@@ -131,6 +147,7 @@ function myMap() {
         $(".battle-title").text(`Battle of Stow-on-the-Wold`);
         $(".battle-date").text(`21 March 1646`);
         $(".battle-combatants").text(`Royalists versus Parliament`);
+        $(".battle-outcome").text(`Parliamentarian victory`)
         map.setZoom(9);
         let stowCoords = {"lat": 51.951708, "lng": -1.728297};
         map.panTo(stowCoords);
@@ -140,6 +157,7 @@ function myMap() {
         $(".battle-title").text(`Battle of Deorham`);
         $(".battle-date").text(`577 AD`);
         $(".battle-combatants").text(`West Saxons versus Britons`);
+        $(".battle-outcome").text(`West Saxon victory`)
         map.setZoom(9);
         let deorhamCoords = {"lat": 51.4891, "lng": -2.373706};
         map.panTo(deorhamCoords);
@@ -149,6 +167,7 @@ function myMap() {
         $(".battle-title").text(`Battle of Nibley Green`);
         $(".battle-date").text(`20th March 1470`)
         $(".battle-combatants").text(`Thomas Talbot, 2nd Viscount Lisle versus William Berkeley, 2nd Baron Berkeley`);
+        $(".battle-outcome").text(`William Berkely, 2nd Baron Berkeley, victorious`)
         map.setZoom(9);
         let nibleyCoords = {"lat": 51.66, "lng": -2.3985};
         map.panTo(nibleyCoords);
