@@ -78,6 +78,24 @@ JQuery is used in this project via CDN to provide the option of simplifying Java
 ## GeoHack
 GeoHack is a service I've used via Wikipedia to source the coordinates for the battlefields in order to place the map markers correctly. [GeoHack](https://geohack.toolforge.org/)
 
+# Credits
+
+## Wikipedia
+
+### Tewkesbury battle information
+The information about the Battle of Tewkesbury used for this site was taken from the battle's [wikipedia page.](https://en.wikipedia.org/wiki/Battle_of_Tewkesbury)
+
+### Battle of Crickley Hill information
+The text for the battle of Crickley Hill came partly from [historyextra.com.](https://www.historyextra.com/period/roman/what-earliest-evidence-battle-britain-first-conflict-ever/) A little more was added by me.
+
+### Beverston Castle information
+The text for Beverston Castle came partly from the castle's [wikipedia page.](https://en.wikipedia.org/wiki/Beverston_Castle)
+
+### Battle of Stow on the Wold information
+The information about the Battle of Stow on the Wold used for this site was taken from the battle's [Wikipedia page.](https://en.wikipedia.org/wiki/Battle_of_Stow-on-the-Wold)
+
+
+
 # Image credits
 * beverstonetoday.jpg is taken from Wikimedia commons, and is open-source. [Link](https://commons.wikimedia.org/wiki/File:Beverston_castle.jpg) The original uploader was Anlace at English Wikipedia., CC BY-SA 2.5 <https://creativecommons.org/licenses/by-sa/2.5>, via Wikimedia Commons
 
