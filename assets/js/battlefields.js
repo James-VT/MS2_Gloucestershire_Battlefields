@@ -59,7 +59,7 @@ function myMap() {
                          "name": "Battle of Crickley Hill", 
                          "date": "~3,300 BC", 
                          "combatants": "Combatants unknown",
-                         "outcome": "Outcome unknown; settlement defences partially levelled"},
+                         "outcome": "Outcome unknown; settlement defences partially levelled"}
                          {"lat": 51.6444, "lng": -2.2011, 
                          "name": "Battle of Beverston Castle", 
                          "date": "1644",
@@ -74,12 +74,14 @@ function myMap() {
                          "name": "Battle of Deorham", 
                          "date": "577 AD", 
                          "combatants": "West Saxons versus Britons",
-                         "outcome": "West Saxon victory"},
+                         "outcome": "West Saxon victory",
+                         "detailed": "The Battle of Deorham (or Dyrham) was a decisive military encounter between the West Saxons and the Britons of the West Country in 577. The battle, which was a major victory for Wessex's forces led by Ceawlin and his son, Cuthwine, resulted in the capture of the Brythonic cities of Glevum (Gloucester), Corinium Dobunnorum (Cirencester), and Aquae Sulis (Bath). It also led to the permanent cultural and ethnic separation of Dumnonia (Devon and Cornwall) from Wales. The Anglo-Saxon Chronicle is the only source that mentions the Battle of Deorham. Although it gives few details, it describes the battle as a major engagement. It was fought at Hinton Hill near Dyrham in South Gloucestershire."},
                          {"lat": 51.66, "lng": -2.3985, 
                          "name": "Battle of Nibley Green", 
                          "date": "20th March 1470", 
                          "combatants": "Thomas Talbot, 2nd Viscount Lisle versus William Berkeley, 2nd Baron Berkeley",
-                         "outcome": "William Berkely, 2nd Baron Berkeley, victorious"}];
+                         "outcome": "William Berkely, 2nd Baron Berkeley, victorious",
+                         "detailed": "The Battle of Nibley Green was fought near North Nibley in Gloucestershire on 20 March 1470, between the troops of Thomas Talbot, 2nd Viscount Lisle and William Berkeley, 2nd Baron Berkeley. It is notable for being the last battle fought in England entirely between the private armies of feudal magnates. Lisle and Berkeley had long been engaged in a dispute over the inheritance of Berkeley Castle and the other Berkeley lands, Lisle being heir-general to Thomas de Berkeley, 5th Baron Berkeley and Berkeley heir-male. Lisle impetuously challenged Berkeley to a battle, and the latter agreed, the battle to be fought the next day at Nibley Green. Lisle paid for his rashness with his life"}];
 
     /** Here's where we loop through the battleMarks objects */
 
