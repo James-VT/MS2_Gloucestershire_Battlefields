@@ -84,7 +84,7 @@ function myMap() {
                          "date": "20th March 1470", 
                          "combatants": "Thomas Talbot, 2nd Viscount Lisle versus William Berkeley, 2nd Baron Berkeley",
                          "outcome": "William Berkely, 2nd Baron Berkeley, victorious",
-                         "detailed": "The Battle of Nibley Green was fought near North Nibley in Gloucestershire on 20 March 1470, between the troops of Thomas Talbot, 2nd Viscount Lisle and William Berkeley, 2nd Baron Berkeley. It is notable for being the last battle fought in England entirely between the private armies of feudal magnates. Lisle and Berkeley had long been engaged in a dispute over the inheritance of Berkeley Castle and the other Berkeley lands, Lisle being heir-general to Thomas de Berkeley, 5th Baron Berkeley and Berkeley heir-male. Lisle impetuously challenged Berkeley to a battle, and the latter agreed, the battle to be fought the next day at Nibley Green. Lisle paid for his rashness with his life"}];
+                         "detailed": "The Battle of Nibley Green was fought near North Nibley in Gloucestershire on 20 March 1470, between the troops of Thomas Talbot, 2nd Viscount Lisle and William Berkeley, 2nd Baron Berkeley. It is notable for being the last battle fought in England entirely between the private armies of feudal magnates. Lisle and Berkeley had long been engaged in a dispute over the inheritance of Berkeley Castle and the other Berkeley lands, Lisle being heir-general to Thomas de Berkeley, 5th Baron Berkeley and Berkeley heir-male. Lisle impetuously challenged Berkeley to a battle, and the latter agreed, the battle to be fought the next day at Nibley Green. Lisle paid for his rashness with his life."}];
 
     /** Here's where we loop through the battleMarks objects */
 
@@ -112,7 +112,7 @@ function myMap() {
         });
     }
     
-    /** This is where we build our buttons I've used panTo instead of setCentre as I prefer the */
+    /** This is where we build our buttons. I've used panTo instead of setCentre as I prefer the effect */
 
     $("#tewkesbury-button").click(function() {
         $(".battle-title").text(`Battle of Tewkesbury`);
@@ -123,7 +123,7 @@ function myMap() {
         of the Roses in England. The forces loyal to the House of Lancaster were completely defeated by those of the rival House of York under 
         their monarch, King Edward IV. The Lancastrian heir to the throne, Edward, Prince of Wales, and many prominent Lancastrian nobles were 
         killed during the battle or executed. The Lancastrian king, Henry VI of England, who was a prisoner in the Tower of London, died or was 
-        murdered shortly after the battle. Tewkesbury restored political stability to England until the death of Edward IV in 1483`),
+        murdered shortly after the battle. Tewkesbury restored political stability to England until the death of Edward IV in 1483`);
         map.setZoom(9);
         let tewksCoords = {"lat": 51.9923, "lng": -2.1580};
         map.panTo(tewksCoords);
@@ -133,7 +133,10 @@ function myMap() {
         $(".battle-title").text(`Battle of Crickley Hill`);
         $(".battle-date").text(`~3,300 BC`);
         $(".battle-combatants").text(`Combatants unknown`);
-        $(".battle-outcome").text(`Outcome unknown; settlement defences partially levelled`)
+        $(".battle-outcome").text(`Outcome unknown; settlement defences partially levelled`);
+        $(".battle-detailed").text(`Archaeologically speaking, the earliest battle evidence from the British Isles comes from the Neolithic or New Stone Age, 
+        when the farmers were first competing for limited resources. At Crickley Hill in Gloucestershire, the earthen ramparts of the settlement were attacked, 
+        some time around 3300 BC, and their defences partially levelled.`);
         map.setZoom(9);
         let crickleyCoords = {"lat": 51.8472, "lng": -2.0978};
         map.panTo(crickleyCoords);
@@ -143,7 +146,10 @@ function myMap() {
         $(".battle-title").text(`Battle of Beverston Castle`);
         $(".battle-date").text(`1644`);
         $(".battle-combatants").text(`Royalists versus Parliament`);
-        $(".battle-outcome").text(`Parliamentarian victory; Beverston's defences slighted`)
+        $(".battle-outcome").text(`Parliamentarian victory; Beverston's defences slighted`);
+        $(".battle-detailed").text(`As a result of the English Civil War (mid-seventeenth century), much of Beverston Castle was destroyed. 
+        Roundhead forces attacked the castle during the War, but the greatest damage was from an order from Parliament to slight its defensive works. 
+        The major attack occurred in 1644.`);
         map.setZoom(9);
         let beverstonCoords = {"lat": 51.6444, "lng": -2.2011};
         map.panTo(beverstonCoords);
@@ -153,7 +159,12 @@ function myMap() {
         $(".battle-title").text(`Battle of Stow-on-the-Wold`);
         $(".battle-date").text(`21 March 1646`);
         $(".battle-combatants").text(`Royalists versus Parliament`);
-        $(".battle-outcome").text(`Parliamentarian victory`)
+        $(".battle-outcome").text(`Parliamentarian victory`);
+        $(".battle-detailed").text(`In the spring of 1646, King Charles I of England was getting ever more desperate to hold the Royalist cause together 
+        whilst waiting for the long promised relief forces from Ireland, Scotland and France. Sir Jacob Astley took command of the Royalist forces in the west 
+        and began to gather up the remnants from the handful of Royalist garrisons still left in the West Midlands to create a new field army. At this point 
+        in the war, Royalist morale was low. However, Astley, a stalwart of the Royalist commanders and an experienced soldier, was able to cobble 
+        together a force of 3,000. While returning to Oxford he was intercepted and defeated at Stow-on-the-Wold.`);
         map.setZoom(9);
         let stowCoords = {"lat": 51.951708, "lng": -1.728297};
         map.panTo(stowCoords);
@@ -163,7 +174,12 @@ function myMap() {
         $(".battle-title").text(`Battle of Deorham`);
         $(".battle-date").text(`577 AD`);
         $(".battle-combatants").text(`West Saxons versus Britons`);
-        $(".battle-outcome").text(`West Saxon victory`)
+        $(".battle-outcome").text(`West Saxon victory`);
+        $(".battle-detailed").text(`The Battle of Deorham (or Dyrham) was a decisive military encounter between the West Saxons and the Britons of the 
+        West Country in 577. The battle, which was a major victory for Wessex's forces led by Ceawlin and his son, Cuthwine, resulted in the capture 
+        of the Brythonic cities of Glevum (Gloucester), Corinium Dobunnorum (Cirencester), and Aquae Sulis (Bath). It also led to the permanent 
+        cultural and ethnic separation of Dumnonia (Devon and Cornwall) from Wales. The Anglo-Saxon Chronicle is the only source that mentions the Battle of Deorham. 
+        Although it gives few details, it describes the battle as a major engagement. It was fought at Hinton Hill near Dyrham in South Gloucestershire.`);
         map.setZoom(9);
         let deorhamCoords = {"lat": 51.4891, "lng": -2.373706};
         map.panTo(deorhamCoords);
@@ -173,7 +189,12 @@ function myMap() {
         $(".battle-title").text(`Battle of Nibley Green`);
         $(".battle-date").text(`20th March 1470`)
         $(".battle-combatants").text(`Thomas Talbot, 2nd Viscount Lisle versus William Berkeley, 2nd Baron Berkeley`);
-        $(".battle-outcome").text(`William Berkely, 2nd Baron Berkeley, victorious`)
+        $(".battle-outcome").text(`William Berkely, 2nd Baron Berkeley, victorious`);
+        $(".battle-detailed").text(`The Battle of Nibley Green was fought near North Nibley in Gloucestershire on 20 March 1470, between the troops of Thomas Talbot, 
+        2nd Viscount Lisle and William Berkeley, 2nd Baron Berkeley. It is notable for being the last battle fought in England entirely between the private armies of 
+        feudal magnates. Lisle and Berkeley had long been engaged in a dispute over the inheritance of Berkeley Castle and the other Berkeley lands, Lisle being heir-general 
+        to Thomas de Berkeley, 5th Baron Berkeley and Berkeley heir-male. Lisle impetuously challenged Berkeley to a battle, and the latter agreed, the battle to be fought the 
+        next day at Nibley Green. Lisle paid for his rashness with his life`);
         map.setZoom(9);
         let nibleyCoords = {"lat": 51.66, "lng": -2.3985};
         map.panTo(nibleyCoords);
