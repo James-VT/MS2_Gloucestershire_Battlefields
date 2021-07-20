@@ -59,17 +59,20 @@ function myMap() {
                          "name": "Battle of Crickley Hill", 
                          "date": "~3,300 BC", 
                          "combatants": "Combatants unknown",
-                         "outcome": "Outcome unknown; settlement defences partially levelled"}
+                         "outcome": "Outcome unknown; settlement defences partially levelled",
+                         "detailed": "Archaeologically speaking, the earliest battle evidence from the British Isles comes from the Neolithic or New Stone Age, when the farmers were first competing for limited resources. At Crickley Hill in Gloucestershire, the earthen ramparts of the settlement were attacked, some time around 3300 BC, and their defences partially levelled."},
                          {"lat": 51.6444, "lng": -2.2011, 
                          "name": "Battle of Beverston Castle", 
                          "date": "1644",
                          "combatants": "Royalists versus Parliament",
-                         "outcome": "Parliamentarian victory; Beverston's defences slighted"},
+                         "outcome": "Parliamentarian victory; Beverston's defences slighted",
+                         "detailed": "As a result of the English Civil War (mid-seventeenth century), much of Beverston Castle was destroyed. Roundhead forces attacked the castle during the War, but the greatest damage was from an order from Parliament to slight its defensive works. The major attack occurred in 1644."},
                          {"lat": 51.951708, "lng": -1.728297,
                          "name": "Battle of Stow-on-the-Wold", 
                          "date": "21 March 1646", 
                          "combatants": "Royalists versus Parliament",
-                         "outcome": "Parliamentarian victory"},
+                         "outcome": "Parliamentarian victory",
+                         "detailed": "In the spring of 1646, King Charles I of England was getting ever more desperate to hold the Royalist cause together whilst waiting for the long promised relief forces from Ireland, Scotland and France. Sir Jacob Astley took command of the Royalist forces in the west and began to gather up the remnants from the handful of Royalist garrisons still left in the West Midlands to create a new field army. At this point in the war, Royalist morale was low. However, Astley, a stalwart of the Royalist commanders and an experienced soldier, was able to cobble together a force of 3,000. While returning to Oxford he was intercepted and defeated at Stow-on-the-Wold."},
                          {"lat": 51.4891, "lng": -2.373706, 
                          "name": "Battle of Deorham", 
                          "date": "577 AD", 
@@ -104,7 +107,8 @@ function myMap() {
             $(".battle-title").text(`${battleMarks[i].name}`);
             $(".battle-date").text(`${battleMarks[i].date}`);
             $(".battle-combatants").text(`${battleMarks[i].combatants}`);
-            $(".battle-outcome").text(`${battleMarks[i].outcome}`)
+            $(".battle-outcome").text(`${battleMarks[i].outcome}`);
+            $(".battle-detailed").text(`${battleMarks[i].detailed}`);
         });
     }
     
