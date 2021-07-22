@@ -81,6 +81,7 @@ GeoHack is a service I've used via Wikipedia to source the coordinates for the b
 # Credits
 
 ## Wikipedia
+Wikipedia was used extensively for this project. Links to specific pages from which information or text was taken are below.
 
 ### Tewkesbury battle information
 The information about the Battle of Tewkesbury used for this site was taken from the battle's [wikipedia page.](https://en.wikipedia.org/wiki/Battle_of_Tewkesbury)
@@ -94,7 +95,11 @@ The text for Beverston Castle came partly from the castle's [wikipedia page.](ht
 ### Battle of Stow on the Wold information
 The information about the Battle of Stow on the Wold used for this site was taken from the battle's [Wikipedia page.](https://en.wikipedia.org/wiki/Battle_of_Stow-on-the-Wold)
 
+### Battle of Deorham information
+The information about the Battle of Deorham used for this site was taken from the battle's [Wikipedia page.](https://en.wikipedia.org/wiki/Battle_of_Deorham)
 
+### Battle of Nibley Green information
+The information about the Battle of Nibley Green used for this site was taken from the battle's [Wikipedia page.](https://en.wikipedia.org/wiki/Battle_of_Nibley_Green)
 
 # Image credits
 * beverstonetoday.jpg is taken from Wikimedia commons, and is open-source. [Link](https://commons.wikimedia.org/wiki/File:Beverston_castle.jpg) The original uploader was Anlace at English Wikipedia., CC BY-SA 2.5 <https://creativecommons.org/licenses/by-sa/2.5>, via Wikimedia Commons
