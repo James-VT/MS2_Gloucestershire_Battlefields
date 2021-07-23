@@ -27,3 +27,12 @@ div {
 .introduction {
     text-align: center;
 }
+
+/* ---------------------Media queries */
+/*The below code centres the page headings in the drop-down nav menu*/
+@media screen and (max-width: 985px) {
+    .drop-center {
+        text-align: center;
+        align-items: center;
+    }
+}
