@@ -37,6 +37,9 @@
                   <a class="nav-link drop-center" href="https://james-vt.github.io/MS2_Gloucestershire_Battlefields/contactus.html">Contact Us</a>
                 </li>
                 <li class="nav-item">
+                  <a class="nav-link drop-center" href="#">Quiz</a>
+                </li>
+                <li class="nav-item">
                   <a class="nav-link drop-center" href="#">Donate</a>
                 </li>
               </ul>
@@ -45,6 +48,7 @@
         </nav>
     </header>
 
+    <!--Introduction below-->
     <div class="introduction content-section">
       <h1>Gloucestershire Battlefields Society</h1>
       <h2>Caring for battlefields and historical sites across Gloucestershire and South Gloucestershire since 2002</h2>
@@ -54,10 +58,12 @@
           you can use our interactive map below. Either click the markers on the map itself or the buttons below to learn more. The information will appear underneath the buttons.</h3>
     </div>
 
+    <!--Below is the map container-->
     <div class="map-container content-section" id="map">
       
     </div>
 
+    <!--The below container hold the buttons-->
     <div class="battlefield-button-container content-section">
       <!--The container, row, col-6 and col-md-4 classes below are all Bootstrap components to bestow the format I want of three buttons in two lines at larger sizes, but two buttons in three lines at smaller sizes.-->
       This will show a collection of buttons each bearing the name of a battle/battlefield. Clicking one of these will focus the map onto the battlefield and open the above divs which will contain the information and narrative of the battle.
@@ -85,6 +91,7 @@
       </div>
     </div>
 
+    <!--The below container holds the barebones facts of the battle-->
     <div class="battle-brief content-section">
         This information will contain the barebones facts of the battle - its name, who fought in it, the date, casualties etc.
         <h1 class="battle-title"></h1>
@@ -92,9 +99,13 @@
         <h3 class="battle-combatants"></h3>
         <h4 class="battle-outcome"></h4>
     </div>
+
+    <!--The below container holds slightly more detailed facts of the battle-->
     <div class="battle-detailed content-section">
         This div will contain the narrative of the battle. It will open upon the user either clicking the map icon or the battle's name in the buttons below.
     </div>
+
+    <!--The below container holds the dimages of the battle-->
     <div class="battle-images content-section">
       This div will contain the images of the battlefield. It will open upon the user either clicking the map icon or the battle's name in the buttons below.
   </div>
