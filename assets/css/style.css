@@ -36,9 +36,10 @@ div {
 
 .quiz-text {
     text-align: center;
+    align-items: center;
 }
 
-.quiz-area {
+.quiz-outer {
     box-sizing: border-box;
     background-color: rgb(204, 204, 255);
     width: 90%;
@@ -48,6 +49,27 @@ div {
     margin-top: 20px;
     border-radius: 8px;
 }
+
+.quiz-inner {
+    box-sizing: border-box;
+    background-color: white;
+    position: relative;
+    /* width: 90%; */
+    height: 30vh;
+    margin-right: 40px;
+    margin-left: 40px;
+    border: 1px solid black;
+}
+
+#quiz-button {
+    position: absolute;
+    width: 100%;
+    left: 44%; 
+    max-width: 10vw;
+    margin-top: 30px;
+}
+
+
 
 /* ---------------------Media queries */
 /*The below code centres the page headings in the drop-down nav menu*/
