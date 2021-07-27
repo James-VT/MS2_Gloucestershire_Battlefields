@@ -90,17 +90,9 @@ div {
     /* margin-left: 20px; */
 }
 
-#answer-buttons {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    margin: 10px;
-}
-
 .hide {
     display: none;
 }
-
 
 /* ---------------------Media queries */
 /*The below code centres the page headings in the drop-down nav menu*/
