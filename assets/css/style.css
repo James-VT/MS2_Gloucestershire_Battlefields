@@ -66,7 +66,7 @@ div {
     align-items: center; */
 }
 
-.button-container {
+#begin-button-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,13 +76,24 @@ div {
     margin-top: 10px;
 }
 
-#quiz-button {
+#begin-button {
     position: absolute;
+    max-width: 10vw;
+}
+
+.quiz-button {
     width: 100%;
     /* left: 44%;  */
-    max-width: 10vw;
     min-width: 100px;
     margin-top: 30px;
+    /* margin-left: 20px; */
+}
+
+#answer-buttons {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    margin: 10px;
 }
 
 
