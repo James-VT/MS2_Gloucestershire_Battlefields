@@ -2,7 +2,7 @@
 /** Much of the code in this file was inspired by this video tutorial: https://www.youtube.com/watch?v=riDzcEQbX6k&t=379s
  * I have edited various parts to fit the needs of the project, in particular function and variable names but also how the code works
  * i.e. we have no need of a "next" button to trigger the next question, as the next question is triggered automatically upon submitting
- * and answer for the previous question.
+ * an answer for the previous question.
  */
 
 const beginButton = document.getElementById("begin-button")
