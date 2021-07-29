@@ -2,13 +2,13 @@
 /** Much of the code in this file was inspired by this video tutorial: https://www.youtube.com/watch?v=riDzcEQbX6k&t=379s
  * I have edited various parts to fit the needs of the project, in particular function and variable names 
  * to make it easier in my view to know what everything does, but also how the code works
- * i.e. we have no need of a "next" button to trigger the next question, as the next question is triggered automatically upon submitting
- * an answer for the previous question.
  */
 
 
 /**Below we set our variables. */
 const beginButton = document.getElementById("begin-button")
+
+const nextButton = document.getElementById("next-button")
 
 /**Here, I differ from the code in the tutorial video by using two separate variables for elements of the quiz. 
  * This is partly for my own custom formatting and styling preferences, but also to accomodate the fact I'm using the Bootstrap 
@@ -29,7 +29,6 @@ beginButton.addEventListener("click", beginQuiz)
 
 /**Below is our function for starting the quiz. */
 function beginQuiz() {
-    console.log("begun");
     beginButton.classList.add("hide")
     /**The below code is what gets us our randomly sorted questions by ensuring a completely random array using mathrandom minus 5.
      * This gives us a number greater or less than zero 50% of the time, ensuring it swings either way fairly.
@@ -63,15 +62,16 @@ function showQuestion(question) {
         button.addEventListener("click", chooseAnswer)
         answerButtonsElement.appendChild(button)
     })
-}
+ }
 
 function resetState() {
+    nextButton.classList.add("hide")
     while (answerButtonsElement.firstChild) {
-        answerButtonsElements.removeChild(answerButtonsElement.firstChild)
+        answerButtonsElement.removeChild(answerButtonsElement.firstChild)
     }
 }
 
-function chooseAnswer(e) {
+function chooseAnswer() {
 
 }
 
