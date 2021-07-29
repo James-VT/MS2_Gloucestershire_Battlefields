@@ -26,6 +26,10 @@ let shuffledQuestions, currentQuestionIndex
 
 /**Below is our event listener for starting the game by clicking the begin button */
 beginButton.addEventListener("click", beginQuiz)
+nextButton.addEventListener("click", () => {
+    currentQuestionIndex++
+    setNextQuestion()
+})
 
 /**Below is our function for starting the quiz. */
 function beginQuiz() {
@@ -71,8 +75,34 @@ function resetState() {
     }
 }
 
-function chooseAnswer() {
+function chooseAnswer(e) {
+    const selectedButton = e.target
+    const correct = selectedButton.dataset.correct
+    setStatusClass(document.body, correct)
+    Array.from(answerButtonsElement.children).forEach(button => {
+        setStatusClass(button, button.dataset.correct)
+    })
+    if (shuffledQuestions.length > currentQuestionIndex + 1) {
+        nextButton.classList.remove("hide")
+    } else {
+        beginButton.innerText = "Restart"
+        startButton.classList.remove("hide")
+    }
+    nextButton.classList.remove("hide")
+}
 
+function setStatusClass(element, correct) {
+    clearStatusClass(element)
+    if (correct) {
+        element.classList.add("correct")
+    } else {
+        element.classList.add("wrong")
+    }
+}
+
+function clearStatusClass(element) {
+    element.classList.remove("correct")
+    element.classList.remove("wrong")
 }
 
 /**Below is where we store our questions as an array of objects of arrays of objects. Yes, you read that correctly */
