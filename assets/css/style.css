@@ -82,6 +82,10 @@ div {
     max-width: 10vw;
 }
 
+#next-button {
+    display: block;
+}
+
 .quiz-button {
     width: 100%;
     /* left: 44%;  */
