@@ -10,6 +10,8 @@ const beginButton = document.getElementById("begin-button")
 
 const nextButton = document.getElementById("next-button")
 
+const nextButtonContainer = document.getElementById("next-button-container")
+
 /**Here, I differ from the code in the tutorial video by using two separate variables for elements of the quiz. 
  * This is partly for my own custom formatting and styling preferences, but also to accomodate the fact I'm using the Bootstrap 
  * grid system to position my buttons.
@@ -27,6 +29,7 @@ let shuffledQuestions, currentQuestionIndex
 /**Below is our event listener for starting the game by clicking the begin button */
 beginButton.addEventListener("click", beginQuiz)
 nextButton.addEventListener("click", () => {
+    console.log("clicked")
     currentQuestionIndex++
     setNextQuestion()
 })
@@ -43,13 +46,13 @@ function beginQuiz() {
     /**Below we're removing the hide class from the question and the answer buttons */
     answerButtonsElement.classList.remove('hide')
     questionContainerElement.classList.remove('hide')
-    nextQuestion()
+    setNextQuestion()
 }
 
 /**Below is our function for showing the next question. Remember to do this automatically when submitting the previous answer or
  * closing the pop-up window.
  */
-function nextQuestion() {
+function setNextQuestion() {
     resetState()
     showQuestion(shuffledQuestions[currentQuestionIndex])
 }
@@ -70,6 +73,7 @@ function showQuestion(question) {
 
 function resetState() {
     nextButton.classList.add("hide")
+    nextButtonContainer.classList.add("hide")
     while (answerButtonsElement.firstChild) {
         answerButtonsElement.removeChild(answerButtonsElement.firstChild)
     }
@@ -78,17 +82,19 @@ function resetState() {
 function chooseAnswer(e) {
     const selectedButton = e.target
     const correct = selectedButton.dataset.correct
-    setStatusClass(document.body, correct)
+    // setStatusClass(document.body, correct)
     Array.from(answerButtonsElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct)
     })
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
         nextButton.classList.remove("hide")
+        nextButtonContainer.classList.add("hide")
     } else {
         beginButton.innerText = "Restart"
-        startButton.classList.remove("hide")
+        beginButton.classList.remove("hide")
     }
     nextButton.classList.remove("hide")
+    nextButtonContainer.classList.remove("hide")
 }
 
 function setStatusClass(element, correct) {
@@ -114,5 +120,53 @@ const questions = [
             {text: "Stow-on-the-Wold", correct: false},
             {text: "London", correct: false}
         ]
-    }
+    },
+    {
+        question: "The Battle of Stow-on-the-Wold marked the end of which war?",
+        answers: [
+            {text: "The First English Civil War", correct: true},
+            {text: "The Crimean War", correct: false},
+            {text: "The Wars of the Roses", correct: false}
+        ]
+    },
+    {
+        question: "The Wars of the Roses were one of the main inspirations for which major television series?",
+        answers: [
+            {text: "Game of Thrones", correct: true},
+            {text: "Downton Abbey", correct: false},
+            {text: "Love Island", correct: false}
+        ]
+    },
+    {
+        question: "The Battle of Nibley Green was fought to determine ownership of which castle?",
+        answers: [
+            {text: "Berkeley Castle", correct: true},
+            {text: "Sudeley Castle", correct: false},
+            {text: "Barnard Castle", correct: false}
+        ]
+    },
+    {
+        question: "Which royal member of the House of Lancaster was executed after the Battle of Tewkesbury?",
+        answers: [
+            {text: "Prince Edward", correct: true},
+            {text: "Margaret of Anjou", correct: false},
+            {text: "Richard of Gloucester", correct: false}
+        ]
+    },
+    {
+        question: "Which Anglo-Saxon kingdom won the Battle of Deorham?",
+        answers: [
+            {text: "Wessex", correct: true},
+            {text: "Northumbria", correct: false},
+            {text: "Hwicce", correct: false}
+        ]
+    },
+    {
+        question: "Beverston Castle had its defences slighted by which side in the English Civil War?",
+        answers: [
+            {text: "Parliament", correct: true},
+            {text: "The Royalists", correct: false},
+            {text: "The Scottish Covenanters", correct: false}
+        ]
+    },
 ]
