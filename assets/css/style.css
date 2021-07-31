@@ -57,13 +57,15 @@ div {
     background-color: white;
     position: relative;
     /* width: 90%; */
-    height: 30vh;
+    height: auto;
+    min-height: 30vh;
     margin-right: 40px;
     margin-left: 40px;
     border: 1px solid black;
     /* display: flex;
     justify-content: center;
     align-items: center; */
+    padding: 10px;
 }
 
 #begin-button-container {
