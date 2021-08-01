@@ -58,3 +58,6 @@ While trying to get the score to increment properly on the quiz, I came across a
 
 Upon re-running the code after coming back from eating dinner, it worked perfectly.
 
+![Image of score counter working as intended](assets/images/testing/scorecounterbugthree.png)
+
+### Problem solved. The solution: do nothing and come back later.
