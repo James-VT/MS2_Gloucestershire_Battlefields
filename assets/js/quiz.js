@@ -111,6 +111,17 @@ function clearStatusClass(element) {
     element.classList.remove("wrong")
 }
 
+/**Here's where we increment the score for a correct answer */
+
+function incrementScore() {
+
+    //  Get the current score from the DOM and increments it 
+  
+    let oldScore = parseInt(document.getElementById("score").innerText);
+    document.getElementById("score").innerText = ++oldScore;
+  
+  }
+
 /**Below is where we store our questions as an array of objects of arrays of objects. Yes, you read that correctly */
 const questions = [
     {

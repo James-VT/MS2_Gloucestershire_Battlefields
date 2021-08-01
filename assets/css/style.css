@@ -96,6 +96,12 @@ div {
     /* margin-left: 20px; */
 }
 
+#score-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .hide {
     display: none;
 }
