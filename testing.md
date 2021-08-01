@@ -47,3 +47,9 @@ Thinking at first that this was to do with the restrictions on the API key, I fi
 As identified by fellow student Sean Young, the attribute of "async" at the end of the script was causing the issue. The reason for this is that async is short for asynchronous loading. This attribute tells the browser to begin loading the next line of code as soon as this one has started loading, instead of waiting for it to finish. This means the script can sometimes load satisfactorily, and sometimes not. It comes down to a race between whether the script containing the API key loads first, or the script that constructs the map loads first. If the former happens, the map loads and works just fine. If not, then the problem I've described is what you're faced with.
 
 ### Problem solved. The solution: remove the async attribute from the HTML.
+
+## Score incrementation bug
+
+While trying to get the score to increment properly on the quiz, I came across an issue whereby the score counter, presented as 0/6 upon the game's initialisation, would merely change to "1" on clicking the first correct answer, "2" on the second, etc.
+
+![Image of score counter pre-click](assets/images/testing/scorecounterbugone.png)

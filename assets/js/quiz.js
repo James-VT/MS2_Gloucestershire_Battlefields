@@ -95,6 +95,9 @@ function chooseAnswer(e) {
     }
     nextButton.classList.remove("hide")
     nextButtonContainer.classList.remove("hide")
+    if (selectedButton.dataset = correct) {
+        incrementScore()
+    }
 }
 
 function setStatusClass(element, correct) {
@@ -111,16 +114,22 @@ function clearStatusClass(element) {
     element.classList.remove("wrong")
 }
 
-/**Here's where we increment the score for a correct answer */
+/**Here's where we increment the score for a correct answer. This code was partly inspired by Code Institute's
+ * Rosie Odenkirk walkthrough project: https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+IFD101+2017_T3/courseware/03d3f6524ad249d9b33e3336d156dfd0/3b2af8636ea54a4d9dc45126f7498633/?child=first
+ */
 
 function incrementScore() {
 
-    //  Get the current score from the DOM and increments it 
+    //  Gets the current score from the DOM and increments it 
   
-    let oldScore = parseInt(document.getElementById("score").innerText);
-    document.getElementById("score").innerText = ++oldScore;
+    let oldScore = parseInt(document.getElementById("score-container").innerText);
+    document.getElementById("score-container").innerText = ++oldScore;
   
-  }
+}
+
+function determineAnswer() {
+
+}
 
 /**Below is where we store our questions as an array of objects of arrays of objects. Yes, you read that correctly */
 const questions = [
