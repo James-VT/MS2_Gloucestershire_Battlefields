@@ -59,6 +59,7 @@ function setNextQuestion() {
 
 function showQuestion(question) {
     questionElement.innerText = question.question
+    answerButtonsElement.classList.remove("hide")
     question.answers.forEach(answer => {
         const button = document.createElement("button")
         button.innerText = answer.text
@@ -93,10 +94,26 @@ function chooseAnswer(e) {
         beginButton.innerText = "Restart"
         beginButton.classList.remove("hide")
     }
+
+    /**Below I've coded the various answer buttons to show or hide the other buttons and quiz elements as appropriate */
+
+    answerButtonsElement.classList.add("hide")
     nextButton.classList.remove("hide")
     nextButtonContainer.classList.remove("hide")
+
+    /**Below I've added some feedback elements for the user. As well as a pop-up informing the user of the result of their
+     * selection, the question text changes to reflect the result and the score is incremented by one for a correct answer.
+     * Also, rather than iterate through the wrong answer buttons to show a "wrong" message for each of them, I've taken 
+     * advantage of the use of dataset to use the != comparison operator to get the wrong answer buttons to do what I want.
+     */
+
     if (selectedButton.dataset = correct) {
+        questionElement.innerText = "Correct!"
+        alert("Correct!")
         incrementScore()
+    } else if (selectedButton.dataset != correct) {
+        questionElement.innerText = "Wrong!"
+        alert("Whoops, that's wrong!")
     }
 }
 
@@ -119,16 +136,10 @@ function clearStatusClass(element) {
  */
 
 function incrementScore() {
-
-    //  Gets the current score from the DOM and increments it 
   
     let oldScore = parseInt(document.getElementById("score").innerText);
     document.getElementById("score").innerText = ++oldScore;
   
-}
-
-function determineAnswer() {
-
 }
 
 /**Below is where we store our questions as an array of objects of arrays of objects. Yes, you read that correctly */
