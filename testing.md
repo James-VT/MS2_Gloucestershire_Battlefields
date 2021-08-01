@@ -53,3 +53,8 @@ As identified by fellow student Sean Young, the attribute of "async" at the end 
 While trying to get the score to increment properly on the quiz, I came across an issue whereby the score counter, presented as 0/6 upon the game's initialisation, would merely change to "1" on clicking the first correct answer, "2" on the second, etc.
 
 ![Image of score counter pre-click](assets/images/testing/scorecounterbugone.png)
+
+![Image of score counter post-click](assets/images/testing/scorecounterbugtwo.png)
+
+Upon re-running the code after coming back from eating dinner, it worked perfectly.
+
