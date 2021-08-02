@@ -6,27 +6,33 @@
 
 
 /**Below we set our variables. */
+
 const beginButton = document.getElementById("begin-button")
 
 const nextButton = document.getElementById("next-button")
 
 const nextButtonContainer = document.getElementById("next-button-container")
 
+
 /**Here, I differ from the code in the tutorial video by using two separate variables for elements of the quiz. 
  * This is partly for my own custom formatting and styling preferences, but also to accomodate the fact I'm using the Bootstrap 
  * grid system to position my buttons.
  */
 const answerButtonsElement = document.getElementById("answer-buttons")
+
 const questionContainerElement = document.getElementById("quiz-question")
 
 const questionElement = document.getElementById("question-text")
 
+
 /**These variables are taken directly from the tutorial video mentioned above, and are used to shuffle the order
  * of the questions.
  */
+
 let shuffledQuestions, currentQuestionIndex
 
 /**Below is our event listener for starting the game by clicking the begin button */
+
 beginButton.addEventListener("click", beginQuiz)
 nextButton.addEventListener("click", () => {
     console.log("clicked")
@@ -35,6 +41,7 @@ nextButton.addEventListener("click", () => {
 })
 
 /**Below is our function for starting the quiz. */
+
 function beginQuiz() {
     beginButton.classList.add("hide")
     /**The below code is what gets us our randomly sorted questions by ensuring a completely random array using mathrandom minus 5.
@@ -52,10 +59,16 @@ function beginQuiz() {
 /**Below is our function for showing the next question. Remember to do this automatically when submitting the previous answer or
  * closing the pop-up window.
  */
+
 function setNextQuestion() {
     resetState()
     showQuestion(shuffledQuestions[currentQuestionIndex])
 }
+
+/**The function below shows our question on clicking either the begin button, or the next button. This is where we set the data of the
+ *  answer to correct if appropriate, for this to later translate to a pop-up and/or score incrementation if it's correct. This is 
+ * called in the setNextQuestion function and the event listener for the next button.
+ */
 
 function showQuestion(question) {
     questionElement.innerText = question.question
@@ -72,6 +85,8 @@ function showQuestion(question) {
     })
  }
 
+/**The resetState function below is where we clear the playing area of the "next" button to make way for the next question */
+
 function resetState() {
     nextButton.classList.add("hide")
     nextButtonContainer.classList.add("hide")
@@ -79,6 +94,10 @@ function resetState() {
         answerButtonsElement.removeChild(answerButtonsElement.firstChild)
     }
 }
+
+/**Here's where we register the selection of an answer. As well as setting the data to what we need it to be, we also remove and add
+ * hide classes and change the button text to restasrt as appropriate.
+ */
 
 function chooseAnswer(e) {
     const selectedButton = e.target
@@ -94,13 +113,10 @@ function chooseAnswer(e) {
         beginButton.innerText = "Restart"
         beginButton.classList.remove("hide")
     }
-
     /**Below I've coded the various answer buttons to show or hide the other buttons and quiz elements as appropriate */
-
     answerButtonsElement.classList.add("hide")
     nextButton.classList.remove("hide")
     nextButtonContainer.classList.remove("hide")
-
     /**Below I've added some feedback elements for the user. As well as a pop-up informing the user of the result of their
      * selection, the question text changes to reflect the result and the score is incremented by one for a correct answer.
      * Also, rather than iterate through the wrong answer buttons to show a "wrong" message for each of them, I've taken 
@@ -117,6 +133,8 @@ function chooseAnswer(e) {
     }
 }
 
+/**The below function sets our classes as appropriate, depending on the answer given */
+
 function setStatusClass(element, correct) {
     clearStatusClass(element)
     if (correct) {
@@ -125,6 +143,8 @@ function setStatusClass(element, correct) {
         element.classList.add("wrong")
     }
 }
+
+/** The below function is called by the above one; it clears existing classes from the buttons as necessary */
 
 function clearStatusClass(element) {
     element.classList.remove("correct")
@@ -143,6 +163,7 @@ function incrementScore() {
 }
 
 /**Below is where we store our questions as an array of objects of arrays of objects. Yes, you read that correctly */
+
 const questions = [
     {
         question: "Where did the earliest known battle in British history take place?",
