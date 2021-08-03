@@ -76,7 +76,8 @@ function showQuestion(question) {
     question.answers.forEach(answer => {
         const button = document.createElement("button")
         button.innerText = answer.text
-        button.classList.add("quiz-button")
+        /**Below is where we give the answer buttons the class they need for styling */
+        button.classList.add("button-style")
         if (answer.correct) {
             button.dataset.correct = answer.correct
         }
