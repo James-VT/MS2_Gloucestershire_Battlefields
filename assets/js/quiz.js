@@ -31,6 +31,13 @@ const questionElement = document.getElementById("question-text")
 
 let shuffledQuestions, currentQuestionIndex
 
+/**I've changed the below from what was originally a "let" variable inside the incrementScore function to a 
+ * "var" variable in order to be able to not only access it outside of the function but also so as to be able to 
+ * reassign it (otherwise I'd have used "const") for the purposes of resetting the score when restarting the quiz.
+ */
+
+var oldScore = parseInt(document.getElementById("score").innerText);
+
 /**Below is our event listener for starting the game by clicking the begin button */
 
 beginButton.addEventListener("click", beginQuiz)
@@ -54,10 +61,13 @@ function beginQuiz() {
     answerButtonsElement.classList.remove('hide')
     questionContainerElement.classList.remove('hide')
     setNextQuestion()
+    if (beginButton.innerText === "Restart") {
+        oldScore = "0";
+        document.getElementById("score").innerText = `${oldScore}`
+    }
 }
 
-/**Below is our function for showing the next question. Remember to do this automatically when submitting the previous answer or
- * closing the pop-up window.
+/**Below is our function for showing the next question.
  */
 
 function setNextQuestion() {
@@ -121,7 +131,9 @@ function chooseAnswer(e) {
     /**Below I've added some feedback elements for the user. As well as a pop-up informing the user of the result of their
      * selection, the question text changes to reflect the result and the score is incremented by one for a correct answer.
      * Also, rather than iterate through the wrong answer buttons to show a "wrong" message for each of them, I've taken 
-     * advantage of the use of dataset to use the != comparison operator to get the wrong answer buttons to do what I want.
+     * advantage of the use of dataset, used extensively in the tutorial video credited at the beginning of this file for 
+     * functionality I didn't use for this project, to use the != comparison operator to get the wrong answer buttons to do 
+     * what I want.
      */
 
     if (selectedButton.dataset = correct) {
@@ -158,7 +170,6 @@ function clearStatusClass(element) {
 
 function incrementScore() {
   
-    let oldScore = parseInt(document.getElementById("score").innerText);
     document.getElementById("score").innerText = ++oldScore;
   
 }
