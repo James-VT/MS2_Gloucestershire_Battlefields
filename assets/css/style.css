@@ -106,6 +106,16 @@ div {
     color: white;
 }
 
+.button-style {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: 20px auto;
+    background-color: #cc0000;
+    border-radius: 8px;
+    color: white;
+}
+
 /* ---------------------Media queries */
 /*The below code centres the page headings in the drop-down nav menu*/
 @media screen and (max-width: 985px) {
