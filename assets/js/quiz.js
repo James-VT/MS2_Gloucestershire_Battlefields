@@ -141,12 +141,15 @@ function chooseAnswer(e) {
      * functionality I didn't use for this project, to use the != comparison operator to get the wrong answer buttons to do 
      * what I want.
      */
-    
-    if (selectedButton.dataset = correct) {
+    if (selectedButton.dataset = correct && document.getElementById("score").innerText === shuffledQuestions.length) {
+        console.log("seven")
+        questionElement.innerText = "Congratulations! You got every question correct!"
+        alert("Congratulations! You got every question correct!")
+        resultMessage()
+    } else if (selectedButton.dataset = correct) {
         questionElement.innerText = "Correct!"
         alert("Correct!")
         incrementScore()
-        resultMessage()
     } else if (selectedButton.dataset != correct) {
         questionElement.innerText = "Wrong!"
         alert("Whoops, that's wrong!")
@@ -182,8 +185,9 @@ function incrementScore() {
 }
 
 function resultMessage() {
-    if (document.getElementById("score").innerText === 7) {
+    if (document.getElementById("score").innerText === 6) {
         questionElement.innerText = "Congratulations! You got every question correct!"
+        console.log("six")
     }
 }
 
