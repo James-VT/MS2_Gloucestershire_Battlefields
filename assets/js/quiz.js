@@ -141,11 +141,12 @@ function chooseAnswer(e) {
      * functionality I didn't use for this project, to use the != comparison operator to get the wrong answer buttons to do 
      * what I want.
      */
-
+    
     if (selectedButton.dataset = correct) {
         questionElement.innerText = "Correct!"
         alert("Correct!")
         incrementScore()
+        resultMessage()
     } else if (selectedButton.dataset != correct) {
         questionElement.innerText = "Wrong!"
         alert("Whoops, that's wrong!")
@@ -178,6 +179,12 @@ function incrementScore() {
   
     document.getElementById("score").innerText = ++oldScore;
   
+}
+
+function resultMessage() {
+    if (document.getElementById("score").innerText === 7) {
+        questionElement.innerText = "Congratulations! You got every question correct!"
+    }
 }
 
 /**Below is where we store our questions as an array of objects of arrays of objects. Yes, you read that correctly */
