@@ -71,6 +71,7 @@ div {
 #begin-button {
     position: absolute;
     max-width: 10vw;
+    margin-top: 30px;
 }
 
 #next-button {
