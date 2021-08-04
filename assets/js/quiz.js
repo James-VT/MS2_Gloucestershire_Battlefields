@@ -120,14 +120,20 @@ function chooseAnswer(e) {
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
         nextButton.classList.remove("hide")
         nextButtonContainer.classList.add("hide")
+        /**The below two lines of code have been moved up into here in order to ensure that the next button isn't 
+         * shown on completion of the quiz - instead, only the restart button will be shown.
+         */
+        nextButton.classList.remove("hide")
+        nextButtonContainer.classList.remove("hide")
     } else {
         beginButton.innerText = "Restart"
         beginButton.classList.remove("hide")
+        // nextButton.classList.add("hide")
+        // nextButtonContainer.classList.add("hide")
     }
     /**Below I've coded the various answer buttons to show or hide the other buttons and quiz elements as appropriate */
     answerButtonsElement.classList.add("hide")
-    nextButton.classList.remove("hide")
-    nextButtonContainer.classList.remove("hide")
+    
     /**Below I've added some feedback elements for the user. As well as a pop-up informing the user of the result of their
      * selection, the question text changes to reflect the result and the score is incremented by one for a correct answer.
      * Also, rather than iterate through the wrong answer buttons to show a "wrong" message for each of them, I've taken 
