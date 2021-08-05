@@ -141,19 +141,19 @@ function chooseAnswer(e) {
      * functionality I didn't use for this project, to use the != comparison operator to get the wrong answer buttons to do 
      * what I want.
      */
-    if (selectedButton.dataset = correct && document.getElementById("score").innerText === shuffledQuestions.length) {
-        console.log("seven")
-        questionElement.innerText = "Congratulations! You got every question correct!"
-        alert("Congratulations! You got every question correct!")
-        resultMessage()
-    } else if (selectedButton.dataset = correct) {
-        questionElement.innerText = "Correct!"
-        alert("Correct!")
-        incrementScore()
-    } else if (selectedButton.dataset != correct) {
-        questionElement.innerText = "Wrong!"
-        alert("Whoops, that's wrong!")
-    }
+     return (document.getElementById("score").innerText == "6") ? resultMessage()
+        : selectedButton.dataset = correct ?  correctMessage()
+        : selectedButton.dataset != correct ? wrongMessage
+        : console.log("error?")
+
+    // } else if (selectedButton.dataset = correct) {
+    //     questionElement.innerText = "Correct!"
+    //     alert("Correct!")
+    //     incrementScore()
+    // } else if (selectedButton.dataset != correct) {
+    //     questionElement.innerText = "Wrong!"
+    //     alert("Whoops, that's wrong!")
+    // }
 }
 
 /**The below function sets our classes as appropriate, depending on the answer given */
@@ -185,10 +185,22 @@ function incrementScore() {
 }
 
 function resultMessage() {
-    if (document.getElementById("score").innerText === 6) {
-        questionElement.innerText = "Congratulations! You got every question correct!"
-        console.log("six")
-    }
+    return ((document.getElementById("score").innerText) ? "6" : resultMessage)
+    // if (document.getElementById("score").innerText === 6) {
+    //     questionElement.innerText = "Congratulations! You got every question correct!"
+    //     console.log("six")
+    // }
+}
+
+function correctMessage() {
+    questionElement.innerText = "Correct!"
+    alert("Correct!")
+    incrementScore()
+}
+
+function wrongMessage() {
+    questionElement.innerText = "Wrong!"
+    alert("Whoops, that's wrong!")
 }
 
 /**Below is where we store our questions as an array of objects of arrays of objects. Yes, you read that correctly */
