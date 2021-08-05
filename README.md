@@ -120,7 +120,14 @@ The information about the Battle of Nibley Green used for this site was taken fr
 
 * stoneage.jpg is taken from Wikimedia Commons, and is open-source. [Link](https://commons.wikimedia.org/wiki/File:Stone-age-painting.jpg) Attribution: Gugatchitchinadze, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons
 
-### Wireframes
+* 512pxkingalfred is taken from Wikimedia Commons, and is open-source. [Link](https://commons.wikimedia.org/wiki/File:King_Alfred_the_Great_statue,_Wantage,_Oxfordshire.jpg) Attribution: Philip Jelley Philipjelley, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons
 
+* 512pxrepincossacks.jpg is taken from Wikimedia Commons, and is open-source. [Link](https://commons.wikimedia.org/wiki/File:Repin_Cossacks-v.jpg) Attribution: Ilya Repin (1844-1930), Public domain, via Wikimedia Commons
+
+* 512pxkinghenryv.jpg is taken from Wikimedia Commons, and is open-source. [Link](https://commons.wikimedia.org/wiki/File:King_Henry_V_of_England_at_the_Battle_of_Agincourt,_1415.jpg) Attribution: Unknown authorUnknown author, Public domain, via Wikimedia Commons
+
+* 512pxmontgomerycastle.jpg is taken from Wikimedia Commons, and is open-source. [Link](https://commons.wikimedia.org/wiki/File:Montgomery_Castle_and_view_of_the_castle_tower_ruins_Montgomery,_Powys.jpg) Attribution: Rosser1954, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons
+
+### Wireframes
 
 The wireframes developed for this project can be found [here](assets/milestone2wireframes.pdf). They were built using Balsamiq (credit in Technologies section).

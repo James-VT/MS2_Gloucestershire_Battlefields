@@ -159,6 +159,9 @@ function chooseAnswer(e) {
         questionElement.innerText = "Wrong!"
         alert("Whoops, that's wrong!")
     }
+
+    let score = document.getElementById("score").innerText;
+    console.log(score);
 }
 
 /**The below function sets our classes as appropriate, depending on the answer given */
