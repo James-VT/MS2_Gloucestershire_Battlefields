@@ -146,16 +146,16 @@ function chooseAnswer(e) {
     //     : selectedButton.dataset != correct ? wrongMessage
     //     : console.log("error?")
 
-        if (selectedButton.dataset = correct && document.getElementById("score").innerText === "6") {
-            console.log("seven")
-            questionElement.innerText = "Congratulations! You got every question correct!"
-            alert("Congratulations! You got every question correct!")
+    if (selectedButton.dataset = correct && document.getElementById("score").innerText === "6") {
+        console.log("seven")
+        questionElement.innerText = "Congratulations! You got every question correct!"
+        alert("Congratulations! You got every question correct!")
             // resultMessage()
-        } else if (selectedButton.dataset = correct) {
+    } else if (selectedButton.dataset = correct) {
         questionElement.innerText = "Correct!"
         alert("Correct!")
         incrementScore()
-        } else if (selectedButton.dataset != correct) {
+    } else if (selectedButton.dataset != correct) {
         questionElement.innerText = "Wrong!"
         alert("Whoops, that's wrong!")
     }
