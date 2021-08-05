@@ -141,19 +141,24 @@ function chooseAnswer(e) {
      * functionality I didn't use for this project, to use the != comparison operator to get the wrong answer buttons to do 
      * what I want.
      */
-     return (document.getElementById("score").innerText == "6") ? resultMessage()
-        : selectedButton.dataset = correct ?  correctMessage()
-        : selectedButton.dataset != correct ? wrongMessage
-        : console.log("error?")
+    //  return (document.getElementById("score").innerText == "6") ? resultMessage()
+    //     : selectedButton.dataset = correct ?  correctMessage()
+    //     : selectedButton.dataset != correct ? wrongMessage
+    //     : console.log("error?")
 
-    // } else if (selectedButton.dataset = correct) {
-    //     questionElement.innerText = "Correct!"
-    //     alert("Correct!")
-    //     incrementScore()
-    // } else if (selectedButton.dataset != correct) {
-    //     questionElement.innerText = "Wrong!"
-    //     alert("Whoops, that's wrong!")
-    // }
+        if (selectedButton.dataset = correct && document.getElementById("score").innerText === "6") {
+            console.log("seven")
+            questionElement.innerText = "Congratulations! You got every question correct!"
+            alert("Congratulations! You got every question correct!")
+            // resultMessage()
+        } else if (selectedButton.dataset = correct) {
+        questionElement.innerText = "Correct!"
+        alert("Correct!")
+        incrementScore()
+        } else if (selectedButton.dataset != correct) {
+        questionElement.innerText = "Wrong!"
+        alert("Whoops, that's wrong!")
+    }
 }
 
 /**The below function sets our classes as appropriate, depending on the answer given */
@@ -185,10 +190,10 @@ function incrementScore() {
 }
 
 function resultMessage() {
-    return ((document.getElementById("score").innerText) ? "6" : resultMessage)
+    // return ((document.getElementById("score").innerText) ? "6" : resultMessage)
     // if (document.getElementById("score").innerText === 6) {
-    //     questionElement.innerText = "Congratulations! You got every question correct!"
-    //     console.log("six")
+    questionElement.innerText = "Congratulations! You got every question correct!"
+    console.log("six")
     // }
 }
 
