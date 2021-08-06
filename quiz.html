@@ -57,15 +57,20 @@
           <div class="hide quiz-text" id="quiz-question">
             <h4 id="question-text">Question</h4>
           </div>
-          <div id="begin-button-container">
-            <button class="quiz-button button" id="begin-button">Begin!</button>
-          </div>
-          <div id="score-container">
-            <span id="score">0</span>
-            <span>/7</span>
+          <div id="begin-score-wrapper">
+            <div id="begin-button-container">
+              <button class="quiz-button button" id="begin-button">Begin!</button>
+            </div>
+            <div id="score-container">
+              <span id="score">0</span>
+              <span>/7</span>
+            </div>
           </div>
           <div id="next-button-container" class="hide">
             <button class="quiz-button button hide" id="next-button">Next question</button> 
+          </div>
+          <div>
+            <button class="quiz-button button hide" id="results-button">How did you do?</button>
           </div>
           <div class="container hide" id="answer-buttons">
             <div class="row">
@@ -81,10 +86,10 @@
             </div>
           </div>
           <div class="result-image">
-            <img src="assets/images/quizresults/512pxrepincossacks.jpg">
-            <img src="assets/images/quizresults/512pxkingalfred.jpg">
-            <img src="assets/images/quizresults/512pxkinghenryv.jpg">
-            <img src="assets/images/quizresults/512pxmontgomerycastle.jpg">
+            <img src="assets/images/quizresults/512pxrepincossacks.jpg" class="hide" id="lower-score">
+            <img src="assets/images/quizresults/512pxkingalfred.jpg" class="hide" id="perfect-image">
+            <img src="assets/images/quizresults/512pxkinghenryv.jpg" class="hide" id="upper-score">
+            <img src="assets/images/quizresults/512pxmontgomerycastle.jpg" class="hide" id="zero-score">
           </div>
         </div>
     </div>

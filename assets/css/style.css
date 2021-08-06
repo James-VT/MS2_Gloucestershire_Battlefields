@@ -69,9 +69,10 @@ div {
 }
 
 #begin-button {
-    position: absolute;
+    /* position: absolute; */
     max-width: 10vw;
     margin-top: 30px;
+    clear: both;
 }
 
 #next-button {
@@ -90,10 +91,15 @@ div {
     display: flex;
     justify-content: center;
     align-items: center;
+    clear: both;
 }
 
 .hide {
     display: none;
+}
+
+#begin-score-wrapper {
+    flex-wrap: wrap;
 }
 
 /* ----------------------Buttons */
@@ -115,6 +121,10 @@ div {
     background-color: #cc0000;
     border-radius: 8px;
     color: white;
+}
+
+.move-down {
+    margin-top: 50px;
 }
 
 /* ---------------------Media queries */

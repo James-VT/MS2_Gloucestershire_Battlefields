@@ -9,9 +9,13 @@
 
 const beginButton = document.getElementById("begin-button")
 
+const beginButtonContainer = document.getElementById("begin-button-container")
+
 const nextButton = document.getElementById("next-button")
 
 const nextButtonContainer = document.getElementById("next-button-container")
+
+const resultsButton = document.getElementById("results-button")
 
 
 /**Here, I differ from the code in the tutorial video by using two separate variables for elements of the quiz. 
@@ -23,6 +27,11 @@ const answerButtonsElement = document.getElementById("answer-buttons")
 const questionContainerElement = document.getElementById("quiz-question")
 
 const questionElement = document.getElementById("question-text")
+
+const perfectImage = document.getElementById("perfect-image")
+const upperScore = document.getElementById("upper-score")
+const lowerScore = document.getElementById("lower-score")
+const zeroImage = document.getElementById("zero-score")
 
 
 /**These variables are taken directly from the tutorial video mentioned above, and are used to shuffle the order
@@ -41,16 +50,29 @@ var oldScore = parseInt(document.getElementById("score").innerText);
 /**Below is our event listener for starting the game by clicking the begin button */
 
 beginButton.addEventListener("click", beginQuiz)
+
 nextButton.addEventListener("click", () => {
     console.log("clicked")
     currentQuestionIndex++
     setNextQuestion()
 })
 
+/**Below is our function for display the results */
+
+resultsButton.addEventListener("click", () => {
+    resultMessage()
+    resultsButton.classList.add("hide")
+    beginButton.innerText = "Restart"
+    beginButton.classList.remove("hide")
+    beginButtonContainer.classList.add("move-down")
+})
+
 /**Below is our function for starting the quiz. */
 
 function beginQuiz() {
     beginButton.classList.add("hide")
+    beginButtonContainer.classList.remove("move-down")
+    
     /**The below code is what gets us our randomly sorted questions by ensuring a completely random array using mathrandom minus 5.
      * This gives us a number greater or less than zero 50% of the time, ensuring it swings either way fairly.
       */
@@ -65,6 +87,10 @@ function beginQuiz() {
         oldScore = "0";
         document.getElementById("score").innerText = `${oldScore}`
     }
+    perfectImage.classList.add("hide")
+    zeroImage.classList.add("hide")
+    lowerScore.classList.add("hide")
+    upperScore.classList.add("hide")
 }
 
 /**Below is our function for showing the next question.
@@ -107,7 +133,7 @@ function resetState() {
 }
 
 /**Here's where we register the selection of an answer. As well as setting the data to what we need it to be, we also remove and add
- * hide classes and change the button text to restasrt as appropriate.
+ * hide classes and change the button text to restart as appropriate.
  */
 
 function chooseAnswer(e) {
@@ -126,8 +152,9 @@ function chooseAnswer(e) {
         nextButton.classList.remove("hide")
         nextButtonContainer.classList.remove("hide")
     } else {
-        beginButton.innerText = "Restart"
-        beginButton.classList.remove("hide")
+        // beginButton.innerText = "Restart"
+        // beginButton.classList.remove("hide")
+        resultsButton.classList.remove("hide")
         // nextButton.classList.add("hide")
         // nextButtonContainer.classList.add("hide")
     }
@@ -146,12 +173,28 @@ function chooseAnswer(e) {
     //     : selectedButton.dataset != correct ? wrongMessage
     //     : console.log("error?")
 
-    if (selectedButton.dataset = correct && document.getElementById("score").innerText === "6") {
-        console.log("seven")
-        questionElement.innerText = "Congratulations! You got every question correct!"
-        alert("Congratulations! You got every question correct!")
-            // resultMessage()
-    } else if (selectedButton.dataset = correct) {
+
+    // if (selectedButton.dataset = correct && score === "6") {
+    //     questionElement.innerText = "Victory! You got every question correct!"
+    //     alert("Victory! You got every question correct!")
+    // } else if (shuffledQuestions.length > currentQuestionIndex + 1 && score == 4 || 5 || 6 ) {
+    //     questionElement.innerText = "An impressive performance, but could you do better?"
+    //     alert("An impressive performance, but could you do better?")
+    // } else if (shuffledQuestions.length > currentQuestionIndex + 1 && score == 1 || 2 || 3) {
+    //     questionElement.innerText = "Oh dear! Retreat!"
+    //     alert("Oh dear! Retreat!")
+    // } else if (shuffledQuestions.length > currentQuestionIndex + 1 && score == 0) {
+    //     questionElement.innerText = "All in ruins!"
+    //     alert("All in ruins!")
+    // } else 
+
+    // if (selectedButton.dataset = correct && document.getElementById("score").innerText === "6") {
+    //     console.log("seven")
+    //     questionElement.innerText = "Congratulations! You got every question correct!"
+    //     alert("Congratulations! You got every question correct!")
+        // resultMessage()
+    
+    if (selectedButton.dataset = correct) {
         questionElement.innerText = "Correct!"
         alert("Correct!")
         incrementScore()
@@ -160,8 +203,6 @@ function chooseAnswer(e) {
         alert("Whoops, that's wrong!")
     }
 
-    let score = document.getElementById("score").innerText;
-    console.log(score);
 }
 
 /**The below function sets our classes as appropriate, depending on the answer given */
@@ -195,9 +236,46 @@ function incrementScore() {
 function resultMessage() {
     // return ((document.getElementById("score").innerText) ? "6" : resultMessage)
     // if (document.getElementById("score").innerText === 6) {
-    questionElement.innerText = "Congratulations! You got every question correct!"
-    console.log("six")
+    // questionElement.innerText = "Congratulations! You got every question correct!"
+    // console.log("six")
+    // let score = document.getElementById("score").innerText;
+    // console.log(score);
+    let score = document.getElementById("score").innerText;
+    console.log(score);
+
+    if (score === "7") {
+        questionElement.innerText = "Victory! You got every question correct!"
+        alert("Victory! You got every question correct!")
+        
+        perfectImage.classList.remove("hide")
+    } else if (score === "4" || score === "5" || score === "6") {
+        questionElement.innerText = "A close call! Could you do better?"
+        alert("A close call! Could you do better?")
+        
+        upperScore.classList.remove("hide")
+    } else if (score === "1" || score === "2" || score === "3") {
+        questionElement.innerText = "Oh dear! Retreat!"
+        alert("Oh dear! Retreat!")
+        
+        lowerScore.classList.remove("hide")
+    } else if (score === "0") {
+        questionElement.innerText = "All in ruins!"
+        alert("All in ruins!")
+        
+        zeroImage.classList.remove("hide")
+    }
+
+    // if (selectedButton.dataset = correct && document.getElementById("score").innerText === "6") {
+    //     console.log("seven")
+    //     questionElement.innerText = "Congratulations! You got every question correct!"
+    //     alert("Congratulations! You got every question correct!")
+    //     resultMessage()
     // }
+}
+
+function perfectScore() {
+    questionElement.innerText = "Congratulations! You got every question correct!"
+    console.log("perfectScore")
 }
 
 function correctMessage() {
