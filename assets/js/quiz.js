@@ -29,8 +29,11 @@ const questionContainerElement = document.getElementById("quiz-question")
 const questionElement = document.getElementById("question-text")
 
 const perfectImage = document.getElementById("perfect-image")
+
 const upperScore = document.getElementById("upper-score")
+
 const lowerScore = document.getElementById("lower-score")
+
 const zeroImage = document.getElementById("zero-score")
 
 
@@ -113,7 +116,7 @@ function showQuestion(question) {
         const button = document.createElement("button")
         button.innerText = answer.text
         /**Below is where we give the answer buttons the class they need for styling */
-        button.classList.add("button-style")
+        button.classList.add("quiz-button")
         if (answer.correct) {
             button.dataset.correct = answer.correct
         }
@@ -146,18 +149,20 @@ function chooseAnswer(e) {
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
         nextButton.classList.remove("hide")
         nextButtonContainer.classList.add("hide")
+
         /**The below two lines of code have been moved up into here in order to ensure that the next button isn't 
          * shown on completion of the quiz - instead, only the restart button will be shown.
          */
+
         nextButton.classList.remove("hide")
         nextButtonContainer.classList.remove("hide")
+
     } else {
-        // beginButton.innerText = "Restart"
-        // beginButton.classList.remove("hide")
+
         resultsButton.classList.remove("hide")
-        // nextButton.classList.add("hide")
-        // nextButtonContainer.classList.add("hide")
+        
     }
+
     /**Below I've coded the various answer buttons to show or hide the other buttons and quiz elements as appropriate */
     answerButtonsElement.classList.add("hide")
     
@@ -168,31 +173,6 @@ function chooseAnswer(e) {
      * functionality I didn't use for this project, to use the != comparison operator to get the wrong answer buttons to do 
      * what I want.
      */
-    //  return (document.getElementById("score").innerText == "6") ? resultMessage()
-    //     : selectedButton.dataset = correct ?  correctMessage()
-    //     : selectedButton.dataset != correct ? wrongMessage
-    //     : console.log("error?")
-
-
-    // if (selectedButton.dataset = correct && score === "6") {
-    //     questionElement.innerText = "Victory! You got every question correct!"
-    //     alert("Victory! You got every question correct!")
-    // } else if (shuffledQuestions.length > currentQuestionIndex + 1 && score == 4 || 5 || 6 ) {
-    //     questionElement.innerText = "An impressive performance, but could you do better?"
-    //     alert("An impressive performance, but could you do better?")
-    // } else if (shuffledQuestions.length > currentQuestionIndex + 1 && score == 1 || 2 || 3) {
-    //     questionElement.innerText = "Oh dear! Retreat!"
-    //     alert("Oh dear! Retreat!")
-    // } else if (shuffledQuestions.length > currentQuestionIndex + 1 && score == 0) {
-    //     questionElement.innerText = "All in ruins!"
-    //     alert("All in ruins!")
-    // } else 
-
-    // if (selectedButton.dataset = correct && document.getElementById("score").innerText === "6") {
-    //     console.log("seven")
-    //     questionElement.innerText = "Congratulations! You got every question correct!"
-    //     alert("Congratulations! You got every question correct!")
-        // resultMessage()
     
     if (selectedButton.dataset = correct) {
         questionElement.innerText = "Correct!"
@@ -223,8 +203,7 @@ function clearStatusClass(element) {
     element.classList.remove("wrong")
 }
 
-/**Here's where we increment the score for a correct answer. This code was partly inspired by Code Institute's
- * Rosie Odenkirk walkthrough project: https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+IFD101+2017_T3/courseware/03d3f6524ad249d9b33e3336d156dfd0/3b2af8636ea54a4d9dc45126f7498633/?child=first
+/**Here's where we increment the score for a correct answer. 
  */
 
 function incrementScore() {
@@ -234,12 +213,7 @@ function incrementScore() {
 }
 
 function resultMessage() {
-    // return ((document.getElementById("score").innerText) ? "6" : resultMessage)
-    // if (document.getElementById("score").innerText === 6) {
-    // questionElement.innerText = "Congratulations! You got every question correct!"
-    // console.log("six")
-    // let score = document.getElementById("score").innerText;
-    // console.log(score);
+
     let score = document.getElementById("score").innerText;
     console.log(score);
 
@@ -264,13 +238,6 @@ function resultMessage() {
         
         zeroImage.classList.remove("hide")
     }
-
-    // if (selectedButton.dataset = correct && document.getElementById("score").innerText === "6") {
-    //     console.log("seven")
-    //     questionElement.innerText = "Congratulations! You got every question correct!"
-    //     alert("Congratulations! You got every question correct!")
-    //     resultMessage()
-    // }
 }
 
 function perfectScore() {

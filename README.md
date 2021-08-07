@@ -128,6 +128,10 @@ The information about the Battle of Nibley Green used for this site was taken fr
 
 * 512pxmontgomerycastle.jpg is taken from Wikimedia Commons, and is open-source. [Link](https://commons.wikimedia.org/wiki/File:Montgomery_Castle_and_view_of_the_castle_tower_ruins_Montgomery,_Powys.jpg) Attribution: Rosser1954, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons
 
+### Tutorials
+
+[Build A Quiz App With JavaScript](https://www.youtube.com/watch?v=riDzcEQbX6k&t=379s) from the channel Web Dev Simplified was extremely helpful for the creation of the site's quiz. I have edited the code heavily while building the quiz in quiz.js but some key chunks of code remain in that file.
+
 ### Wireframes
 
 The wireframes developed for this project can be found [here](assets/milestone2wireframes.pdf). They were built using Balsamiq (credit in Technologies section).
