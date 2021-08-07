@@ -127,6 +127,15 @@ div {
     margin-top: 50px;
 }
 
+/* ---------------------Footer */
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #99ccff;
+}
+
+
 /* ---------------------Media queries */
 /*The below code centres the page headings in the drop-down nav menu*/
 @media screen and (max-width: 985px) {
