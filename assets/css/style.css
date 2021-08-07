@@ -102,6 +102,14 @@ div {
     flex-wrap: wrap;
 }
 
+.quiz-image {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #ccc;
+}
+
 /* ----------------------Buttons */
 .button {
     align-items: center;
