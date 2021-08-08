@@ -36,6 +36,10 @@ const lowerScore = document.getElementById("lower-score")
 
 const zeroImage = document.getElementById("zero-score")
 
+const resultsText = document.getElementById("results-text")
+
+const resultsTable = document.getElementById("table-results")
+
 
 /**These variables are taken directly from the tutorial video mentioned above, and are used to shuffle the order
  * of the questions.
@@ -239,6 +243,8 @@ function resultMessage() {
         
         zeroImage.classList.remove("hide")
     }
+
+
 }
 
 function perfectScore() {

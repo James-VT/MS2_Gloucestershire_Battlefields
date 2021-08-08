@@ -127,6 +127,11 @@ div {
     display: none;
 }
 
+.results-table{
+    /* display: none; */
+    table-layout: fixed;
+}
+
 /* ----------------------Buttons */
 .button {
     align-items: center;
