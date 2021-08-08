@@ -176,11 +176,11 @@ function chooseAnswer(e) {
     
     if (selectedButton.dataset = correct) {
         questionElement.innerText = "Correct!"
-        alert("Correct!")
+        // alert("Correct!")
         incrementScore()
     } else if (selectedButton.dataset != correct) {
         questionElement.innerText = "Wrong!"
-        alert("Whoops, that's wrong!")
+        // alert("Whoops, that's wrong!")
     }
 
 }
@@ -219,22 +219,22 @@ function resultMessage() {
 
     if (score === "7") {
         questionElement.innerText = "Victory! You got every question correct!"
-        alert("Victory! You got every question correct!")
+        // alert("Victory! You got every question correct!")
         
         perfectImage.classList.remove("hide")
     } else if (score === "4" || score === "5" || score === "6") {
         questionElement.innerText = "A close call! Could you do better?"
-        alert("A close call! Could you do better?")
+        // alert("A close call! Could you do better?")
         
         upperScore.classList.remove("hide")
     } else if (score === "1" || score === "2" || score === "3") {
         questionElement.innerText = "Oh dear! Retreat!"
-        alert("Oh dear! Retreat!")
+        // alert("Oh dear! Retreat!")
         
         lowerScore.classList.remove("hide")
     } else if (score === "0") {
         questionElement.innerText = "All in ruins!"
-        alert("All in ruins!")
+        // alert("All in ruins!")
         
         zeroImage.classList.remove("hide")
     }
@@ -247,16 +247,16 @@ function perfectScore() {
 
 function correctMessage() {
     questionElement.innerText = "Correct!"
-    alert("Correct!")
+    // alert("Correct!")
     incrementScore()
 }
 
 function wrongMessage() {
     questionElement.innerText = "Wrong!"
-    alert("Whoops, that's wrong!")
+    // alert("Whoops, that's wrong!")
 }
 
-/**Below is where we store our questions as an array of objects of arrays of objects. Yes, you read that correctly */
+/**Below is where we store our questions as an array of objects of arrays of objects. */
 
 const questions = [
     {
