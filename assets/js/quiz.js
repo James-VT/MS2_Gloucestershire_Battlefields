@@ -107,6 +107,7 @@ function setNextQuestion() {
 /**The function below shows our question on clicking either the begin button, or the next button. This is where we set the data of the
  *  answer to correct if appropriate, for this to later translate to a pop-up and/or score incrementation if it's correct. This is 
  * called in the setNextQuestion function and the event listener for the next button.
+ * @param question [object is being drawn from the array of objects in which the questions are held] 
  */
 
 function showQuestion(question) {
