@@ -40,6 +40,8 @@ const resultsText = document.getElementById("results-text")
 
 const resultsTable = document.getElementById("table-results")
 
+const chosenAnswers = []
+
 
 /**These variables are taken directly from the tutorial video mentioned above, and are used to shuffle the order
  * of the questions.
@@ -122,6 +124,7 @@ function showQuestion(question) {
         button.innerText = answer.text
         /**Below is where we give the answer buttons the class they need for styling */
         button.classList.add("quiz-button")
+        button.classList.add("quiz-selection")
         if (answer.correct) {
             button.dataset.correct = answer.correct
         }
@@ -187,6 +190,8 @@ function chooseAnswer(e) {
         questionElement.innerText = "Wrong!"
         // alert("Whoops, that's wrong!")
     }
+
+    checkAnswer()
 
 }
 
@@ -261,6 +266,25 @@ function correctMessage() {
 function wrongMessage() {
     questionElement.innerText = "Wrong!"
     // alert("Whoops, that's wrong!")
+}
+
+function checkAnswer() {
+    let selections = document.getElementsByClassName("quiz-selection");
+
+    function buildChosenAnswers() {
+        chosenAnswers.push(selections[i].innerText)
+        console.log(chosenAnswers[i]);
+        }
+
+    for (var i=0; i < selections.length; i++) {
+        selections[i].addEventListener("click", buildChosenAnswers()) 
+    }
+
+    // $("quiz-selection").click(function() {
+    //     chosenAnswers.push(text)
+    //     console.log(chosenAnswers[0])
+    // })
+    
 }
 
 /**Below is where we store our questions as an array of objects of arrays of objects. */
