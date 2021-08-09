@@ -150,6 +150,7 @@ function resetState() {
 function chooseAnswer(e) {
     const selectedButton = e.target
     const correct = selectedButton.dataset.correct
+    selectedButton.classList.add("submitted-answer")
     // setStatusClass(document.body, correct)
     Array.from(answerButtonsElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct)
@@ -268,23 +269,20 @@ function wrongMessage() {
     // alert("Whoops, that's wrong!")
 }
 
+
+/**Here we're building an array from the chosen answers, which we'll push into our table to show the results at the end of the quiz */
 function checkAnswer() {
-    let selections = document.getElementsByClassName("quiz-selection");
+
+    let selections = document.getElementsByClassName("submitted-answer");
 
     function buildChosenAnswers() {
         chosenAnswers.push(selections[i].innerText)
-        console.log(chosenAnswers[i]);
+        console.log(chosenAnswers);
         }
 
     for (var i=0; i < selections.length; i++) {
         selections[i].addEventListener("click", buildChosenAnswers()) 
     }
-
-    // $("quiz-selection").click(function() {
-    //     chosenAnswers.push(text)
-    //     console.log(chosenAnswers[0])
-    // })
-    
 }
 
 /**Below is where we store our questions as an array of objects of arrays of objects. */
@@ -346,4 +344,28 @@ const questions = [
             {text: "The Scottish Covenanters", correct: false}
         ]
     },
+    {
+        question: "As a precursor to the famous British redcoats of later centuries, what colour dye was used by some regiments of the New Model Army?",
+        answers: [
+            {text: "Venetian Red", correct: true},
+            {text: "Blood red", correct: false},
+            {text: "Scarlet red", correct: false}
+        ]
+    },
+    {
+        question: "Which Anglo-Saxon kingdom would later go on to unify all of England?",
+        answers: [
+        {text: "Wessex", correct: true},
+        {text: "Mercia", correct: false},
+        {text: "East Anglia", correct: false}
+        ]
+    },
+    {
+        question: "Who was the last king of the Yorkist royal line?",
+        answers: [
+            {text: "Richard III", correct: true},
+            {text: "Edward IV", correct: false},
+            {text: "John II", correct: false}
+        ]
+    }
 ]
