@@ -226,17 +226,17 @@ function resultMessage() {
     let score = document.getElementById("score").innerText;
     console.log(score);
 
-    if (score === "7") {
+    if (score === "10") {
         questionElement.innerText = "Victory! You got every question correct!"
         // alert("Victory! You got every question correct!")
         
         perfectImage.classList.remove("hide")
-    } else if (score === "4" || score === "5" || score === "6") {
+    } else if (score === "6" || score === "7" || score === "8" || score === "9") {
         questionElement.innerText = "A close call! Could you do better?"
         // alert("A close call! Could you do better?")
         
         upperScore.classList.remove("hide")
-    } else if (score === "1" || score === "2" || score === "3") {
+    } else if (score === "1" || score === "2" || score === "3" || score === "4" || score === "5") {
         questionElement.innerText = "Oh dear! Retreat!"
         // alert("Oh dear! Retreat!")
         
