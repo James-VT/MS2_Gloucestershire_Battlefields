@@ -185,11 +185,9 @@ function chooseAnswer(e) {
     
     if (selectedButton.dataset = correct) {
         questionElement.innerText = "Correct!"
-        // alert("Correct!")
         incrementScore()
     } else if (selectedButton.dataset != correct) {
         questionElement.innerText = "Wrong!"
-        // alert("Whoops, that's wrong!")
     }
 
     checkAnswer()
