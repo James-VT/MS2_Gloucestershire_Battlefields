@@ -42,6 +42,8 @@ const resultsTable = document.getElementById("table-results")
 
 const chosenAnswers = []
 
+const questionTableArray = []
+
 
 /**These variables are taken directly from the tutorial video mentioned above, and are used to shuffle the order
  * of the questions.
@@ -118,6 +120,8 @@ function setNextQuestion() {
 
 function showQuestion(question) {
     questionElement.innerText = question.question
+    questionTableArray.push(questionElement.innerText)
+    console.log(questionTableArray);
     answerButtonsElement.classList.remove("hide")
     question.answers.forEach(answer => {
         const button = document.createElement("button")
