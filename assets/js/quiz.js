@@ -44,6 +44,8 @@ const chosenAnswers = []
 
 const questionTableArray = []
 
+const correctAnswersArray = []
+
 
 /**These variables are taken directly from the tutorial video mentioned above, and are used to shuffle the order
  * of the questions.
@@ -204,6 +206,8 @@ function setStatusClass(element, correct) {
     clearStatusClass(element)
     if (correct) {
         element.classList.add("correct")
+        correctAnswersArray.push(element.innerText);
+        console.log(correctAnswersArray);
     } else {
         element.classList.add("wrong")
     }
