@@ -248,6 +248,7 @@ function resultMessage() {
         zeroImage.classList.remove("hide")
     }
 
+    resultsTable.classList.remove("hide")
 
 }
 
@@ -276,11 +277,35 @@ function checkAnswer() {
     function buildChosenAnswers() {
         chosenAnswers.push(selections[i].innerText)
         console.log(chosenAnswers);
+
+        if (chosenAnswers.length == 9) {
+            createTable()
         }
+    }
 
     for (var i=0; i < selections.length; i++) {
         selections[i].addEventListener("click", buildChosenAnswers()) 
     }
+
+}
+
+/** Much of the code below is inspired from this page: https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Traversing_an_HTML_table_with_JavaScript_and_DOM_Interfaces
+ * I have edited it to suit the fact I already have some of the table being built in the HTML.
+ */ 
+function createTable() {
+    /**We're using [0] in the line below because getElements always requires iteration or specifically numbering the 
+     * number element you want - in our case there is only one tbody, thus it is the first and we get it with [0].
+     */
+    var tableBody = document.getElementsByTagName("tbody"[0])
+
+    // Below, we create our cells. As there will be a few, we need to iterate
+    for (var i = 0; i < 10; i++) {
+        var newRow = document.createElement("tr");
+        var rowText = document.createTextNode("");
+        newRow.appendChild(rowText);
+    }
+
+    tableBody.appendChild(newRow);
 }
 
 /**Below is where we store our questions as an array of objects of arrays of objects. */
