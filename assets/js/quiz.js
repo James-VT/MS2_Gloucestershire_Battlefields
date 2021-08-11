@@ -234,6 +234,8 @@ function resultMessage() {
     let score = document.getElementById("score").innerText;
     console.log(score);
 
+    createTable()
+
     if (score === "10") {
         questionElement.innerText = "Victory! You got every question correct!"
         // alert("Victory! You got every question correct!")
@@ -286,8 +288,8 @@ function checkAnswer() {
         chosenAnswers.push(selections[i].innerText)
         console.log(chosenAnswers);
 
-        if (chosenAnswers.length == 9) {
-            createTable()
+        if (chosenAnswers.length == 10) {
+            
         }
     }
 
@@ -320,12 +322,34 @@ function createTable() {
 
 // const correctAnswersArray = []
     var tableArray = [questionTableArray, chosenAnswers, correctAnswersArray]
-
+    /** The below code creates the table header row and its headings */
     let tableMake = document.createElement("table");
         let trOne = document.createElement("tr");
-            let thOne = document.createElement("tr");
+            let thOne = document.createElement("th");
                 thOne.innerHTML = "Question:";
             let thTwo = document.createElement("th");
+                thTwo.innerHTML = "The answer you chose:";
+            let thThree = document.createElement("th");
+                thThree.innerHTML = "The correct answer was:";
+            trOne.appendChild(thOne);
+            trOne.appendChild(thTwo);
+            trOne.appendChild(thThree);
+        tableMake.appendChild(trOne);
+
+    for(let i = 0; i < 10; i++) {
+        let trTwo = document.createElement("tr");
+            let tdOne = document.createElement("td");
+                tdOne.innerHTML = tableArray[0][i]; //Questions
+            let tdTwo = document.createElement("td");
+                tdTwo.innerHTML = tableArray[1][i]; //Submitted answers
+            let tdThree = document.createElement("td");
+                tdThree.innerHTML = tableArray[2][i]; //Correct answers
+            trTwo.appendChild(tdOne);
+            trTwo.appendChild(tdTwo);
+            trTwo.appendChild(tdThree);
+        tableMake.appendChild(trTwo);
+        }
+    document.body.appendChild(tableMake);
 }
 
 /**Below is where we store our questions as an array of objects of arrays of objects. */
