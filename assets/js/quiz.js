@@ -40,11 +40,11 @@ const resultsText = document.getElementById("results-text")
 
 const resultsTable = document.getElementById("table-results")
 
-const chosenAnswers = []
+var chosenAnswers = []
 
-const questionTableArray = []
+var questionTableArray = []
 
-const correctAnswersArray = []
+var correctAnswersArray = []
 
 
 /**These variables are taken directly from the tutorial video mentioned above, and are used to shuffle the order
@@ -99,6 +99,14 @@ function beginQuiz() {
     if (beginButton.innerText === "Restart") {
         oldScore = "0";
         document.getElementById("score").innerText = `${oldScore}`
+        resultsTable.classList.add("hide")
+        var tBody = document.getElementsByTagName("tbody")[0]
+        tBody.remove()
+        chosenAnswers = []
+
+        questionTableArray = []
+
+        correctAnswersArray = []
     }
     perfectImage.classList.add("hide")
     zeroImage.classList.add("hide")
@@ -308,7 +316,11 @@ function createTable() {
  * I have edited it to suit my needs.
  * */
     var tableArray = [questionTableArray, chosenAnswers, correctAnswersArray]
-    var tableBody = document.getElementsByTagName("table")[0]
+    // var tableOuter = document.getElementById("table-results")
+    const newTable = document.createElement("tbody");
+    newTable.classList.add("answers");
+    resultsTable.appendChild(newTable);
+    // var tableBody = document.getElementsByTagName("tbody")[0]
     /** The below code creates the table header row and its headings */
     var tableMake = document.createElement("table");
         let trOne = document.createElement("tr");
@@ -336,7 +348,7 @@ function createTable() {
             trTwo.appendChild(tdThree);
         tableMake.appendChild(trTwo);
         }
-    tableBody.appendChild(tableMake);
+    newTable.appendChild(tableMake);
 }
 
 /**Below is where we store our questions as an array of objects of arrays of objects. */
