@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  
+
   <!--The below link and script are to make sure Bootstrap's JS elements work within this site, and are found here https://getbootstrap.com/docs/5.0/getting-started/download/#cdn-via-jsdelivr -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -32,7 +32,10 @@
               <ul class="navbar-nav">
                 <li class="nav-item">
                   <!--The text-center class on the links below is designed to center the links in the drop-down nav menu on small devices.-->
-                  <a class="nav-link active drop-center" aria-current="page" href="#">Home</a>
+                  <a class="nav-link active drop-center" aria-current="page" href="https://james-vt.github.io/MS2_Gloucestershire_Battlefields/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link drop-center" href="https://james-vt.github.io/MS2_Gloucestershire_Battlefields/map.html">Map</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link drop-center" href="https://james-vt.github.io/MS2_Gloucestershire_Battlefields/contactus.html">Contact Us</a>
@@ -46,129 +49,63 @@
         </nav>
     </header>
 
-    <!--Introduction below-->
-    <div class="introduction content-section">
-      <h1>Gloucestershire Battlefields Society</h1>
-      <h2>Caring for battlefields and historical sites across Gloucestershire and South Gloucestershire since 2002</h2>
-      <h3>Welcome to the website of the Gloucestershire Battlefields Society. We are a small group of friends and volunteers who have been caring for historic sites in Gloucestershire 
-          and South Gloucestershire for almost two decades. We perform essential groundworks and litterpicks on the sites we look after, raise funds for their upkeep, and can facilitate tours of the 
-          battlefields for pre-booked groups of visitors. For more information on arranging a tour to visit one of our sites, you can click the link in the header. Or to learn about the sites we look after, 
-          you can use our interactive map below. Either click the markers on the map itself or the buttons below to learn more. The information will appear underneath the buttons.</h3>
-    </div>
-
-    <!--Below is the map container-->
-    <div class="map-container content-section" id="map">
-      
-    </div>
-
-    <!--The below container hold the buttons-->
-    <div class="battlefield-button-container content-section">
-      <!--The container, row, col-6 and col-md-4 classes below are all Bootstrap components to bestow the format I want of three buttons in two lines at larger sizes, but two buttons in three lines at smaller sizes.-->
-      This will show a collection of buttons each bearing the name of a battle/battlefield. Clicking one of these will focus the map onto the battlefield and open the above divs which will contain the information and narrative of the battle.
-      <div class="container">
-        <div class="row button-row">
-          <div class="col-6 col-md-4">
-            <button class="button" id="tewkesbury-button">Battle of Tewkesbury</button>
-          </div>
-          <div class="col-6 col-md-4">
-            <button class="button" id="crickley-button">Battle of Crickley Hill</button>
-          </div>
-          <div class="col-6 col-md-4">
-            <button class="button" id="beverston-button">Beverston Castle</button>
-          </div>
-          <div class="col-6 col-md-4">
-            <button class="button" id="stow-button">Battle of Stow-on-the-Wold</button>
-          </div>
-          <div class="col-6 col-md-4">
-            <button class="button" id="deorham-button">Battle of Deorham</button>
-          </div>
-          <div class="col-6 col-md-4">
-            <button class="button" id="nibley-button">Battle of Nibley Green</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--The below container holds the barebones facts of the battle-->
-    <div class="battle-brief content-section">
-        This information will contain the barebones facts of the battle - its name, who fought in it, the date, casualties etc.
-        <h1 class="battle-title"></h1>
-        <h2 class="battle-date"></h2>
-        <h3 class="battle-combatants"></h3>
-        <h4 class="battle-outcome"></h4>
-    </div>
-
-    <!--The below container holds slightly more detailed facts of the battle-->
-    <div class="battle-detailed content-section">
-        This div will contain the narrative of the battle. It will open upon the user either clicking the map icon or the battle's name in the buttons below.
-    </div>
-
-    <!--The below container holds the dimages of the battle-->
-    <div class="battle-images content-section">
-      This div will contain the images of the battlefield. It will open upon the user either clicking the map icon or the battle's name in the buttons below.
-    </div>
-    
     <!--The classes for the footer below are Bootstrap components. Link here: https://getbootstrap.com/docs/5.0/examples/sticky-footer/ -->
     <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col col-md-6">
-            Follow us on:
-            <!--Below I've used the list-inline class from Bootstrap 5 to position my social media icons in a row.-->
-            <ul class="list-inline iconstyle inline-block">
-              <li class="list-inline-item">
-                  <a href="https://www.facebook.com" target="_blank">
-                      <i class="fab fa-facebook-square" aria-hidden="true"></i>
-                      <span class="sr-only">
-                          Facebook
-                      </span>
+        <div class="container">
+          <div class="row">
+            <div class="col col-md-6">
+              Follow us on:
+              <!--Below I've used the list-inline class from Bootstrap 5 to position my social media icons in a row.-->
+              <ul class="list-inline iconstyle inline-block">
+                <li class="list-inline-item">
+                    <a href="https://www.facebook.com" target="_blank">
+                        <i class="fab fa-facebook-square" aria-hidden="true"></i>
+                        <span class="sr-only">
+                            Facebook
+                        </span>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.twitter.com" target="_blank">
+                        <i class="fab fa-twitter-square" aria-hidden="true"></i>
+                        <span class="sr-only">
+                            Twitter
+                        </span>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.instagram.com" target="_blank">
+                        <i class="fab fa-instagram-square" aria-hidden="true"></i>
+                        <span class="sr-only">
+                            Instagram
+                        </span>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.blogger.com/about/?bpli=1" target="_blank">
+                        <i class="fab fa-blogger" aria-hidden="true"></i>
+                        <span class="sr-only">
+                            Blogger
+                        </span>
+                    </a>
+                </li>
+            </ul>
+            </div>
+            <div class="col col-md-6">
+              <ul class="list-unstyled">
+                <li>Registered charity no. 000000</li>
+                <li>
+                  <i class="fas fa-envelope-square"></i> <a href="mailto:glosbattlefields@battlesites.org.uk" class="email-link">
+                  glosbattlefields@battlesites.org.uk
                   </a>
-              </li>
-              <li class="list-inline-item">
-                  <a href="https://www.twitter.com" target="_blank">
-                      <i class="fab fa-twitter-square" aria-hidden="true"></i>
-                      <span class="sr-only">
-                          Twitter
-                      </span>
-                  </a>
-              </li>
-              <li class="list-inline-item">
-                  <a href="https://www.instagram.com" target="_blank">
-                      <i class="fab fa-instagram-square" aria-hidden="true"></i>
-                      <span class="sr-only">
-                          Instagram
-                      </span>
-                  </a>
-              </li>
-              <li class="list-inline-item">
-                  <a href="https://www.blogger.com/about/?bpli=1" target="_blank">
-                      <i class="fab fa-blogger" aria-hidden="true"></i>
-                      <span class="sr-only">
-                          Blogger
-                      </span>
-                  </a>
-              </li>
-          </ul>
-          </div>
-          <div class="col col-md-6">
-            <ul class="list-unstyled">
-              <li>Registered charity no. 000000</li>
-              <li>
-                <i class="fas fa-envelope-square"></i> <a href="mailto:glosbattlefields@battlesites.org.uk" class="email-link">
-                glosbattlefields@battlesites.org.uk
-                </a>
-              </li>
-          </ul>
-          </div>
-          <div>
-            
+                </li>
+            </ul>
+            </div>
+            <div>
+              
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
 
-    <!--Below, we load our scripts. The googleapis one loads our API for google maps, for which the code is in the battefields.js file, which is loaded next.-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGO4o3FgmDdCHmMmnC3n6IE9ZYCduyZ-4&callback=initMap"></script>
-    <script src="assets/js/battlefields.js"></script>
 </body>
-</html>
