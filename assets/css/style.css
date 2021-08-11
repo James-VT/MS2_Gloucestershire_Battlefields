@@ -174,3 +174,11 @@ div {
         align-items: center;
     }
 }
+
+@media screen and (max-width: 375px) {
+    .quiz-inner {
+        margin-right: 0;
+        margin-left: 0;
+        padding: 0;
+    }
+}

@@ -303,27 +303,14 @@ function checkAnswer() {
  * I have edited it to suit the fact I already have some of the table being built in the HTML.
  */ 
 function createTable() {
-    /**We're using [0] in the line below because getElements always requires iteration or specifically numbering the 
-     * number element you want - in our case there is only one tbody, thus it is the first and we get it with [0].
-     */
-    // var tableBody = document.getElementsByTagName("tbody"[0])
-
-    // Below, we create our cells. As there will be a few, we need to iterate
-    // for (var i = 0; i < 10; i++) {
-    //     var newRow = document.createElement("tr");
-    //     var rowText = document.createTextNode("");
-    //     newRow.appendChild(rowText);
-    // }
-
-    // tableBody.appendChild(newRow);
-//     const chosenAnswers = []
-
-// const questionTableArray = []
-
-// const correctAnswersArray = []
+/**Much of the code used in this function was taken from this Stack Overflow thread: 
+ * https://stackoverflow.com/questions/47999155/how-to-create-html-table-rows-from-multiple-arrays-of-data-in-javascript
+ * I have edited it to suit my needs.
+ * */
     var tableArray = [questionTableArray, chosenAnswers, correctAnswersArray]
+    var tableBody = document.getElementsByTagName("table")[0]
     /** The below code creates the table header row and its headings */
-    let tableMake = document.createElement("table");
+    var tableMake = document.createElement("table");
         let trOne = document.createElement("tr");
             let thOne = document.createElement("th");
                 thOne.innerHTML = "Question:";
@@ -349,7 +336,7 @@ function createTable() {
             trTwo.appendChild(tdThree);
         tableMake.appendChild(trTwo);
         }
-    document.body.appendChild(tableMake);
+    tableBody.appendChild(tableMake);
 }
 
 /**Below is where we store our questions as an array of objects of arrays of objects. */
