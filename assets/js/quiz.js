@@ -17,11 +17,6 @@ const nextButtonContainer = document.getElementById("next-button-container")
 
 const resultsButton = document.getElementById("results-button")
 
-
-/**Here, I differ from the code in the tutorial video by using two separate variables for elements of the quiz. 
- * This is partly for my own custom formatting and styling preferences, but also to accomodate the fact I'm using the Bootstrap 
- * grid system to position my buttons.
- */
 const answerButtonsElement = document.getElementById("answer-buttons")
 
 const questionContainerElement = document.getElementById("quiz-question")
