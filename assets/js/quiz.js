@@ -304,16 +304,28 @@ function createTable() {
     /**We're using [0] in the line below because getElements always requires iteration or specifically numbering the 
      * number element you want - in our case there is only one tbody, thus it is the first and we get it with [0].
      */
-    var tableBody = document.getElementsByTagName("tbody"[0])
+    // var tableBody = document.getElementsByTagName("tbody"[0])
 
     // Below, we create our cells. As there will be a few, we need to iterate
-    for (var i = 0; i < 10; i++) {
-        var newRow = document.createElement("tr");
-        var rowText = document.createTextNode("");
-        newRow.appendChild(rowText);
-    }
+    // for (var i = 0; i < 10; i++) {
+    //     var newRow = document.createElement("tr");
+    //     var rowText = document.createTextNode("");
+    //     newRow.appendChild(rowText);
+    // }
 
-    tableBody.appendChild(newRow);
+    // tableBody.appendChild(newRow);
+//     const chosenAnswers = []
+
+// const questionTableArray = []
+
+// const correctAnswersArray = []
+    var tableArray = [questionTableArray, chosenAnswers, correctAnswersArray]
+
+    let tableMake = document.createElement("table");
+        let trOne = document.createElement("tr");
+            let thOne = document.createElement("tr");
+                thOne.innerHTML = "Question:";
+            let thTwo = document.createElement("th");
 }
 
 /**Below is where we store our questions as an array of objects of arrays of objects. */
