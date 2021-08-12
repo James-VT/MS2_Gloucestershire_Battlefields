@@ -61,3 +61,32 @@ Upon re-running the code after coming back from eating dinner, it worked perfect
 ![Image of score counter working as intended](assets/images/testing/scorecounterbugthree.png)
 
 ### Problem solved. The solution: do nothing and come back later.
+
+## Hover animation delay/glitch
+
+After adding a mouseenter/mouseleave event handler to my image links in index.html, I noticed that if I moved the mouse too quickly - really not very quickly at all - the animation broke. It would cease to respond to the mouse entering or leaving the element, and if any response came at all it could take up to five seconds after leaving the element to realise the mouse had even entered it. The code looked like this:
+
+```
+$(document).ready(function() {
+    $(".index-menu-image").mouseenter(function() {
+        $(this).animate({opacity: "0.2"});
+    $(".index-menu-image").mouseleave(function() {
+        $(this).animate({opacity: "1"});
+    })
+});
+```
+As you can see, this block of code uses mouseenter and mouseleave. To try something else, I wrote the same bit of code again but this time using a hover event handler instead of mouseenter and mouseleave:
+
+```
+$(document).ready(function() {
+    $(".index-menu-image").hover(function() {
+        $(this).animate({opacity: "0.2"});
+    },
+    function() {
+        $(this).animate({opacity: "1"})
+    })
+});
+```
+This allowed me to roll everything into one function, rather than two. This works much better, allowing the animation to react to much quicker movements. If it needs to catch-up, it can now do so without getting broken.
+
+## Problem solved. The solution: use hover instead of mouseenter/mouseleave.

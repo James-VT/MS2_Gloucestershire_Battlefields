@@ -13,10 +13,17 @@ $(".text-reveal").click(function() {
 })
 
 $(document).ready(function() {
-    $(".index-menu-image").mouseenter(function() {
+    $(".index-menu-image").hover(function() {
         $(this).animate({opacity: "0.2"});
-    $(".index-menu-image").mouseleave(function() {
-        $(this).animate({opacity: "1"});
+    },
+    function() {
+        $(this).animate({opacity: "1"})
     })
-    });
+
+    // $(".index-menu-image").mouseenter(function() {
+    //     $(this).animate({opacity: "0.2"});
+    // $(".index-menu-image").mouseleave(function() {
+    //     $(this).animate({opacity: "1"});
+    // })
+    // });
 })
