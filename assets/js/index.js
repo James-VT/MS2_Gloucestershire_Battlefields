@@ -3,10 +3,3 @@ $(".text-reveal").click(function() {
         $(".text-reveal").addClass("hide")
     })
 })
-
-$("#map-link").hover(function() {
-    $(this).fadeOut(function() {
-        $(this).fadeIn()
-    })
-    
-})
