@@ -128,6 +128,10 @@ The information about the Battle of Nibley Green used for this site was taken fr
 
 * 512pxmontgomerycastle.jpg is taken from Wikimedia Commons, and is open-source. [Link](https://commons.wikimedia.org/wiki/File:Montgomery_Castle_and_view_of_the_castle_tower_ruins_Montgomery,_Powys.jpg) Attribution: Rosser1954, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons
 
+* foolshead.jpg is an image displayed at the American Museum & Gardens. [Link](https://artuk.org/discover/artworks/fools-head-world-map-271600). It is believed to have been created c.1590. Its artist is unknown.
+
+* assets/images/indeximages/horseman.jpg is taken from Wikimedia Commons, and is open-source. [Link](https://commons.wikimedia.org/wiki/File:Portrait_of_a_Horseman_MET_DP169220.jpg)  Attribution: James Seymour, CC0, via Wikimedia Commons.
+
 ### Tutorials
 
 [Build A Quiz App With JavaScript](https://www.youtube.com/watch?v=riDzcEQbX6k&t=379s) from the channel Web Dev Simplified was extremely helpful for the creation of the site's quiz. I have edited the code heavily while building the quiz in quiz.js but I begun by taking some ideas from that tutorial and building from there.
