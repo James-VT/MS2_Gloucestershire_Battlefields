@@ -28,15 +28,19 @@ div {
 
 .picture-menu {
     position: relative;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .index-menu-image {
     width: 400px;
     height: 300px;
     margin-top: 20px;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: auto;
+    margin-left: auto;
     padding: 5px;
+    /* width: 100%;
+    height: auto; */
     border: 2px solid black;
 }
 
@@ -242,6 +246,6 @@ div {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 50%;
+        /* width: 50%; */
     }
 }

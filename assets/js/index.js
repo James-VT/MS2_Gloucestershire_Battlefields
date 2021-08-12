@@ -11,3 +11,12 @@ $(".text-reveal").click(function() {
         $(".text-reveal").addClass("hide")
     })
 })
+
+$(document).ready(function() {
+    $(".index-menu-image").mouseenter(function() {
+        $(this).animate({opacity: "0.2"});
+    $(".index-menu-image").mouseleave(function() {
+        $(this).animate({opacity: "1"});
+    })
+    });
+})
