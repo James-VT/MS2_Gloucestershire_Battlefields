@@ -53,15 +53,30 @@ div {
     text-align: center;
 }
 
-/* Some of the code from .holder and .centered styling were taken from https://www.w3schools.com/howto/howto_css_image_text.asp*/
+/* Some of the code from .holder and .imagetext styling were taken from https://www.tutorialrepublic.com/faq/how-to-position-text-over-an-image-using-css.php */
 
 .holder {
     position: relative;
-    text-align: center;
-    color: white;
+    /*text-align: center;
+    color: white; */
+    display: inline-block;
 }
 
-.centered {
+.image-text {
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 40%; /* Adjust this value to move the positioned div up and down */
+    text-align: center;
+    width: 60%; /* Set the width of the positioned div */
+    color: white;
+    font-size: 300%;
+    font-family: 'Balsamiq Sans', cursive !important;
+}
+
+/* .centered {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -69,7 +84,7 @@ div {
     color: white;
     font-size: 300%;
     font-family: 'Balsamiq Sans', cursive !important;
-}
+} */
 
 /* ----------------------Carousel */
 .carousel-holder {
@@ -278,5 +293,11 @@ div {
     .index-menu-image {
         max-width: 100%;
         height: auto;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .centered {
+        justify-content: center;
     }
 }
