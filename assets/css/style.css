@@ -247,7 +247,7 @@ div {
 
 
 /* ---------------------Media queries */
-/*The below code centres the page headings in the drop-down nav menu*/
+/* The below code centres the page headings in the drop-down nav menu */
 @media screen and (max-width: 985px) {
     .drop-center {
         text-align: center;
@@ -270,5 +270,13 @@ div {
         margin-left: auto;
         margin-right: auto;
         /* width: 50%; */
+    }
+}
+
+/* The below code makes the index menu images responsive at smaller screen widths */
+@media screen and (max-width: 600px) {
+    .index-menu-image {
+        max-width: 100%;
+        height: auto;
     }
 }
