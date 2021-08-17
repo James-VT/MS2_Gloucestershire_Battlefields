@@ -86,7 +86,7 @@ function beginQuiz() {
     /**The below code is what gets us our randomly sorted questions by ensuring a completely random array using mathrandom minus 5.
      * This gives us a number greater or less than zero 50% of the time, ensuring it swings either way fairly.
       */
-    shuffledQuestions = questions.sort(() => Math.random() - .5);
+    shuffledQuestions = questions.sort(() => Math.random() - 0.5);
     /**The line below ensures we start at the first question in our array */
     currentQuestionIndex = 0;
     /**Below we're removing the hide class from the question and the answer buttons */
