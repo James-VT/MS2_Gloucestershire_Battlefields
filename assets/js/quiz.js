@@ -208,21 +208,21 @@ function chooseAnswer(e) {
 /**The below function sets our classes as appropriate, depending on the answer given */
 
 function setStatusClass(element, correct) {
-    clearStatusClass(element)
+    clearStatusClass(element);
     if (correct) {
-        element.classList.add("correct")
+        element.classList.add("correct");
         correctAnswersArray.push(element.innerText);
         console.log(correctAnswersArray);
     } else {
-        element.classList.add("wrong")
+        element.classList.add("wrong");
     }
 }
 
 /** The below function is called by the above one; it clears existing classes from the buttons as necessary */
 
 function clearStatusClass(element) {
-    element.classList.remove("correct")
-    element.classList.remove("wrong")
+    element.classList.remove("correct");
+    element.classList.remove("wrong");
 }
 
 /**Here's where we increment the score for a correct answer. 
@@ -242,44 +242,44 @@ function resultMessage() {
     createTable()
 
     if (score === "10") {
-        questionElement.innerText = "Victory! You got every question correct!"
+        questionElement.innerText = "Victory! You got every question correct!";
         // alert("Victory! You got every question correct!")
         
-        perfectImage.classList.remove("hide")
+        perfectImage.classList.remove("hide");
     } else if (score === "6" || score === "7" || score === "8" || score === "9") {
-        questionElement.innerText = "A close call! Could you do better?"
+        questionElement.innerText = "A close call! Could you do better?";
         // alert("A close call! Could you do better?")
         
-        upperScore.classList.remove("hide")
+        upperScore.classList.remove("hide");
     } else if (score === "1" || score === "2" || score === "3" || score === "4" || score === "5") {
-        questionElement.innerText = "Oh dear! Retreat!"
+        questionElement.innerText = "Oh dear! Retreat!";
         // alert("Oh dear! Retreat!")
         
-        lowerScore.classList.remove("hide")
+        lowerScore.classList.remove("hide");
     } else if (score === "0") {
-        questionElement.innerText = "All in ruins!"
+        questionElement.innerText = "All in ruins!";
         // alert("All in ruins!")
         
-        zeroImage.classList.remove("hide")
+        zeroImage.classList.remove("hide");
     }
 
-    resultsTable.classList.remove("hide")
+    resultsTable.classList.remove("hide");
 
 }
 
 function perfectScore() {
-    questionElement.innerText = "Congratulations! You got every question correct!"
-    console.log("perfectScore")
+    questionElement.innerText = "Congratulations! You got every question correct!";
+    console.log("perfectScore");
 }
 
 function correctMessage() {
-    questionElement.innerText = "Correct!"
+    questionElement.innerText = "Correct!";
     // alert("Correct!")
-    incrementScore()
+    incrementScore();
 }
 
 function wrongMessage() {
-    questionElement.innerText = "Wrong!"
+    questionElement.innerText = "Wrong!";
     // alert("Whoops, that's wrong!")
 }
 
@@ -290,7 +290,7 @@ function checkAnswer() {
     let selections = document.getElementsByClassName("submitted-answer");
 
     function buildChosenAnswers() {
-        chosenAnswers.push(selections[i].innerText)
+        chosenAnswers.push(selections[i].innerText);
         console.log(chosenAnswers);
 
         if (chosenAnswers.length == 10) {
@@ -299,7 +299,7 @@ function checkAnswer() {
     }
 
     for (var i=0; i < selections.length; i++) {
-        selections[i].addEventListener("click", buildChosenAnswers()) 
+        selections[i].addEventListener("click", buildChosenAnswers());
     }
 
 }
@@ -312,7 +312,7 @@ function createTable() {
  * https://stackoverflow.com/questions/47999155/how-to-create-html-table-rows-from-multiple-arrays-of-data-in-javascript
  * I have edited it to suit my needs.
  * */
-    var tableArray = [questionTableArray, chosenAnswers, correctAnswersArray]
+    var tableArray = [questionTableArray, chosenAnswers, correctAnswersArray];
     // var tableOuter = document.getElementById("table-results")
     const newTable = document.createElement("tbody");
     newTable.classList.add("answers");
