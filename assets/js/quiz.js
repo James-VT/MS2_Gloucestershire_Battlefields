@@ -35,6 +35,8 @@ const resultsText = document.getElementById("results-text")
 
 const resultsTable = document.getElementById("table-results")
 
+const quizImageHolder = document.getElementById("quiz-image-holder")
+
 var chosenAnswers = []
 
 var questionTableArray = []
@@ -80,6 +82,7 @@ resultsButton.addEventListener("click", () => {
 function beginQuiz() {
     beginButton.classList.add("hide")
     beginButtonContainer.classList.remove("move-down")
+    quizImageHolder.classList.add("hide")
     
     /**The below code is what gets us our randomly sorted questions by ensuring a completely random array using mathrandom minus 5.
      * This gives us a number greater or less than zero 50% of the time, ensuring it swings either way fairly.
