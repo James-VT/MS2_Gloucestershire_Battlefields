@@ -7,48 +7,48 @@
 
 /**Below we set our variables. */
 
-const beginButton = document.getElementById("begin-button")
+const beginButton = document.getElementById("begin-button");
 
-const beginButtonContainer = document.getElementById("begin-button-container")
+const beginButtonContainer = document.getElementById("begin-button-container");
 
-const nextButton = document.getElementById("next-button")
+const nextButton = document.getElementById("next-button");
 
-const nextButtonContainer = document.getElementById("next-button-container")
+const nextButtonContainer = document.getElementById("next-button-container");
 
-const resultsButton = document.getElementById("results-button")
+const resultsButton = document.getElementById("results-button");
 
-const answerButtonsElement = document.getElementById("answer-buttons")
+const answerButtonsElement = document.getElementById("answer-buttons");
 
-const questionContainerElement = document.getElementById("quiz-question")
+const questionContainerElement = document.getElementById("quiz-question");
 
-const questionElement = document.getElementById("question-text")
+const questionElement = document.getElementById("question-text");
 
-const perfectImage = document.getElementById("perfect-image")
+const perfectImage = document.getElementById("perfect-image");
 
-const upperScore = document.getElementById("upper-score")
+const upperScore = document.getElementById("upper-score");
 
-const lowerScore = document.getElementById("lower-score")
+const lowerScore = document.getElementById("lower-score");
 
-const zeroImage = document.getElementById("zero-score")
+const zeroImage = document.getElementById("zero-score");
 
-const resultsText = document.getElementById("results-text")
+const resultsText = document.getElementById("results-text");
 
-const resultsTable = document.getElementById("table-results")
+const resultsTable = document.getElementById("table-results");
 
-const quizImageHolder = document.getElementById("quiz-image-holder")
+const quizImageHolder = document.getElementById("quiz-image-holder");
 
-var chosenAnswers = []
+var chosenAnswers = [];
 
-var questionTableArray = []
+var questionTableArray = [];
 
-var correctAnswersArray = []
+var correctAnswersArray = [];
 
 
 /**These variables are taken directly from the tutorial video mentioned above, and are used to shuffle the order
  * of the questions.
  */
 
-let shuffledQuestions, currentQuestionIndex
+let shuffledQuestions, currentQuestionIndex;
 
 /**I've changed the below from what was originally a "let" variable inside the incrementScore function to a 
  * "var" variable in order to be able to not only access it outside of the function but also so as to be able to 
@@ -59,65 +59,64 @@ var oldScore = parseInt(document.getElementById("score").innerText);
 
 /**Below is our event listener for starting the game by clicking the begin button */
 
-beginButton.addEventListener("click", beginQuiz)
+beginButton.addEventListener("click", beginQuiz);
 
 nextButton.addEventListener("click", () => {
-    console.log("clicked")
-    currentQuestionIndex++
-    setNextQuestion()
-})
+    currentQuestionIndex++;
+    setNextQuestion();
+});
 
 /**Below is our function for display the results */
 
 resultsButton.addEventListener("click", () => {
-    resultMessage()
-    resultsButton.classList.add("hide")
-    beginButton.innerText = "Restart"
-    beginButton.classList.remove("hide")
-    beginButtonContainer.classList.add("move-down")
+    resultMessage();
+    resultsButton.classList.add("hide");
+    beginButton.innerText = "Restart";
+    beginButton.classList.remove("hide");
+    beginButtonContainer.classList.add("move-down");
 })
 
 /**Below is our function for starting the quiz. */
 
 function beginQuiz() {
-    beginButton.classList.add("hide")
-    beginButtonContainer.classList.remove("move-down")
-    quizImageHolder.classList.add("hide")
+    beginButton.classList.add("hide");
+    beginButtonContainer.classList.remove("move-down");
+    quizImageHolder.classList.add("hide");
     
     /**The below code is what gets us our randomly sorted questions by ensuring a completely random array using mathrandom minus 5.
      * This gives us a number greater or less than zero 50% of the time, ensuring it swings either way fairly.
       */
-    shuffledQuestions = questions.sort(() => Math.random() - .5)
+    shuffledQuestions = questions.sort(() => Math.random() - .5);
     /**The line below ensures we start at the first question in our array */
-    currentQuestionIndex = 0
+    currentQuestionIndex = 0;
     /**Below we're removing the hide class from the question and the answer buttons */
-    answerButtonsElement.classList.remove('hide')
-    questionContainerElement.classList.remove('hide')
-    setNextQuestion()
+    answerButtonsElement.classList.remove('hide');
+    questionContainerElement.classList.remove('hide');
+    setNextQuestion();
     if (beginButton.innerText === "Restart") {
         oldScore = "0";
-        document.getElementById("score").innerText = `${oldScore}`
-        resultsTable.classList.add("hide")
-        var tBody = document.getElementsByTagName("tbody")[0]
-        tBody.remove()
-        chosenAnswers = []
+        document.getElementById("score").innerText = `${oldScore}`;
+        resultsTable.classList.add("hide");
+        var tBody = document.getElementsByTagName("tbody")[0];
+        tBody.remove();
+        chosenAnswers = [];
 
-        questionTableArray = []
+        questionTableArray = [];
 
-        correctAnswersArray = []
+        correctAnswersArray = [];
     }
-    perfectImage.classList.add("hide")
-    zeroImage.classList.add("hide")
-    lowerScore.classList.add("hide")
-    upperScore.classList.add("hide")
+    perfectImage.classList.add("hide");
+    zeroImage.classList.add("hide");
+    lowerScore.classList.add("hide");
+    upperScore.classList.add("hide");
 }
 
 /**Below is our function for showing the next question.
  */
 
 function setNextQuestion() {
-    resetState()
-    showQuestion(shuffledQuestions[currentQuestionIndex])
+    resetState();
+    showQuestion(shuffledQuestions[currentQuestionIndex]);
 }
 
 /**The function below shows our question on clicking either the begin button, or the next button. This is where we set the data of the
@@ -127,31 +126,31 @@ function setNextQuestion() {
  */
 
 function showQuestion(question) {
-    questionElement.innerText = question.question
-    questionTableArray.push(questionElement.innerText)
+    questionElement.innerText = question.question;
+    questionTableArray.push(questionElement.innerText);
     console.log(questionTableArray);
-    answerButtonsElement.classList.remove("hide")
+    answerButtonsElement.classList.remove("hide");
     question.answers.forEach(answer => {
-        const button = document.createElement("button")
-        button.innerText = answer.text
+        const button = document.createElement("button");
+        button.innerText = answer.text;
         /**Below is where we give the answer buttons the class they need for styling */
-        button.classList.add("quiz-button")
-        button.classList.add("quiz-selection")
+        button.classList.add("quiz-button");
+        button.classList.add("quiz-selection");
         if (answer.correct) {
-            button.dataset.correct = answer.correct
+            button.dataset.correct = answer.correct;
         }
-        button.addEventListener("click", chooseAnswer)
-        answerButtonsElement.appendChild(button)
+        button.addEventListener("click", chooseAnswer);
+        answerButtonsElement.appendChild(button);
     })
  }
 
 /**The resetState function below is where we clear the playing area of the "next" button to make way for the next question */
 
 function resetState() {
-    nextButton.classList.add("hide")
-    nextButtonContainer.classList.add("hide")
+    nextButton.classList.add("hide");
+    nextButtonContainer.classList.add("hide");
     while (answerButtonsElement.firstChild) {
-        answerButtonsElement.removeChild(answerButtonsElement.firstChild)
+        answerButtonsElement.removeChild(answerButtonsElement.firstChild);
     }
 }
 
@@ -160,32 +159,32 @@ function resetState() {
  */
 
 function chooseAnswer(e) {
-    const selectedButton = e.target
-    const correct = selectedButton.dataset.correct
-    selectedButton.classList.add("submitted-answer")
+    const selectedButton = e.target;
+    const correct = selectedButton.dataset.correct;
+    selectedButton.classList.add("submitted-answer");
     // setStatusClass(document.body, correct)
     Array.from(answerButtonsElement.children).forEach(button => {
-        setStatusClass(button, button.dataset.correct)
+        setStatusClass(button, button.dataset.correct);
     })
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
-        nextButton.classList.remove("hide")
-        nextButtonContainer.classList.add("hide")
+        nextButton.classList.remove("hide");
+        nextButtonContainer.classList.add("hide");
 
         /**The below two lines of code have been moved up into here in order to ensure that the next button isn't 
          * shown on completion of the quiz - instead, only the restart button will be shown.
          */
 
-        nextButton.classList.remove("hide")
-        nextButtonContainer.classList.remove("hide")
+        nextButton.classList.remove("hide");
+        nextButtonContainer.classList.remove("hide");
 
     } else {
 
-        resultsButton.classList.remove("hide")
+        resultsButton.classList.remove("hide");
         
     }
 
     /**Below I've coded the various answer buttons to show or hide the other buttons and quiz elements as appropriate */
-    answerButtonsElement.classList.add("hide")
+    answerButtonsElement.classList.add("hide");
     
     /**Below I've added some feedback elements for the user. As well as a pop-up informing the user of the result of their
      * selection, the question text changes to reflect the result and the score is incremented by one for a correct answer.
@@ -196,13 +195,13 @@ function chooseAnswer(e) {
      */
     
     if (selectedButton.dataset = correct) {
-        questionElement.innerText = "Correct!"
-        incrementScore()
+        questionElement.innerText = "Correct!";
+        incrementScore();
     } else if (selectedButton.dataset != correct) {
-        questionElement.innerText = "Wrong!"
+        questionElement.innerText = "Wrong!";
     }
 
-    checkAnswer()
+    checkAnswer();
 
 }
 
