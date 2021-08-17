@@ -264,6 +264,25 @@ div {
     background-color: #99ccff;
 }
 
+.iconstyle {
+    margin-left: -50px;
+}
+
+.iconstyle i {
+    color: #4F7CAC;
+    font-size: 50px;
+    padding: 10px 20px 0px 20px;
+}
+
+.email-link {
+    font-family: 'Balsamiq Sans', cursive !important;
+    font-size: 130%
+}
+
+.footer-text {
+    font-family: 'Balsamiq Sans', cursive !important;
+    font-size: 200%;
+}
 
 /* ---------------------Media queries */
 /* The below code centres the page headings in the drop-down nav menu */
@@ -306,8 +325,14 @@ div {
     }
 }
 
-/* @media screen and (max-height: 600px) {
-    .footer {
-        position: fixed;
+@media screen and (max-width: 550px) {
+    .iconstyle {
+        margin-left: 10px;
     }
-} */
+}
+
+@media screen and (max-width: 510px) {
+    .iconstyle i {
+        padding: 10px 10px 0px 10px;
+    }
+}
