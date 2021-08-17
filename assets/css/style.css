@@ -227,6 +227,10 @@ div {
     table-layout: fixed;
 }
 
+#reenactment-caption {
+    text-align: center;
+}
+
 /* ----------------------Buttons */
 .button {
     align-items: center;

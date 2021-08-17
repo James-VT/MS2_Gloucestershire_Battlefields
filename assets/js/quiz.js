@@ -66,7 +66,7 @@ nextButton.addEventListener("click", () => {
     setNextQuestion();
 });
 
-/**Below is our function for display the results */
+/**Below is our function for displaying the results */
 
 resultsButton.addEventListener("click", () => {
     resultMessage();
@@ -81,7 +81,7 @@ resultsButton.addEventListener("click", () => {
 function beginQuiz() {
     beginButton.classList.add("hide");
     beginButtonContainer.classList.remove("move-down");
-    quizImageHolder.classList.add("hide");
+    quizImageHolder.classList.remove("hide");
     
     /**The below code is what gets us our randomly sorted questions by ensuring a completely random array using mathrandom minus 5.
      * This gives us a number greater or less than zero 50% of the time, ensuring it swings either way fairly.
@@ -237,6 +237,7 @@ function incrementScore() {
 function resultMessage() {
 
     let score = document.getElementById("score").innerText;
+    quizImageHolder.classList.add("hide");
     console.log(score);
 
     createTable();
