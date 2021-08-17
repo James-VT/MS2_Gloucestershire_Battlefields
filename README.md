@@ -78,6 +78,9 @@ JQuery is used in this project via CDN to provide the option of simplifying Java
 ## GeoHack
 GeoHack is a service I've used via Wikipedia to source the coordinates for the battlefields in order to place the map markers correctly. [GeoHack](https://geohack.toolforge.org/)
 
+## JSHint
+JSHint is a free JavaScript testing programme, used to look for errors in the sites various JS files. [JSHint](https://jshint.com/)
+
 # Credits
 
 ## Wikipedia
