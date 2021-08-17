@@ -74,7 +74,7 @@ resultsButton.addEventListener("click", () => {
     beginButton.innerText = "Restart";
     beginButton.classList.remove("hide");
     beginButtonContainer.classList.add("move-down");
-})
+});
 
 /**Below is our function for starting the quiz. */
 
@@ -141,7 +141,7 @@ function showQuestion(question) {
         }
         button.addEventListener("click", chooseAnswer);
         answerButtonsElement.appendChild(button);
-    })
+    });
  }
 
 /**The resetState function below is where we clear the playing area of the "next" button to make way for the next question */
@@ -165,7 +165,7 @@ function chooseAnswer(e) {
     // setStatusClass(document.body, correct)
     Array.from(answerButtonsElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct);
-    })
+    });
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
         nextButton.classList.remove("hide");
         nextButtonContainer.classList.add("hide");
@@ -239,7 +239,7 @@ function resultMessage() {
     let score = document.getElementById("score").innerText;
     console.log(score);
 
-    createTable()
+    createTable();
 
     if (score === "10") {
         questionElement.innerText = "Victory! You got every question correct!";
@@ -431,4 +431,4 @@ const questions = [
             {text: "John II", correct: false}
         ]
     }
-]
+];
