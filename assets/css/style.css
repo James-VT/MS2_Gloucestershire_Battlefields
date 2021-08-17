@@ -301,3 +301,9 @@ div {
         justify-content: center;
     }
 }
+
+/* @media screen and (max-height: 600px) {
+    .footer {
+        position: fixed;
+    }
+} */
