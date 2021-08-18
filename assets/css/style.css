@@ -171,6 +171,11 @@ div {
     clear: both;
 }
 
+#question-text {
+    font-family: 'Balsamiq Sans', cursive !important;
+    font-size: 200%;
+}
+
 #next-button {
     display: block;
 }
