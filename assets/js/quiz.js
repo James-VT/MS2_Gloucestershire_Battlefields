@@ -31,8 +31,6 @@ const lowerScore = document.getElementById("lower-score");
 
 const zeroImage = document.getElementById("zero-score");
 
-const resultsText = document.getElementById("results-text");
-
 const resultsTable = document.getElementById("table-results");
 
 const quizImageHolder = document.getElementById("quiz-image-holder");
@@ -267,23 +265,6 @@ function resultMessage() {
     resultsTable.classList.remove("hide");
 
 }
-
-function perfectScore() {
-    questionElement.innerText = "Congratulations! You got every question correct!";
-    console.log("perfectScore");
-}
-
-function correctMessage() {
-    questionElement.innerText = "Correct!";
-    // alert("Correct!")
-    incrementScore();
-}
-
-function wrongMessage() {
-    questionElement.innerText = "Wrong!";
-    // alert("Whoops, that's wrong!")
-}
-
 
 /**Here we're building an array from the chosen answers, which we'll push into our table to show the results at the end of the quiz */
 function checkAnswer() {
