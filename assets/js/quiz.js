@@ -246,7 +246,7 @@ function resultMessage() {
         
         perfectImage.classList.remove("hide");
     } else if (score === "6" || score === "7" || score === "8" || score === "9") {
-        questionElement.innerText = "A close call! Could you do better?";
+        questionElement.innerText = "A good score! But could you do better?";
         // alert("A close call! Could you do better?")
         
         upperScore.classList.remove("hide");
