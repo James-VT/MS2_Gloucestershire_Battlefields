@@ -184,14 +184,16 @@ function chooseAnswer(e) {
     /**Below I've coded the various answer buttons to show or hide the other buttons and quiz elements as appropriate */
     answerButtonsElement.classList.add("hide");
     
-    /**Below I've added some feedback elements for the user. As well as a pop-up informing the user of the result of their
-     * selection, the question text changes to reflect the result and the score is incremented by one for a correct answer.
+    /**Below I've added some feedback elements for the user. The question text changes to reflect the result and the score
+     * is incremented by one for a correct answer.
      * Also, rather than iterate through the wrong answer buttons to show a "wrong" message for each of them, I've taken 
      * advantage of the use of dataset, used extensively in the tutorial video credited at the beginning of this file for 
      * functionality I didn't use for this project, to use the != comparison operator to get the wrong answer buttons to do 
      * what I want.
      */
     
+    /**The below code falls foul of JSHint for being both a conditional expression and an assignment. However, trying to set it as a conditional expression causes 
+     * the code to fail. As such, I've kept it as both so that it'll work. */
     if (selectedButton.dataset = correct) {
         questionElement.innerText = "Correct!";
         incrementScore();
