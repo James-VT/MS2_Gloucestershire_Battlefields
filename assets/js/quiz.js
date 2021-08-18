@@ -346,8 +346,8 @@ const questions = [
     {
         question: "The Battle of Stow-on-the-Wold marked the end of which war?",
         answers: [
-            {text: "The First English Civil War", correct: true},
             {text: "The Crimean War", correct: false},
+            {text: "The First English Civil War", correct: true},
             {text: "The Wars of the Roses", correct: false}
         ]
     },
@@ -362,25 +362,25 @@ const questions = [
     {
         question: "The Battle of Nibley Green was fought to determine ownership of which castle?",
         answers: [
-            {text: "Berkeley Castle", correct: true},
             {text: "Sudeley Castle", correct: false},
-            {text: "Barnard Castle", correct: false}
+            {text: "Barnard Castle", correct: false},
+            {text: "Berkeley Castle", correct: true}
         ]
     },
     {
         question: "Which royal member of the House of Lancaster was executed after the Battle of Tewkesbury?",
         answers: [
-            {text: "Prince Edward", correct: true},
             {text: "Margaret of Anjou", correct: false},
+            {text: "Prince Edward", correct: true},
             {text: "Richard of Gloucester", correct: false}
         ]
     },
     {
         question: "Which Anglo-Saxon kingdom won the Battle of Deorham?",
         answers: [
-            {text: "Wessex", correct: true},
             {text: "Northumbria", correct: false},
-            {text: "Hwicce", correct: false}
+            {text: "Hwicce", correct: false},
+            {text: "Wessex", correct: true}
         ]
     },
     {
@@ -394,17 +394,17 @@ const questions = [
     {
         question: "As a precursor to the famous British redcoats of later centuries, what colour dye was used by some regiments of the New Model Army?",
         answers: [
-            {text: "Venetian Red", correct: true},
             {text: "Blood red", correct: false},
-            {text: "Scarlet red", correct: false}
+            {text: "Scarlet red", correct: false},
+            {text: "Venetian Red", correct: true}
         ]
     },
     {
         question: "Which Anglo-Saxon kingdom would later go on to unify all of England?",
         answers: [
-        {text: "Wessex", correct: true},
         {text: "Mercia", correct: false},
-        {text: "East Anglia", correct: false}
+        {text: "East Anglia", correct: false},
+        {text: "Wessex", correct: true}
         ]
     },
     {

@@ -98,3 +98,8 @@ The JavaScript files used in this project were tested using JSHint (link in READ
 ### index.js testing
 
 ![Image of JSHint results for index.js](assets/images/testing/jshinttesting/indexjshint.png)
+
+No issues were detected in Index.js.
+
+### quiz.js testing
+
