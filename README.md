@@ -78,6 +78,7 @@ Another way of getting your own local version to work on is to clone the reposit
 6. Then you want to type "git clone https://github.com/James-VT/MS2_Gloucestershire_Battlefields", the same URL as before.
 7. Hit Enter. You're good to go!
 
+# Features
 
 # Technologies used
 
