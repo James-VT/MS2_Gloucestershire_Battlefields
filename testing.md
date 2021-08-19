@@ -44,7 +44,7 @@ User Story Number | A site owner will want to: | How was this achieved? | Eviden
 7 | Visually display the locations of battlefields on the interactive map according to user input. | Clicking one of the buttons with the battlefields' name on it will pan the map to that location. | (evidence image here)
 8 | Provide the opportunity for visitors to contact the charity via an interactive feedback form. | Contact form allows site owners to receive communication from visitors. | (evidence image here)
 9 | Present visitors with a fun and working interactive quiz that feeds back their results. | The quiz presents a user with results at the end, keeps score and presents them with "correct" or "wrong" for each answer given, depending. | [Wrong answer and score](assets/images/testing/userstorytesting/userstoryanswerfeedback.png), [results](assets/images/testing/userstorytesting/userstoryresults.png)
-10 | Relay to visitors the purpose and nature of the charity. | Information is presented to the user upon landing on the home page, with an option to read more upon interacting with the page. | (evidence image here)
+10 | Relay to visitors the purpose and nature of the charity. | Information is presented to the user upon landing on the home page, with an option to read more upon interacting with the page. | [Home page intro with optional extra info](assets/images/testing/userstorytesting/userstoryindex.png)
 
 ---
 
