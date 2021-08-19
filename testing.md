@@ -21,6 +21,12 @@ As you can see from the image below, the test was successful.
 
 ![Image of successful test](assets/images/testing/firstbuttontest.png)
 
+### Quiz data testing
+
+To ensure the correct data was being collected throughout the development of the quiz, I added a number of console.logs to its various functions and arrays. In the screenshot below, you can see how this built up the information towards the end of the quiz. We have the questions, the correct answers and the submitted answers, in that order.
+
+![Image of the console logs of the quiz](assets/images/testing/featuretesting/quiztesting.png)
+
 ## Testing against user stories
 
 I have tested each user story against the various features of the site to ensure that each of them are met in some way.
