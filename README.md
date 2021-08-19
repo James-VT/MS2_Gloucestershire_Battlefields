@@ -45,19 +45,17 @@ The site's information is structured in such a way as to make the map primary; i
 TODO
 
 # Deployment
-
-# Deployment
  Here I'll explain how to deploy/how I deployed the website to GitHub and how to run it locally. 
 
 ### Deploying a static project to GitHub pages:
  1. You'll need a GitHub account, if you don't already have one. Head to their site https://github.com and you'll see the sign-up links straightaway on the home page. Google Chrome is the recommended browser for GitHub.
  2. Once you're signed-up, this'll be your landing page.
- 3. Click on the user icon in the top right corner of the screen - in the example above, mine is the little pink and white checkered circle. Click "settings" in this list.
- 4. On the next screen, you'll see a menu on the left. Click "repositories" in this menu.
- 5. You'll come to the screen above. Click the repository you want - in this case, Handleigh Hall.
+ 3. Click on the user icon in the top right corner of the screen. This opens a dropdown menu. Click "Your repositories."
+ 4. You'll then see a list of your repositories.
+ 5. In the list of repositories, click the repository you want - in this case, Gloucestershire Battlefields.
  6. Then, from the bar along the top (not the nav bar - lower, under the repo name) click Settings.
  7. On the Settings page, click "Pages" from the left-hand menu.
- 8. In the picture I've attached, you can see I've opened a drop down menu which, before you've deployed, will have a default value of none. Click this, then set it to Main or Master depending on the version you're using. Mine, having been already deployed, says Master and yours will too when deployed, but ignore that discrepancy for now.
+ 8. In the Pages options, before you've deployed, your "Branch" under "Source" will have a default value of none. Click this, then set it to Main or Master depending on the version you're using. Mine, having been already deployed, says Master and yours will too when deployed, but ignore that discrepancy for now.
  9. Click Save.
  10. The page will refresh, and you'll see it change to say "Your site is ready to be deployed at "https://username.github.io/repository-name/"
  11. Be aware this deployed site will take a few minutes to deploy, usually about ten. Be patient and don't click while it's building as that can slow it down.
@@ -77,7 +75,7 @@ Another way of getting your own local version to work on is to clone the reposit
 4. Click HTTPS to make sure you're in it, then copy the link you see there.
 6. Head into GitPod or your IDE of choice, and open up the terminal.
 5. Switch your working directory to the location you want to the cloned directory created.
-6. Then you want to type "git clone https://github.com/James-VT/MS1_Handleigh_Hall", the same URL as before.
+6. Then you want to type "git clone https://github.com/James-VT/MS2_Gloucestershire_Battlefields", the same URL as before.
 7. Hit Enter. You're good to go!
 
 
