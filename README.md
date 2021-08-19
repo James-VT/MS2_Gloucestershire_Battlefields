@@ -80,6 +80,17 @@ Another way of getting your own local version to work on is to clone the reposit
 
 # Features
 
+* ## Intro text w/ optional extra text
+    * As an early bit of JQuery for my project, I spotted an opporunity to give the user the option not to have to have all of the intro text on the screen. On smaller devices, it's quite a lot of information and, attention spans being what they are, it might put people off the site. As a result, the bare essentials are there with an option to click for the rest of the intro. A first time user who is really interested would probably click this, while a returning user might have already read it and so not need to, and instead move on to the links below.
+
+    User story goal achieved by this feature | How was this achieved?
+    --- | ---
+    10 Relay to visitors the purpose and nature of the charity. | The into text provides a first impression of the organisation behind the website, informing a visitor of what the site is for and the things they can do on it.
+
+
+
+![Image of index.html intro text with click to expand option](assets/images/testing/userstorytesting/userstoryindex.png)
+
 # Technologies used
 
 ## Languages:
