@@ -26,6 +26,10 @@ The primary aim of the Gloucestershire Battlefields website is information - for
 9. Present visitors with a fun and working interactive quiz that feeds back their results.
 10. Relay to visitors the purpose and nature of the charity.
 
+# Design choices
+
+Here I will explain my choices.
+
 # The Five Planes of User Experience Development
 As part of the planning for this project, I have run through the stages of User Experience Design, as proposed by Jesse James Garrett.
 
@@ -43,6 +47,15 @@ The site's information is structured in such a way as to make the map primary; i
 
 ## The Surface Plane
 TODO
+
+## Colour scheme
+![Image of coolors selections](assets/images/coolorspalette.png)
+* Russian Green #70997B
+* Glossy Grape #B594B6
+* Jet #2F2F2F
+* Peach Puff #F1D6B8
+
+I have made these choices based on the recommendations of Coolors' system after seaching for colours to match Russian Green, a colour I decided on early on. Although pink may seem a weird colour for a website on military history, the territory of the British Empire was coloured pink on maps so I decided to stick with that particular suggestion. Jet's a sleek choice that pairs well with pretty much anything, even moreso than black for not being as dark. Finally, Peach Puff seemed an appropriate colour to use for a site about the history of a county in which a great many houses are built from the local limestone, which is this colour.
 
 # Deployment
  Here I'll explain how to deploy/how I deployed the website to GitHub and how to run it locally. 

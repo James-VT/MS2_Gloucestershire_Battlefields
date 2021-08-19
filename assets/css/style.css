@@ -125,7 +125,7 @@ div {
 
 .quiz-outer {
     box-sizing: border-box;
-    background-color: rgb(204, 204, 255);
+    background-color: #B594B6;
     width: 90%;
     /* height: 65vh; */
     margin-left: auto;
@@ -268,7 +268,7 @@ div {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #99ccff;
+    background-color: #f1d6b8;
 }
 
 .iconstyle {
