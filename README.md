@@ -13,18 +13,18 @@ The primary aim of the Gloucestershire Battlefields website is information - for
 
 ## User stories
 ### A visitor to the site will want to:
-1. Learn the history, location and other details of a specific battlefield.
-2. Select a specific battlefield on the map or from the button menu in order to see information about it appear on the page.
+1. Learn the history of a specific battlefield chosen by interacting with the map.
+2. Select a specific battlefield on the interactive map or from the button menu in order to see information about it feed back on the page.
 3. Contact the organisation behind the website, and receive confirmation that their correspondence has been sent.
-4. Test their knowledge with a quiz on the subject that feeds back their score.
-5. Donate to the charity that owns the site, and receive confirmation when this is sent.
+4. Test their knowledge with a quiz they can initiate on the subject that feeds back their score.
+5. Review their answers to the quiz via feedback, to see where they went wrong if applicable.
 
 ### A site owner will want to:
-6. Relay information about the battlefields the charity promotes, as chosen by the visitor.
-7. Visually display the locations of battlefields on the interactive map.
+6. Relay information about the battlefields the charity promotes according to user input.
+7. Visually display the locations of battlefields on the interactive map according to user input.
 8. Provide the opportunity for visitors to contact the charity via an interactive feedback form.
-9. Present images to the visitor appropriate to the battlefield selected.
-10. Raise revenue via donations.
+9. Present visitors with a fun and working interactive quiz that feeds back their results.
+10. Relay to visitors the purpose and nature of the charity.
 
 # The Five Planes of User Experience Development
 As part of the planning for this project, I have run through the stages of User Experience Design, as proposed by Jesse James Garrett.

@@ -21,6 +21,19 @@ As you can see from the image below, the test was successful.
 
 ![Image of successful test](assets/images/testing/firstbuttontest.png)
 
+## Testing against user stories
+
+User Story Number | A first time user will want to: | How was this achieved? | Evidence
+------ | ------ | ------ | ------
+1 | Learn the history of a specific battlefield chosen by interacting with the map. | Clicking the map buttons or functions will feed information onto the page relevant to the selection. | (evidence image here)
+2 | Change the clicked battlefield on the interactive map or from the button menu in order to see information about it feed back on the page, while removing the information from the previous selection. | Selecting a different battlefield will remove the previous selection's info, and fed the new selection's info onto the page. | (evidence image here)
+3 | Contact the organisation behind the website, and receive confirmation that their correspondence has been sent. | The contact form facilitates contact between visitors and site owners, and feeds back to confirm successful receipt of correspondence. | (evidence image here)
+4 | Test their knowledge with a quiz they can initiate on the subject that feeds back their score. | The quiz is accessed via links in the nav bar and the index page image menu. The quiz itself feeds back user score throughout. | (evidence image here)
+5 | Review their answers to the quiz via feedback, to see where they went wrong if applicable. | A table of results and correct answers is presented to the user at the end of the quiz. | (evidence image here)
+
+
+## Bugs
+
 ### Race condition bug
 
 A bug I faced when working with the Google Maps API was due to what I later learned was a "race condition." When loading the live page or the port 8000 test page, the map would show on some page loads but not others. When the map failed to load, I noted the following two errors in the console:
@@ -91,6 +104,21 @@ This allowed me to roll everything into one function, rather than two. This work
 
 #### Problem solved. The solution: use hover instead of mouseenter/mouseleave.
 
+## Unfixed bugs
+
+An ongoing issue is with this piece of code within the quiz.js file:
+
+```
+if (selectedButton.dataset = correct) {
+        questionElement.innerText = "Correct!";
+        incrementScore();
+    } else if (selectedButton.dataset != correct) {
+        questionElement.innerText = "Wrong!";
+    }
+```
+
+This was flagged by JSHint (see: Testing JavaScript with JSHint) as an warning because the first line functions as both conditional expression and assignment. However, attempts to fix this using == or ===, or to put the word correct in quotations, cause the function to fail. As a result, it remains. With more time, I would seek other options to fix this but the functionality itself works, I have allowed it to stand for now.
+
 ## Testing JavaScript with JSHint.
 
 The JavaScript files used in this project were tested using JSHint (link in README, technologies used section).
@@ -103,3 +131,6 @@ No issues were detected in Index.js.
 
 ### quiz.js testing
 
+![Image of JSHint results for quiz.js](assets/images/testing/jshinttesting/quizjslinter.png)
+
+A single issue was flagged with quiz.js: that of the combined conditional expression and assignment in the chooseAnswer function. This is addressed in a comment above that particular section in the file itself. The code will not work without doing both, so has been kept as it is (see also: unfixed bugs).
