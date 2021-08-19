@@ -143,6 +143,10 @@ https://developers.google.com/web/tools/lighthouse
 
 * To use Lighthouse, you can download Google Chrome web browser and use it from there or use one of the alternative options in the link above. Personally, I used Chrome. Right click on any web page, choose the bottom "inspect" option and click it. Then, in the dev tools that open up, the top bar will have a symbol of two little arrows. Select this, and you'll see Lighthouse at the bottom. Open it up from there, and click generate report. Voila.
 
+### Lighthouse test for index.html
+
+![Image of Lighthouse test for index.html](assets/images/testing/lighthousetesting/lighthouseindex.png)
+
 ### Lighthouse test for quiz.html
 
 ![Image of Lighthouse test for quiz.html](assets/images/testing/lighthousetesting/lighthousequiz.png)
