@@ -23,6 +23,8 @@ As you can see from the image below, the test was successful.
 
 ## Testing against user stories
 
+### First time user stories:
+
 User Story Number | A first time user will want to: | How was this achieved? | Evidence
 ------ | ------ | ------ | ------
 1 | Learn the history of a specific battlefield chosen by interacting with the map. | Clicking the map buttons or functions will feed information onto the page relevant to the selection. | (evidence image here)
@@ -31,6 +33,16 @@ User Story Number | A first time user will want to: | How was this achieved? | E
 4 | Test their knowledge with a quiz they can initiate on the subject that feeds back their score. | The quiz is accessed via links in the nav bar and the index page image menu. The quiz itself feeds back user score throughout. | (evidence image here)
 5 | Review their answers to the quiz via feedback, to see where they went wrong if applicable. | A table of results and correct answers is presented to the user at the end of the quiz. | (evidence image here)
 
+------
+### Site owner stories:
+
+User Story Number | A site owner will want to: | How was this achieved? | Evidence
+------ | ------ | ------ | ------
+6 | Relay information about the battlefields the charity promotes according to user input. | Map page reveals info depending on user selection. | (evidence image here)
+7 | Visually display the locations of battlefields on the interactive map according to user input. | Clicking one of the buttons with the battlefields' name on it will pan the map to that location. | (evidence image here)
+8 | Provide the opportunity for visitors to contact the charity via an interactive feedback form. | Contact form allows site owners to receive communication from visitors. | (evidence image here)
+9 | Present visitors with a fun and working interactive quiz that feeds back their results. | The quiz presents a user with results at the end, keeps score and presents them with "correct" or "wrong" for each answer given, depending. | (evidence image here)
+10 | Relay to visitors the purpose and nature of the charity. | Information is presented to the user upon landing on the home page, with an option to read more upon interacting with the page. | (evidence image here)
 
 ## Bugs
 
