@@ -23,6 +23,8 @@ As you can see from the image below, the test was successful.
 
 ## Testing against user stories
 
+I have tested each user story against the various features of the site to ensure that each of them are met in some way.
+
 ### First time user stories:
 
 User Story Number | A first time user will want to: | How was this achieved? | Evidence
