@@ -72,7 +72,7 @@ function myMap() {
                          "date": "21 March 1646", 
                          "combatants": "Royalists versus Parliament",
                          "outcome": "Parliamentarian victory",
-                         "detailed": "In the spring of 1646, King Charles I of England was getting ever more desperate to hold the Royalist cause together whilst waiting for the long promised relief forces from Ireland, Scotland and France. Sir Jacob Astley took command of the Royalist forces in the west and began to gather up the remnants from the handful of Royalist garrisons still left in the West Midlands to create a new field army. At this point in the war, Royalist morale was low. However, Astley, a stalwart of the Royalist commanders and an experienced soldier, was able to cobble together a force of 3,000. While returning to Oxford he was intercepted and defeated at Stow-on-the-Wold."},
+                         "detailed": "In the spring of 1646, King Charles I of England was getting ever more desperate to hold the Royalist cause together whilst waiting for the long promised relief forces from Ireland, Scotland and France. Sir Jacob Astley took command of the Royalist forces in the west and began to gather up the remnants from the handful of Royalist garrisons still left in the West Midlands to create a new field army. At this point in the war, Royalist morale was low. However, Astley, a stalwart of the Royalist commanders and an experienced soldier, was able to cobble together a force of 3,000. While returning to Oxford he was intercepted and defeated at Stow-on-the-Wold. Some units of parliamentarian soldiers, arranged in regiments, wore uniforms coloured in Venetian Red - this was one of the first wars in which soldiers wore uniform clothing. In the years that followed, this colour would be adopted by all regiments of England's - and later Britain's - army, giving rise to the term 'redcoats.'"},
                          {"lat": 51.4891, "lng": -2.373706, 
                          "name": "Battle of Deorham", 
                          "date": "577 AD", 
@@ -164,7 +164,9 @@ function myMap() {
         whilst waiting for the long promised relief forces from Ireland, Scotland and France. Sir Jacob Astley took command of the Royalist forces in the west 
         and began to gather up the remnants from the handful of Royalist garrisons still left in the West Midlands to create a new field army. At this point 
         in the war, Royalist morale was low. However, Astley, a stalwart of the Royalist commanders and an experienced soldier, was able to cobble 
-        together a force of 3,000. While returning to Oxford he was intercepted and defeated at Stow-on-the-Wold.`);
+        together a force of 3,000. While returning to Oxford he was intercepted and defeated at Stow-on-the-Wold. Some units of parliamentarian soldiers, arranged in regiments, 
+        wore uniforms coloured in Venetian Red - this was one of the first wars in which soldiers wore uniform clothing. In the years that followed, this colour would be 
+        adopted by all regiments of England's - and later Britain's - army, giving rise to the term 'redcoats.'`);
         map.setZoom(9);
         let stowCoords = {"lat": 51.951708, "lng": -1.728297};
         map.panTo(stowCoords);

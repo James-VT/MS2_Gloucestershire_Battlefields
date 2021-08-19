@@ -21,11 +21,21 @@ As you can see from the image below, the test was successful.
 
 ![Image of successful test](assets/images/testing/firstbuttontest.png)
 
+---
+
 ### Quiz data testing
 
 To ensure the correct data was being collected throughout the development of the quiz, I added a number of console.logs to its various functions and arrays. In the screenshot below, you can see how this built up the information towards the end of the quiz. We have the questions, the correct answers and the submitted answers, in that order.
 
 ![Image of the console logs of the quiz](assets/images/testing/featuretesting/quiztesting.png)
+
+The final outcome of all this is the results table, shown to the player at the end of the quiz. Not only does it display the answers chosen vs. the correct ones, but the message and picture presented to the user are different depending on their score.
+
+![Image of a 5/10 score](assets/images/testing/featuretesting/resultstest.png)
+
+Here we can see the player achieved a score of 5/10, and received the message "Oh dear! Retreat!" and a picture of the Zaparozhian cossacks as a result. This is the functionality working as it should.
+
+---
 
 ## Testing against user stories
 
