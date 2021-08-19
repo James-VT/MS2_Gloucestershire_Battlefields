@@ -135,6 +135,18 @@ if (selectedButton.dataset = correct) {
 
 This was flagged by JSHint (see: Testing JavaScript with JSHint) as an warning because the first line functions as both conditional expression and assignment. However, attempts to fix this using == or ===, or to put the word correct in quotations, cause the function to fail. As a result, it remains. With more time, I would seek other options to fix this but the functionality itself works, I have allowed it to stand for now.
 
+## Testing pages with Lighthouse
+
+https://developers.google.com/web/tools/lighthouse
+
+* Lighthouse is a validator built into Google Chrome, used for testing the performance, accessibility, best practice and more of a web page. Specifically I have used it to make sure all my pages are above the 80% mark in performance.
+
+* To use Lighthouse, you can download Google Chrome web browser and use it from there or use one of the alternative options in the link above. Personally, I used Chrome. Right click on any web page, choose the bottom "inspect" option and click it. Then, in the dev tools that open up, the top bar will have a symbol of two little arrows. Select this, and you'll see Lighthouse at the bottom. Open it up from there, and click generate report. Voila.
+
+### Lighthouse test for quiz.html
+
+![Image of Lighthouse test for quiz.html](assets/images/testing/lighthousetesting/lighthousequiz.png)
+
 ## Testing JavaScript with JSHint.
 
 The JavaScript files used in this project were tested using JSHint (link in README, technologies used section).
