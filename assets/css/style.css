@@ -109,6 +109,11 @@ div {
     height: 500px;
 }
 
+/* ---------------------Map page */
+.battle-brief {
+    text-align: center;
+}
+
 /* ---------------------Header */
 
 .nav-style {
