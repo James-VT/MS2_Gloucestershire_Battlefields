@@ -114,6 +114,10 @@ div {
     text-align: center;
 }
 
+.battle-detailed {
+    text-align: center;
+}
+
 /* ---------------------Header */
 
 .nav-style {
@@ -341,7 +345,7 @@ div {
     }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 575px) {
     .iconstyle {
         margin-left: 10px;
     }
