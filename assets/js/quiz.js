@@ -394,8 +394,8 @@ const questions = [
     {
         question: "As a precursor to the famous British redcoats of later centuries, what colour dye was used by some regiments of the New Model Army?",
         answers: [
-            {text: "Blood red", correct: false},
-            {text: "Scarlet red", correct: false},
+            {text: "Blood Red", correct: false},
+            {text: "Scarlet Red", correct: false},
             {text: "Venetian Red", correct: true}
         ]
     },
