@@ -60,7 +60,7 @@ function myMap() {
                          "date": "~3,300 BC", 
                          "combatants": "Combatants unknown",
                          "outcome": "Outcome unknown; settlement defences partially levelled",
-                         "detailed": "Archaeologically speaking, the earliest battle evidence from the British Isles comes from the Neolithic or New Stone Age, when the farmers were first competing for limited resources. At Crickley Hill in Gloucestershire, the earthen ramparts of the settlement were attacked, some time around 3300 BC, and their defences partially levelled."},
+                         "detailed": "Archaeologically speaking, the earliest battle evidence from the British Isles comes from the Neolithic or New Stone Age, when the farmers were first competing for limited resources. Crickley Hill is the earliset know battle that took place in the UK. At Crickley Hill in Gloucestershire, the earthen ramparts of the settlement were attacked, some time around 3300 BC, and their defences partially levelled."},
                          {"lat": 51.6444, "lng": -2.2011, 
                          "name": "Battle of Beverston Castle", 
                          "date": "1644",
@@ -135,7 +135,7 @@ function myMap() {
         $(".battle-combatants").text(`Combatants unknown`);
         $(".battle-outcome").text(`Outcome unknown; settlement defences partially levelled`);
         $(".battle-detailed").text(`Archaeologically speaking, the earliest battle evidence from the British Isles comes from the Neolithic or New Stone Age, 
-        when the farmers were first competing for limited resources. At Crickley Hill in Gloucestershire, the earthen ramparts of the settlement were attacked, 
+        when the farmers were first competing for limited resources. Crickley Hill is the earliset know battle that took place in the UK. At Crickley Hill in Gloucestershire, the earthen ramparts of the settlement were attacked, 
         some time around 3300 BC, and their defences partially levelled.`);
         map.setZoom(9);
         let crickleyCoords = {"lat": 51.8472, "lng": -2.0978};
