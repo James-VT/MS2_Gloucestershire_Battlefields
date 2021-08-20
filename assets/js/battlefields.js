@@ -78,7 +78,7 @@ function myMap() {
                          "date": "577 AD", 
                          "combatants": "West Saxons versus Britons",
                          "outcome": "West Saxon victory",
-                         "detailed": "The Battle of Deorham (or Dyrham) was a decisive military encounter between the West Saxons and the Britons of the West Country in 577. The battle, which was a major victory for Wessex's forces led by Ceawlin and his son, Cuthwine, resulted in the capture of the Brythonic cities of Glevum (Gloucester), Corinium Dobunnorum (Cirencester), and Aquae Sulis (Bath). It also led to the permanent cultural and ethnic separation of Dumnonia (Devon and Cornwall) from Wales. The Anglo-Saxon Chronicle is the only source that mentions the Battle of Deorham. Although it gives few details, it describes the battle as a major engagement. It was fought at Hinton Hill near Dyrham in South Gloucestershire."},
+                         "detailed": "The Battle of Deorham (or Dyrham) was a decisive military encounter between the West Saxons and the Britons of the West Country in 577. The battle, which was a major victory for Wessex's forces led by Ceawlin and his son, Cuthwine, resulted in the capture of the Brythonic cities of Glevum (Gloucester), Corinium Dobunnorum (Cirencester), and Aquae Sulis (Bath). It also led to the permanent cultural and ethnic separation of Dumnonia (Devon and Cornwall) from Wales. The Anglo-Saxon Chronicle is the only source that mentions the Battle of Deorham. Although it gives few details, it describes the battle as a major engagement. It was fought at Hinton Hill near Dyrham in South Gloucestershire. In later centuries, Wessex would go on unite the other kingdoms into the kingdom of England while leading the fight against the Vikings."},
                          {"lat": 51.66, "lng": -2.3985, 
                          "name": "Battle of Nibley Green", 
                          "date": "20th March 1470", 
@@ -181,7 +181,8 @@ function myMap() {
         West Country in 577. The battle, which was a major victory for Wessex's forces led by Ceawlin and his son, Cuthwine, resulted in the capture 
         of the Brythonic cities of Glevum (Gloucester), Corinium Dobunnorum (Cirencester), and Aquae Sulis (Bath). It also led to the permanent 
         cultural and ethnic separation of Dumnonia (Devon and Cornwall) from Wales. The Anglo-Saxon Chronicle is the only source that mentions the Battle of Deorham. 
-        Although it gives few details, it describes the battle as a major engagement. It was fought at Hinton Hill near Dyrham in South Gloucestershire.`);
+        Although it gives few details, it describes the battle as a major engagement. It was fought at Hinton Hill near Dyrham in South Gloucestershire. In later centuries, 
+        Wessex would go on unite the other kingdoms into the kingdom of England while leading the fight against the Vikings.`);
         map.setZoom(9);
         let deorhamCoords = {"lat": 51.4891, "lng": -2.373706};
         map.panTo(deorhamCoords);
