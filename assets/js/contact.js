@@ -32,9 +32,11 @@ form.addEventListener("submit", (e) => {
     
     // validateEmail();
 
-    if (emailAddress.class === "invalid") {
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(emailAddress.value)) {
+        return(true);
+    } else {
         errorMessages.push("Please enter a valid email address");
-    }
+    };
 
     if (errorMessages.length > 0) {
         e.preventDefault();
