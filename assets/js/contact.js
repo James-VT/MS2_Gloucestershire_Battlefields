@@ -18,12 +18,22 @@ form.addEventListener("submit", (e) => {
     let errorMessages = [];
     if (fullName.value === "" || fullName.value == null) {
         errorMessages.push("Your name is required");
+    } else  {
+        for (let i = 0; i < errorMessages.length; i++) {
+            if (errorMessages[i] === "Your name is required") {
+                errorMessages.splice[i, 1]
+            }
+        }
     }
     
     /** The following link is where I learned the expression pattern for validating an email address: https://www.w3resource.com/javascript/form/email-validation.php
     */
     if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(emailAddress.value)) {
-        return(true);
+        for (let i = 0; i < errorMessages.length; i++) {
+            if (errorMessages[i] === "Please enter a valid email address") {
+                errorMessages.splice[i, 1]
+            }
+        }
     } else {
         errorMessages.push("Please enter a valid email address");
     };
