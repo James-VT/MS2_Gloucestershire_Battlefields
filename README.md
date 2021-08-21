@@ -46,7 +46,7 @@ My wireframes can be found below. These have been constructed with the idea that
 The site's information is structured in such a way as to make the map primary; it is the first thing a user will see upon loading the page, and the cascading information resulting from clicking a button or location of a battle appears underneath the map itself. The difference at smaller screen sizes may be (depending on the precise size) the changing of the layout of the buttons. 
 
 ## The Surface Plane
-TODO
+The colours chosen have been partnered based on suggestions from Coolors (credit below). Russian green has a nice military olive look to it, and from there I accepted or refused suggestions of pairings.
 
 ## Colour scheme
 ![Image of coolors selections](assets/images/coolorspalette.png)
@@ -56,6 +56,8 @@ TODO
 * Peach Puff #F1D6B8
 
 I have made these choices based on the recommendations of Coolors' system after seaching for colours to match Russian Green, a colour I decided on early on. Although pink may seem a weird colour for a website on military history, the territory of the British Empire was coloured pink on maps so I decided to stick with that particular suggestion. Jet's a sleek choice that pairs well with pretty much anything, even moreso than black for not being as dark. Finally, Peach Puff seemed an appropriate colour to use for a site about the history of a county in which a great many houses are built from the local limestone, which is this colour.
+
+As well as the colours pictured above, Venetian Red is used in two places - the tab icon and the error messages on the contact form. These uses would've red anyway, but due to the colour's association with British military history, I decided to go with that red in particular.
 
 # Deployment
  Here I'll explain how to deploy/how I deployed the website to GitHub and how to run it locally. 
@@ -106,43 +108,43 @@ Another way of getting your own local version to work on is to clone the reposit
 
 # Technologies used
 
-## Languages:
-* [HTML5](https://en.wikipedia.org/wiki/HTML5) was used for the content and structure of the site.
-* [CSS3](https://en.wikipedia.org/wiki/CSS#CSS_3) was used for the styling of the site.
-* [JavaScript](https://en.wikipedia.org/wiki/JavaScript) was used for the interactivity of the site.
+* Languages:
+    * [HTML5](https://en.wikipedia.org/wiki/HTML5) was used for the content and structure of the site.
+    * [CSS3](https://en.wikipedia.org/wiki/CSS#CSS_3) was used for the styling of the site.
+    * [JavaScript](https://en.wikipedia.org/wiki/JavaScript) was used for the interactivity of the site.
 
-## Balsamiq
-Balsamiq was used to create the wireframes for this project. [Balsamiq](https://balsamiq.com/)
+* Balsamiq
+    * Balsamiq was used to create the wireframes for this project. [Balsamiq](https://balsamiq.com/)
 
-## Bootstrap
-Bootstrap 5 was used for some HTML component templates and CSS styling. [Bootstrap 5.](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+* Bootstrap
+    * Bootstrap 5 was used for some HTML component templates and CSS styling. [Bootstrap 5.](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
 
-## Git
-Git was used for version control and saving work in the repository, using the GitPod extension in Google Chrome to commit to GitHub. [Git](https://git-scm.com/)
+* Git
+    * Git was used for version control and saving work in the repository, using the GitPod extension in Google Chrome to commit to GitHub. [Git](https://git-scm.com/)
 
-## Google Chrome
-This project was created in the Google Chrome browser, and as such Chrome was used as the default testing browser. [Chrome](https://www.google.com/intl/en_uk/chrome/)
+* Google Chrome
+    * This project was created in the Google Chrome browser, and as such Chrome was used as the default testing browser. [Chrome](https://www.google.com/intl/en_uk/chrome/)
 
-## Google Fonts
-The fonts for the site were imported from Google Fonts. [Google Fonts](https://fonts.google.com/)
+* Google Fonts
+    * The fonts for the site were imported from Google Fonts. [Google Fonts](https://fonts.google.com/)
 
-## FontAwesome
-The icons for social media links were taken from FontAwesome. [FontAwesome](https://fontawesome.com/)
+* FontAwesome
+    * The icons for social media links were taken from FontAwesome. [FontAwesome](https://fontawesome.com/)
 
-## Coolors
-The colour palette for this site was chosen using Coolors. [Coolors](https://coolors.co/)
+* Coolors
+    * The colour palette for this site was chosen using Coolors. [Coolors](https://coolors.co/)
 
-## JQuery
-JQuery is used in this project via CDN to provide the option of simplifying JavaScript code. [JQuery](https://jquery.com/download/#using-jquery-with-a-cdn)
+* JQuery
+    * JQuery is used in this project via CDN to provide the option of simplifying JavaScript code. [JQuery](https://jquery.com/download/#using-jquery-with-a-cdn)
 
-## GeoHack
-GeoHack is a service I've used via Wikipedia to source the coordinates for the battlefields in order to place the map markers correctly. [GeoHack](https://geohack.toolforge.org/)
+* GeoHack
+    * GeoHack is a service I've used via Wikipedia to source the coordinates for the battlefields in order to place the map markers correctly. [GeoHack](https://geohack.toolforge.org/)
 
-## JSHint
-JSHint is a free JavaScript testing programme, used to look for errors in the sites various JS files. [JSHint](https://jshint.com/)
+* JSHint
+    * JSHint is a free JavaScript testing programme, used to look for errors in the sites various JS files. [JSHint](https://jshint.com/)
 
-## favicon
-Favicon was used to create the icon for this site. [favicon](https://favicon.io/favicon-generator/)
+* Favicon
+    * Favicon was used to create the icon for this site. [favicon](https://favicon.io/favicon-generator/)
 
 # Credits
 
