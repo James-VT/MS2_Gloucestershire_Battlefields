@@ -9,8 +9,15 @@ const form = document.getElementById("form");
 const errorElement = document.getElementById("error-messages");
 
 form.addEventListener("submit", (e) => {
-    let errorMessages = []
+    let errorMessages = [];
     if (fullName.value === "" || fullName.value == null) {
-        errorMessages.push("Your name is required")
+        errorMessages.push("Your name is required");
+    }
+
+    
+
+    if (errorMessages.length > 0) {
+        e.preventDefault();
+        errorElement.innerText = errorMessages.join(", ");
     }
 })
