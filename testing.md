@@ -55,6 +55,16 @@ Result! Here we can see the Code Institute formdump success screen, which confir
 
 ---
 
+### Contact form error message removal testing
+
+In the above test, we made sure that the form would not send if the required fields were not filled in and that error messages would display to the user, telling them what they had done wrong. But what if the user later corrected their mistake and submitted the form with the required fields filled in this time? Or what if they correctly filled in a section they had got wrong the first time, but still had a mistake in the other required field? We needed a way of removing the messages in order to keep the feedback of errors up to date. In order to do this, I added splice methods to remove the error messages from the array when corrections had been made. To test this worked, I used a console.log. Below you can see how I made sure it worked:
+
+![Image of the form and the console logs that proved my array item removal method worked](assets/images/testing/featuretesting/contactarraytest.png)
+
+We can see three entries in the console: firstly, one for each required field not filled in, and then a third for neither having been filled in. Filling in both and clicking submit gives us a successful form submission, same as the last image in the section above. Success!
+
+---
+
 ## Testing against user stories
 
 I have tested each user story against the various features of the site to ensure that each of them are met in some way.
