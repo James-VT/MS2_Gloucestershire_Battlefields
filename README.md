@@ -102,9 +102,9 @@ Another way of getting your own local version to work on is to clone the reposit
     --- | ---
     10 Relay to visitors the purpose and nature of the charity. | The into text provides a first impression of the organisation behind the website, informing a visitor of what the site is for and the things they can do on it.
 
-
-
 ![Image of index.html intro text with click to expand option](assets/images/testing/userstorytesting/userstoryindex.png)
+
+---
 
 # Technologies used
 
