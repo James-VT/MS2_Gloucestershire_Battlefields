@@ -141,6 +141,9 @@ GeoHack is a service I've used via Wikipedia to source the coordinates for the b
 ## JSHint
 JSHint is a free JavaScript testing programme, used to look for errors in the sites various JS files. [JSHint](https://jshint.com/)
 
+## favicon
+Favicon was used to create the icon for this site. [favicon](https://favicon.io/favicon-generator/)
+
 # Credits
 
 ## Wikipedia
