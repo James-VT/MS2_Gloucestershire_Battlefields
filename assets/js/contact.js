@@ -42,4 +42,5 @@ form.addEventListener("submit", (e) => {
         e.preventDefault();
         errorElement.innerText = errorMessages.join(", ");
     }
+    console.log(errorMessages);
 })
