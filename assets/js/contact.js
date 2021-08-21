@@ -10,10 +10,9 @@ const emailAddress = document.getElementById("emailaddress");
 
 const errorElement = document.getElementById("error-messages");
 
-/** For the below function used to validate a user's email address, I consulted the following page: https://www.w3resource.com/javascript/form/email-validation.php
- * The above link is also where I learned the expression pattern for validating an email address.
- */
+const messageBox = document.getElementById("message-box");
 
+/**The below function checks our form for the required fields - name, email and message. If one of these is not filled in, the form will not submit. */
 form.addEventListener("submit", (e) => {
     let errorMessages = [];
     if (fullName.value === "" || fullName.value == null) {
@@ -21,6 +20,16 @@ form.addEventListener("submit", (e) => {
     } else  {
         for (let i = 0; i < errorMessages.length; i++) {
             if (errorMessages[i] === "Your name is required") {
+                errorMessages.splice[i, 1]
+            }
+        }
+    }
+
+    if (messageBox.value === "" || messageBox.value == null) {
+        errorMessages.push("Your message is required");
+    } else  {
+        for (let i = 0; i < errorMessages.length; i++) {
+            if (errorMessages[i] === "Your message is required") {
                 errorMessages.splice[i, 1]
             }
         }

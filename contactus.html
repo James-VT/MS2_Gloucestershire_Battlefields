@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/17b09219bc.js" crossorigin="anonymous"></script>
     <!--The below script adds Jquery compatibility to the page. Link in credits.-->
+    <link rel="icon" type="image/png" icon href="assets/images/favicon-16x16.png" sizes="16x16">
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -53,8 +54,8 @@
     </header>
 
     <div>
-      <!--action="https://formdump.codeinstitute.net/"The action feature for this form has been linked to the Code Institute formdump for testing purposes, as Gloucestershire Battlefields is a fictional organisation.-->
-      <form  method="GET" id="form">
+      <!--The action feature for this form has been linked to the Code Institute formdump for testing purposes, as Gloucestershire Battlefields is a fictional organisation.-->
+      <form action="https://formdump.codeinstitute.net/" method="POST" id="form">
         <div>
           <label for="full-name">Full name</label>
           <input id="full-name" name="full-name" type="text" placeholder="Mrs A N Onymous">
@@ -94,15 +95,8 @@
           </select>
         </div>
         <div>
-          <label for="tour-numbers">How many people will be on the tour?</label>
-          <select id="tour-numbers" name="tour-numbers" aria-describedby="tourNumbers">
-            <option>1-10</option>
-            <option>11-20</option>
-            <option>21-30</option>
-            <option>31-40</option>
-            <option>41-50</option>
-            <option>50+</option>
-          </select>
+          <label for="message-box">Your message</label>
+          <textarea rows="5" id="message-box" name="message-box" placeholder="Write your message here"></textarea>
         </div>
         
         <div id="error-messages"></div>

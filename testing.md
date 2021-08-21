@@ -63,6 +63,10 @@ In the above test, we made sure that the form would not send if the required fie
 
 We can see three entries in the console: firstly, one for each required field not filled in, and then a third for neither having been filled in. Filling in both and clicking submit gives us a successful form submission, same as the last image in the section above. Success!
 
+Addendum: I later added a requirement for the message field as well. Here's the evidence for it working below:
+
+![Image of the successful building of an array including the message box](assets/images/testing/featuretesting/contactmessagetest.png)
+
 ---
 
 ## Testing against user stories
