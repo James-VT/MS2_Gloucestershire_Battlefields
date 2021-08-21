@@ -17,7 +17,7 @@ function buttonTest() {
 button.addEventListener('click', buttonTest);
 ```
 
-As you can see from the image below, the test was successful.
+As you can see from the image below of the map page during development, the test was successful.
 
 ![Image of successful test](assets/images/testing/firstbuttontest.png)
 
@@ -34,6 +34,24 @@ The final outcome of all this is the results table, shown to the player at the e
 ![Image of a 5/10 score](assets/images/testing/featuretesting/resultstest.png)
 
 Here we can see the player achieved a score of 5/10, and received the message "Oh dear! Retreat!" and a picture of the Zaparozhian cossacks as a result. This is the functionality working as it should.
+
+---
+
+### Contact form validation testing
+
+Here we have an example of the contact form during development:
+
+![Image of proto-version of the contact form](assets/images/testing/featuretesting/contacttest.png)
+
+Using JavaScript, I have added validations to ensure a name and an email address are entered and if they are not entered, I have added funationality that will prevent the form from being submitted. The other fields are less essential, thus do not require validation. Both the Full name and Email address fields have placeholder text to serve as examples. To test whether the validation had worked, I clicked submit before anything was entered. If the validation of these two fields and the arresting of the default function have worked properly, we should see error messages appear above the Submit button.
+
+![Image of successful prevention of form submission due to unfilled fields in contact form](assets/images/testing/featuretesting/contactfailedtest.png)
+
+As you can see from the image above, it worked like a charm. The error messages appear as expected, and the form is unable to submit while error messages are present - in fact the prevention of the default submit feature of the submit button hinges on the fact error messages are present. So what happens when we fulfill the demands of the messages and then click submit?
+
+![Image of successful form submission](assets/images/testing/featuretesting/contactsuccessfultest.png)
+
+Result! Here we can see the Code Institute formdump success screen, which confirms submission of the form along with the precise data sent. Success!
 
 ---
 
