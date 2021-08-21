@@ -321,6 +321,12 @@ div {
     margin-top: 50px;
 }
 
+/* ----------------------Contact form */
+#error-messages {
+    color: #c80815;
+}
+
+
 /* ---------------------Footer */
 .footer {
     left: 0;

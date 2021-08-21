@@ -30,7 +30,7 @@ form.addEventListener("submit", (e) => {
         errorMessages.push("Your name is required");
     }
     
-    validateEmail();
+    // validateEmail();
 
     if (emailAddress.class === "invalid") {
         errorMessages.push("Please enter a valid email address");
