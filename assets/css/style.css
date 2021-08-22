@@ -335,6 +335,13 @@ div {
     padding-top: 40px;
 }
 
+.form-element {
+    font-size: 150%;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+}
 
 /* ---------------------Footer */
 .footer {
@@ -379,6 +386,10 @@ div {
         margin-left: 0;
         padding: 0;
     }
+
+    .form-element {
+        padding-left: 10px;
+    }
 }
 
 @media screen and (max-width: 1350px) {
@@ -420,5 +431,11 @@ div {
 @media screen and (min-width: 1700px) {
     .results-table{
         margin-left: 100px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .form-element {
+        font-size: 110%;
     }
 }

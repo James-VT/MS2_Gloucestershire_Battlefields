@@ -58,11 +58,12 @@
         <div class="introduction">
           <h1>Contact form</h1>
           <h2>Questions? Comments? Looking to book a tour? Get in touch using our form below.</h2>
-      </div>
+        </div>
+        <hr>
         <!--The action feature for this form has been linked to the Code Institute formdump for testing purposes, as Gloucestershire Battlefields is a fictional organisation.-->
         <form action="https://formdump.codeinstitute.net/" method="POST" id="form">
           <div class="form-element">
-            <label for="full-name">Full name</label>
+            <label for="full-name">Full name (required)</label>
             <input id="full-name" name="full-name" type="text" placeholder="Mrs A N Onymous">
           </div>
           <div class="form-element">
@@ -70,7 +71,7 @@
             <input id="organisation-name" name="organisation-name" type="text">
           </div>
           <div class="form-element">
-            <label for="emailaddress">Email address</label>
+            <label for="emailaddress">Email address (required)</label>
             <input type="email" id="emailaddress" name="contact-email" placeholder="example@domain.com">
           </div>
           <div class="form-element">
@@ -100,14 +101,19 @@
             </select>
           </div>
           <div class="form-element">
-            <label for="message-box">Your message</label>
+            <label for="message-box">Your message:</label>
+          </div>
+          <div class="form-element">
             <textarea rows="5" id="message-box" name="message-box" placeholder="Write your message here"></textarea>
           </div>
           
           <div id="error-messages" class="form-element"></div>
-          <button type="submit" class="form-element">Submit</button>
+          <div class="form-element">
+            <button type="submit">Submit</button>
+          </div>
         </form>
       </div>
+    </div>
 
       <!--The classes for the footer below are Bootstrap components. Link here: https://getbootstrap.com/docs/5.0/examples/sticky-footer/ -->
       <footer class="footer">
@@ -163,7 +169,6 @@
               </div>
           </div>
         </div>
-      </div>
     </footer>
 
     <script src="assets/js/contact.js"></script>
