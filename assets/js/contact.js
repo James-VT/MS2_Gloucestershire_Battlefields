@@ -12,9 +12,10 @@ const errorElement = document.getElementById("error-messages");
 
 const messageBox = document.getElementById("messagebox");
 
-/**The below function checks our form for the required fields - name, email and message. If one of these is not filled in, the form will not submit. */
+/**The below function checks our form for the required fields - name, email and message. If one of these is not filled in, the form will not submit.
+ * @param e below is the submit button.
+ */
 form.addEventListener("submit", (e) => {
-    // e.preventDefault();
     console.log(e.target);
     let errorMessages = [];
     if (fullName.value === "" || fullName.value == null) {
@@ -76,10 +77,12 @@ form.addEventListener("submit", (e) => {
     })
     .then(
     function(response) {
+        /**console.log below is a success message, so has been left in. */
         console.log("SUCCESS", response);
         alert("Thank you for your email. We will get back to you as soon as we can.")
         },
     function(error) {
+        /**console.log below is a fail message, so has been left in. */
         console.log("FAILED", error);
     })
     return false;
