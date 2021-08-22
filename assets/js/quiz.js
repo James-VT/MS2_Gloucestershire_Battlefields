@@ -4,7 +4,6 @@
  * to make it easier in my view to know what everything does, but also how the code works
  */
 
-
 /**Below we set our variables. */
 
 const beginButton = document.getElementById("begin-button");
@@ -40,7 +39,6 @@ var chosenAnswers = [];
 var questionTableArray = [];
 
 var correctAnswersArray = [];
-
 
 /**These variables are taken directly from the tutorial video mentioned above, and are used to shuffle the order
  * of the questions.
@@ -160,7 +158,6 @@ function chooseAnswer(e) {
     const selectedButton = e.target;
     const correct = selectedButton.dataset.correct;
     selectedButton.classList.add("submitted-answer");
-    // setStatusClass(document.body, correct)
     Array.from(answerButtonsElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct);
     });
@@ -244,23 +241,15 @@ function resultMessage() {
 
     if (score === "10") {
         questionElement.innerText = "Victory! You got every question correct!";
-        // alert("Victory! You got every question correct!")
-        
         perfectImage.classList.remove("hide");
     } else if (score === "6" || score === "7" || score === "8" || score === "9") {
         questionElement.innerText = "A good score! But could you do better?";
-        // alert("A close call! Could you do better?")
-        
         upperScore.classList.remove("hide");
     } else if (score === "1" || score === "2" || score === "3" || score === "4" || score === "5") {
         questionElement.innerText = "Oh dear! Retreat!";
-        // alert("Oh dear! Retreat!")
-        
         lowerScore.classList.remove("hide");
     } else if (score === "0") {
         questionElement.innerText = "All in ruins!";
-        // alert("All in ruins!")
-        
         zeroImage.classList.remove("hide");
     }
 
@@ -297,11 +286,9 @@ function createTable() {
  * I have edited it to suit my needs.
  * */
     var tableArray = [questionTableArray, chosenAnswers, correctAnswersArray];
-    // var tableOuter = document.getElementById("table-results")
     const newTable = document.createElement("tbody");
     newTable.classList.add("answers");
     resultsTable.appendChild(newTable);
-    // var tableBody = document.getElementsByTagName("tbody")[0]
     /** The below code creates the table header row and its headings */
     var tableMake = document.createElement("table");
         let trOne = document.createElement("tr");
