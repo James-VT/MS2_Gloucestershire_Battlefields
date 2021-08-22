@@ -15,7 +15,6 @@ const messageBox = document.getElementById("messagebox");
 /**The below function checks our form for the required fields - name, email and message. If one of these is not filled in, the form will not submit. */
 form.addEventListener("submit", (e) => {
     let errorMessages = [];
-    e.preventDefault()
     if (fullName.value === "" || fullName.value == null) {
         errorMessages.push("Your name is required");
     } else  {
@@ -55,12 +54,15 @@ form.addEventListener("submit", (e) => {
     console.log(errorMessages);
 })
 
+/**Much of the code in the below function came from Code Institute's tutorial in the CV project: https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+IFD101+2017_T3/courseware/03d3f6524ad249d9b33e3336d156dfd0/e4710f80cdf34bffbd607bc102482d5c/
+ * I have edited to make use of my project's parameters.
+ */
+
 function sendMail(contactForm) {
     emailjs.send("service_wvkwl78","template_dtsj6ch", {
         "from_name": contactForm.fullname.value,
         "from_email": contactForm.emailaddress.value,
-        "from_organisation": contactForm.organisationname.value,
-        "from_contactnumber": contactForm.phonenumber.value,
+        "from_organisation": contactForm.organisationtype.value,
         "about_site": contactForm.siteselect.value,
         "inquiry_type": contactForm.inquirytype.value,
         "inquiry_request": contactForm.messagebox.value
