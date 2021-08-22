@@ -318,6 +318,8 @@ div {
 
 #contact-background {
     background-color: #70997b;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 #contact-container {
