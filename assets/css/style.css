@@ -378,6 +378,15 @@ div {
     font-size: 200%;
 }
 
+/* ---------------------404 */
+#text404 {
+    padding-top: 5px;
+}
+
+#footer404 {
+    position: fixed;
+}
+
 /* ---------------------Media queries */
 /* The below code centres the page headings in the drop-down nav menu */
 @media screen and (max-width: 985px) {

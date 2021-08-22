@@ -65,6 +65,7 @@ form.addEventListener("submit", (e) => {
  */
 
  function sendEmail(contactForm) {
+    emailjs.init("user_5ueze81fv5kyPAkGuJJD8");
     emailjs.send("service_wvkwl78","template_dtsj6ch", {
         "from_name": contactForm.fullname.value,
         "from_email": contactForm.emailaddress.value,
