@@ -230,3 +230,10 @@ No issues were detected in Index.js.
 ![Image of JSHint results for quiz.js](docs/testing/jshinttesting/quizjslinter.png)
 
 A single issue was flagged with quiz.js: that of the combined conditional expression and assignment in the chooseAnswer function. This is addressed in a comment above that particular section in the file itself. The code will not work without doing both, so has been kept as it is (see also: unfixed bugs).
+
+### battlefields.js testing
+
+![Image of JSHint results for battlefields.js](docs/testing/jshinttesting/maplinter.png)
+
+One warning remains on this one, about a function declared within a loop possibly leading to confusing semantics. With the names things have been given, confusion should be avoided, and this is a known approach to using Google Maps API. The same goes for the undefined variables - due to the use of the API here necessetates this.
+

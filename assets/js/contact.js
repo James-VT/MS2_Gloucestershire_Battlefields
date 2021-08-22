@@ -26,7 +26,7 @@ form.addEventListener("submit", (e) => {
     } else  {
         for (let i = 0; i < errorMessages.length; i++) {
             if (errorMessages[i] === "Your name is required") {
-                errorMessages.splice[i, 1]
+                errorMessages.splice[i, 1];
             }
         }
     }
@@ -36,7 +36,7 @@ form.addEventListener("submit", (e) => {
     } else  {
         for (let i = 0; i < errorMessages.length; i++) {
             if (errorMessages[i] === "Your message is required") {
-                errorMessages.splice[i, 1]
+                errorMessages.splice[i, 1];
             }
         }
     }
@@ -46,12 +46,12 @@ form.addEventListener("submit", (e) => {
     if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(emailAddress.value)) {
         for (let i = 0; i < errorMessages.length; i++) {
             if (errorMessages[i] === "Please enter a valid email address") {
-                errorMessages.splice[i, 1]
+                errorMessages.splice[i, 1];
             }
         }
     } else {
         errorMessages.push("Please enter a valid email address");
-    };
+    }
 
     if (errorMessages.length > 0) {
         e.preventDefault();
@@ -62,7 +62,7 @@ form.addEventListener("submit", (e) => {
         /**@ param e = e is the submit button, while e.target is the form itself. This is how we get it to send. */
         sendEmail(e.target);
     }
-})
+});
 
 /**Much of the code in the below function came from Code Institute's tutorial in the CV project: https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+IFD101+2017_T3/courseware/03d3f6524ad249d9b33e3336d156dfd0/e4710f80cdf34bffbd607bc102482d5c/
  * I have edited to make use of my project's parameters.
@@ -82,11 +82,11 @@ form.addEventListener("submit", (e) => {
     function(response) {
         /**console.log below is a success message, so has been left in. */
         console.log("SUCCESS", response);
-        alert("Thank you for your email. We will get back to you as soon as we can.")
+        alert("Thank you for your email. We will get back to you as soon as we can.");
         },
     function(error) {
         /**console.log below is a fail message, so has been left in. */
         console.log("FAILED", error);
-    })
+    });
     return false;
 }
