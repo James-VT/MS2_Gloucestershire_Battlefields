@@ -1,21 +1,3 @@
-// The below is to test whether this file is linked properly to the index.html file
-// and its button elements
-
-let button = document.getElementById("tewkesbury-button");
-
-function buttonTest() {
-    console.log("button clicked");
-}
-
-button.addEventListener('click', buttonTest);
-
-/** The (document).ready below is to make sure the page has loaded properly before any JQuery is used for the buttons
-
-$(document).ready(function() {
-
- 
-});
-
 /** The const below is for the map's centre coordinates. I've called this outside of the function itself as calling it inside failed to work. */
 
 const properties = {"lat": 51.864445, "lng":-2.244444}
@@ -95,7 +77,6 @@ function myMap() {
             title: battleMarks[i].name
         });
         /** This is where the code I got from Eamonn Smyth ends. */
-
 
         /** This is where we add event listeners to our markers */
         /** Much of the inspiration for this code was taken from https://developers.google.com/maps/documentation/javascript/events#maps_event_simple-javascript, but I have changed it as needed */

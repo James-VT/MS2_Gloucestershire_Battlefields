@@ -209,6 +209,10 @@ The Lighthouse test for map.html flagged an error to the console, hence the slig
 
 ![Image of Lighthouse test for contactus.html](docs/testing/lighthousetesting/lighthousecontact.png)
 
+### Lighthouse test for 404.html
+
+![Image of Lighthouse test for 404.html](docs/testing/lighthousetesting/lighthouse404.png)
+
 ---
 
 ## Testing JavaScript with JSHint.
