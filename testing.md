@@ -193,11 +193,11 @@ https://developers.google.com/web/tools/lighthouse
 
 ### Lighthouse test for index.html
 
-![Image of Lighthouse test for index.html](assets/images/testing/lighthousetesting/lighthouseindex.png)
+![Image of Lighthouse test for index.html](docs/testing/lighthousetesting/lighthouseindex.png)
 
 ### Lighthouse test for quiz.html
 
-![Image of Lighthouse test for quiz.html](assets/images/testing/lighthousetesting/lighthousequiz.png)
+![Image of Lighthouse test for quiz.html](docs/testing/lighthousetesting/lighthousequiz.png)
 
 ## Testing JavaScript with JSHint.
 
@@ -205,12 +205,12 @@ The JavaScript files used in this project were tested using JSHint (link in READ
 
 ### index.js testing
 
-![Image of JSHint results for index.js](assets/images/testing/jshinttesting/indexjshint.png)
+![Image of JSHint results for index.js](docs/testing/jshinttesting/indexjshint.png)
 
 No issues were detected in Index.js.
 
 ### quiz.js testing
 
-![Image of JSHint results for quiz.js](assets/images/testing/jshinttesting/quizjslinter.png)
+![Image of JSHint results for quiz.js](docs/testing/jshinttesting/quizjslinter.png)
 
 A single issue was flagged with quiz.js: that of the combined conditional expression and assignment in the chooseAnswer function. This is addressed in a comment above that particular section in the file itself. The code will not work without doing both, so has been kept as it is (see also: unfixed bugs).
