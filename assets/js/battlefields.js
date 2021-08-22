@@ -7,7 +7,6 @@ const properties = {"lat": 51.864445, "lng":-2.244444}
  */
 /** The function below creates the map */
 
-
 function myMap() {
 
     /** The below code is to define the map's properties */
