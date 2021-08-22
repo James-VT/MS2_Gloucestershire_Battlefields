@@ -13,6 +13,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+    <!--The below two scripts enable emailjs-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+    emailjs.init("user_5ueze81fv5kyPAkGuJJD8");
+    })();
+    </script>
     <title>
       Gloucestershire Battlefields | Contact Us
     </title>
@@ -61,7 +68,7 @@
         </div>
         <hr>
         <!--The action feature for this form has been linked to the Code Institute formdump for testing purposes, as Gloucestershire Battlefields is a fictional organisation.-->
-        <form action="https://formdump.codeinstitute.net/" method="POST" id="form">
+        <form action="https://formdump.codeinstitute.net/" method="POST" id="form" onsubmit="return sendMail(this);">
           <div class="form-element">
             <label for="full-name">Full name (required)</label>
             <input id="full-name" name="full-name" type="text" placeholder="Mrs A N Onymous">
