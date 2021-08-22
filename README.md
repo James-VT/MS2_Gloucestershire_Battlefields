@@ -49,7 +49,7 @@ The site's information is structured in such a way as to make the map primary; i
 The colours chosen have been partnered based on suggestions from Coolors (credit below). Russian green has a nice military olive look to it, and from there I accepted or refused suggestions of pairings.
 
 ## Colour scheme
-![Image of coolors selections](assets/images/coolorspalette.png)
+![Image of coolors selections](docs/coolorspalette.png)
 * Russian Green #70997B
 * Glossy Grape #B594B6
 * Jet #2F2F2F
@@ -102,7 +102,7 @@ Another way of getting your own local version to work on is to clone the reposit
     --- | ---
     10 Relay to visitors the purpose and nature of the charity. | The into text provides a first impression of the organisation behind the website, informing a visitor of what the site is for and the things they can do on it.
 
-![Image of index.html intro text with click to expand option](assets/images/testing/userstorytesting/userstoryindex.png)
+![Image of index.html intro text with click to expand option](docs/testing/userstorytesting/userstoryindex.png)
 
 ---
 
