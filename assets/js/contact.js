@@ -2,7 +2,7 @@
  * However, that tutorial was for building a log-in form. I have adapted it heavily for my own use.
  */
 
-const fullName = document.getElementById("full-name");
+const fullName = document.getElementById("fullname");
 
 const form = document.getElementById("form");
 
@@ -10,11 +10,12 @@ const emailAddress = document.getElementById("emailaddress");
 
 const errorElement = document.getElementById("error-messages");
 
-const messageBox = document.getElementById("message-box");
+const messageBox = document.getElementById("messagebox");
 
 /**The below function checks our form for the required fields - name, email and message. If one of these is not filled in, the form will not submit. */
 form.addEventListener("submit", (e) => {
     let errorMessages = [];
+    e.preventDefault()
     if (fullName.value === "" || fullName.value == null) {
         errorMessages.push("Your name is required");
     } else  {
@@ -53,3 +54,23 @@ form.addEventListener("submit", (e) => {
     }
     console.log(errorMessages);
 })
+
+function sendMail(contactForm) {
+    emailjs.send("service_wvkwl78","template_dtsj6ch", {
+        "from_name": contactForm.fullname.value,
+        "from_email": contactForm.emailaddress.value,
+        "from_organisation": contactForm.organisationname.value,
+        "from_contactnumber": contactForm.phonenumber.value,
+        "about_site": contactForm.siteselect.value,
+        "inquiry_type": contactForm.inquirytype.value,
+        "inquiry_request": contactForm.messagebox.value
+    })
+    .then(
+    function(response) {
+        console.log("SUCCESS", response);
+        },
+    function(error) {
+        console.log("FAILED", error);
+    })
+    return false;
+}

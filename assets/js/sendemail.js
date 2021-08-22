@@ -2,6 +2,8 @@
  * I have edited to make use of my project's parameters.
  */
 
+console.log("linked");
+
 function sendMail(contactForm) {
     emailjs.send("service_wvkwl78","template_dtsj6ch", {
         "from_name": contactForm.fullname.value,
@@ -10,11 +12,11 @@ function sendMail(contactForm) {
         "from_contactnumber": contactForm.contactnumber.value,
         "about_site": contactForm.siteselect.value,
         "inquiry_type": contactForm.siteselect.value,
-        "inquiry_request": contactForm.messagebox.value,
+        "inquiry_request": contactForm.messagebox.value
     })
     .then(
-        function(response) {
-            console.log("SUCCESS", response);
+    function(response) {
+        console.log("SUCCESS", response);
         },
     function(error) {
         console.log("FAILED", error);
