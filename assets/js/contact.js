@@ -14,7 +14,8 @@ const messageBox = document.getElementById("messagebox");
 
 /**The below function checks our form for the required fields - name, email and message. If one of these is not filled in, the form will not submit. */
 form.addEventListener("submit", (e) => {
-    console.log(this);
+    // e.preventDefault();
+    console.log(e.target);
     let errorMessages = [];
     if (fullName.value === "" || fullName.value == null) {
         errorMessages.push("Your name is required");
@@ -52,7 +53,9 @@ form.addEventListener("submit", (e) => {
         e.preventDefault();
         errorElement.innerText = errorMessages.join(", ");
     } else {
-        sendEmail(contactForm);
+        e.preventDefault();
+        sendEmail(e.target);
+        console.log("ELSE TRIGGERED, NO ERROR MESSAGES")
     }
     console.log(errorMessages);
 })
@@ -61,7 +64,7 @@ form.addEventListener("submit", (e) => {
  * I have edited to make use of my project's parameters.
  */
 
-function sendEmail(contactForm) {
+ function sendEmail(contactForm) {
     emailjs.send("service_wvkwl78","template_dtsj6ch", {
         "from_name": contactForm.fullname.value,
         "from_email": contactForm.emailaddress.value,
@@ -78,5 +81,5 @@ function sendEmail(contactForm) {
     function(error) {
         console.log("FAILED", error);
     })
-    // return false;
+    return false;
 }
