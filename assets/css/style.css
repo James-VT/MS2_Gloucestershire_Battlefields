@@ -80,6 +80,7 @@ div {
     /* height: 35vh; */
     display: inline;
     max-height: 700px;
+    background-color: black;
 }
 
 .carousel-image {
