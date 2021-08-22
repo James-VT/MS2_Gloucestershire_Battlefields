@@ -1,4 +1,3 @@
-
 /** Much of the code in this file was inspired by this video tutorial: https://www.youtube.com/watch?v=riDzcEQbX6k&t=379s
  * I have edited various parts to fit the needs of the project, in particular function and variable names 
  * to make it easier in my view to know what everything does, but also how the code works
