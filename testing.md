@@ -170,6 +170,8 @@ This allowed me to roll everything into one function, rather than two. This work
 
 ## Unfixed bugs
 
+### Expression/assignation
+
 An ongoing issue is with this piece of code within the quiz.js file:
 
 ```
@@ -182,6 +184,12 @@ if (selectedButton.dataset = correct) {
 ```
 
 This was flagged by JSHint (see: Testing JavaScript with JSHint) as an warning because the first line functions as both conditional expression and assignment. However, attempts to fix this using == or ===, or to put the word correct in quotations, cause the function to fail. As a result, it remains. With more time, I would seek other options to fix this but the functionality itself works, I have allowed it to stand for now.
+
+### WAVE index.html results
+
+We also have the unsolved issue of index.html's unresolved contrast issues. See below for details. I consider this is an unfixed bug rather than an error of WAVE's part because it is more likely down to my inexperience than a machine error. But as WAVE will not tell me where the issues actually are on the page, I cannot fix them for now.
+
+---
 
 ## Testing pages with Lighthouse
 
@@ -253,9 +261,9 @@ WAVE stands for Web Accessibility Evalutation Tool. While it has its limits, it 
 
 Our first result is an example of why it can be imperfect. It shows the page as still having four contrast errors but cannot tell me where these ones are. On first attempt it showed seven and was able to identify three of them, which I removed. But as the other four do not show, there isn't much I can do. It also shows four alets. Three of these are suggestions for where headings could go - in this case, in our image links below the carousel. I do not need them there, so can ignore these. It has a point about the redundant link, but the ability to highlight the "Home" link and set it as active to assist screenreaders means it's more useful to keep it than get rid of it.
 
-![Image of WAVE results for map.html]()
+![Image of WAVE results for map.html](docs/testing/wavetesting/wavemap.png)
 
-
+The results for the map page are even worse. What's frustrating here is not that the missing alternative text warnings won't tell me where they are on the page. I can assume it is referring to the map markers (of which there are six, not nine). However, the map markers do have text to explain what they refer to. Again, perhaps this is my lack of experience but as it won't show me where the issue is, I am uncertain how to fix this. The same is true of the empty headings (which are not empty once a battlefield is selected, as the placeholder text makes clear). Of the alerts, the same must be said - it is not made clear where these problems are on the page.
 
 ![Image of WAVE results for contactus.html]()
 

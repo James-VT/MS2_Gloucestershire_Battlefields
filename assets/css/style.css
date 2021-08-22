@@ -1,3 +1,6 @@
+/*We've used box-shadow quite a lot here, which I took from the styling in this 
+tutorial: https://www.youtube.com/watch?v=riDzcEQbX6k&t=379s */
+
 /* Below is the font we're using for this project. It needs a tag of !important or the body's default font will override it. */
 body {
 font-family: sans-serif !important;
@@ -12,7 +15,6 @@ div {
     box-sizing: border-box;
     background-color: #70997b;
     width: 90%;
-    /* height: 65vh; */
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
@@ -28,6 +30,8 @@ div {
     text-align: center;
 }
 
+/*The below is necessary to avoid contrast issues in WAVE. Seems odd to have to 
+make link text black, but this is apparently preferable to blue in this case. */
 .text-reveal {
     color: black;
 }
@@ -45,8 +49,6 @@ div {
     margin-right: auto;
     margin-left: auto;
     padding: 5px;
-    /* width: 100%;
-    height: auto; */
     border: 2px solid black;
 }
 
@@ -58,8 +60,6 @@ div {
 
 .holder {
     position: relative;
-    /*text-align: center;
-    color: white; */
     display: inline-block;
 }
 
@@ -78,17 +78,16 @@ div {
 }
 
 /* ----------------------Carousel */
+/*The image captions for the carousel were ditched, but I've kept the background colour 
+as it works well to contrast from the green*/
 .carousel-holder {
     width: 200px;
-    /* height: 35vh; */
     display: inline;
     max-height: 700px;
     background-color: black;
 }
 
 .carousel-image {
-    /* max-height: 45vh;
-    max-width: 50vw; */
     margin-right: auto;
     margin-left: auto;
     background-color: black;
@@ -104,12 +103,10 @@ div {
 /* ---------------------Map page */
 .battle-brief {
     text-align: center;
-    /* background-color: #70997b; */
 }
 
 .battle-detailed {
     text-align: center;
-    /* background-color: #70997b; */
 }
 
 .map-intro {
@@ -131,7 +128,6 @@ div {
     box-sizing: border-box;
     background-color: #70997b;
     width: 90%;
-    /* height: 65vh; */
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
@@ -146,15 +142,11 @@ div {
     box-sizing: border-box;
     background-color: #f1d6b8;
     position: relative;
-    /* width: 90%; */
     height: auto;
     min-height: 30vh;
     margin-right: 40px;
     margin-left: 40px;
     border: 1px solid black;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     padding: 10px;
 }
 
@@ -180,7 +172,6 @@ div {
     box-sizing: border-box;
     background-color: #B594B6;
     width: 90%;
-    /* height: 65vh; */
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
@@ -194,15 +185,11 @@ div {
     box-sizing: border-box;
     background-color: #f1d6b8;
     position: relative;
-    /* width: 90%; */
     height: auto;
     min-height: 30vh;
     margin-right: 40px;
     margin-left: 40px;
     border: 1px solid black;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     padding: 10px;
 }
 
@@ -217,8 +204,9 @@ div {
     margin-top: 10px;
 }
 
+/*Some of the buttons, especially this one, required separate styling. This affects 
+both the begin and restart buttons, since they're the same button with different text*/
 #begin-button {
-    /* position: absolute; */
     max-width: 10vw;
     margin-top: 30px;
     clear: both;
@@ -236,10 +224,8 @@ div {
 .quiz-button {
     width: 55%;
     height: 60px;
-    /* left: 44%;  */
     min-width: 100px;
     margin-top: 30px;
-    /* margin-left: 20px; */
     align-items: center;
     text-align: center;
     clear: both;
@@ -268,7 +254,6 @@ div {
     margin-right: auto;
     height: auto;
     padding: 5px;
-    /* margin: 5px; */
     border: 1px solid #ccc;
     display: block;
     align-items: center;
@@ -280,8 +265,9 @@ div {
     display: none;
 }
 
+/* This keeps the results table where it should be, but we have a media query for 
+big screens below*/
 .results-table{
-    /* display: none; */
     table-layout: fixed;
     text-align: center;
     margin-top: 40px;
@@ -317,6 +303,8 @@ div {
 }
 
 /* ----------------------Contact form */
+/*We've used Venetian Red for the error message colour for its connection with British 
+military history.*/
 #error-messages {
     color: #c80815;
 }
@@ -400,6 +388,7 @@ div {
     }
 }
 
+/*I've paired these two together as their problems start at precisely the same width.
 @media screen and (max-width: 375px) {
     .quiz-inner {
         margin-right: 0;
@@ -412,13 +401,13 @@ div {
     }
 }
 
+/*This media query is sort of coupled with the one after it. Both look after the index images*/
 @media screen and (max-width: 1350px) {
     .index-menu-holder {
         text-align: center;
         display: block;
         margin-left: auto;
         margin-right: auto;
-        /* width: 50%; */
     }
 }
 
@@ -430,30 +419,35 @@ div {
     }
 }
 
+/*Centered keeps our images where they should be*/
 @media screen and (max-width: 450px) {
     .centered {
         justify-content: center;
     }
 }
 
+/*The below is coupled with the media query just after it, but goes up to larger screens to fine-tune positioning*/
 @media screen and (max-width: 575px) {
     .iconstyle {
         margin-left: 10px;
     }
 }
 
+/*The below is to keep the social media icons on their best behaviour on small screens*/
 @media screen and (max-width: 510px) {
     .iconstyle i {
         padding: 10px 10px 0px 10px;
     }
 }
 
+/*The below code keeps the results table where it should be on large screens*/
 @media screen and (min-width: 1700px) {
     .results-table{
         margin-left: 100px;
     }
 }
 
+/*This keeps things from overhanging their divs on the form on small screens*/
 @media screen and (max-width: 350px) {
     .form-element {
         font-size: 110%;
