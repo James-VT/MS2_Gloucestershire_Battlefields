@@ -343,6 +343,10 @@ div {
     padding-right: 10px;
 }
 
+#submit-button {
+    max-width: 110px;
+}
+
 /* ---------------------Footer */
 .footer {
     left: 0;
