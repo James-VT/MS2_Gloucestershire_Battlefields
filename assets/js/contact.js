@@ -50,7 +50,9 @@ form.addEventListener("submit", (e) => {
     if (errorMessages.length > 0) {
         e.preventDefault();
         errorElement.innerText = errorMessages.join(", ");
-    } 
+    } else {
+        sendEmail(contactForm);
+    }
     console.log(errorMessages);
 })
 
