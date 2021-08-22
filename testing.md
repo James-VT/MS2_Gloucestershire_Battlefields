@@ -237,3 +237,9 @@ A single issue was flagged with quiz.js: that of the combined conditional expres
 
 One warning remains on this one, about a function declared within a loop possibly leading to confusing semantics. With the names things have been given, confusion should be avoided, and this is a known approach to using Google Maps API. The same goes for the undefined variables - due to the use of the API here necessetates this.
 
+### contactus.js testing
+
+![Image of JSHint results for contactus.js](docs/testing/jshinttesting/contactlinter.png)
+
+Three warnings and two instances of an undefinded variable remain in this file. JSHint appears to read "errorMessage.splice[i, 1]" as an expression rather thasn as a function. I have not tried to change these, as the file's functionality works fine with them there. Similarly, the undefined variable is emailjs which is used throughout with the API.
+
