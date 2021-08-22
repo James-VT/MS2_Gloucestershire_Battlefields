@@ -1,6 +1,6 @@
 /** The const below is for the map's centre coordinates. I've called this outside of the function itself as calling it inside failed to work. */
 
-const properties = {"lat": 51.864445, "lng":-2.244444}
+const properties = {"lat": 51.864445, "lng":-2.244444};
 
 /** The code below is an attempt to make Google Maps API work - credit goes to Eamonn Smyth, a fellow student at Code Institute, for his excellent guide from which much code is taken for this section.
  * I have changed a number of parts, particularly the variable names.
@@ -109,7 +109,7 @@ function myMap() {
         map.setZoom(9);
         let tewksCoords = {"lat": 51.9923, "lng": -2.1580};
         map.panTo(tewksCoords);
-    })
+    });
 
     $("#crickley-button").click(function() {
         $(".battle-title").text(`Battle of Crickley Hill`);
@@ -122,7 +122,7 @@ function myMap() {
         map.setZoom(9);
         let crickleyCoords = {"lat": 51.8472, "lng": -2.0978};
         map.panTo(crickleyCoords);
-    })
+    });
 
     $("#beverston-button").click(function() {
         $(".battle-title").text(`Battle of Beverston Castle`);
@@ -135,7 +135,7 @@ function myMap() {
         map.setZoom(9);
         let beverstonCoords = {"lat": 51.6444, "lng": -2.2011};
         map.panTo(beverstonCoords);
-    })
+    });
 
     $("#stow-button").click(function() {
         $(".battle-title").text(`Battle of Stow-on-the-Wold`);
@@ -152,7 +152,7 @@ function myMap() {
         map.setZoom(9);
         let stowCoords = {"lat": 51.951708, "lng": -1.728297};
         map.panTo(stowCoords);
-    })
+    });
 
     $("#deorham-button").click(function() {
         $(".battle-title").text(`Battle of Deorham`);
@@ -168,7 +168,7 @@ function myMap() {
         map.setZoom(9);
         let deorhamCoords = {"lat": 51.4891, "lng": -2.373706};
         map.panTo(deorhamCoords);
-    })
+    });
 
     $("#nibley-button").click(function() {
         $(".battle-title").text(`Battle of Nibley Green`);
@@ -183,10 +183,10 @@ function myMap() {
         map.setZoom(9);
         let nibleyCoords = {"lat": 51.66, "lng": -2.3985};
         map.panTo(nibleyCoords);
-    })
+    });
 
 }
 
 /** And here we call the map itself */
 
-myMap()
+myMap();
