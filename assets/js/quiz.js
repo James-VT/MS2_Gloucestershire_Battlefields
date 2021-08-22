@@ -123,7 +123,7 @@ function setNextQuestion() {
 function showQuestion(question) {
     questionElement.innerText = question.question;
     questionTableArray.push(questionElement.innerText);
-    console.log(questionTableArray);
+    // console.log(questionTableArray);
     answerButtonsElement.classList.remove("hide");
     question.answers.forEach(answer => {
         const button = document.createElement("button");
@@ -208,7 +208,7 @@ function setStatusClass(element, correct) {
     if (correct) {
         element.classList.add("correct");
         correctAnswersArray.push(element.innerText);
-        console.log(correctAnswersArray);
+        // console.log(correctAnswersArray);
     } else {
         element.classList.add("wrong");
     }
@@ -234,7 +234,7 @@ function resultMessage() {
 
     let score = document.getElementById("score").innerText;
     quizImageHolder.classList.add("hide");
-    console.log(score);
+    // console.log(score);
 
     createTable();
 
@@ -263,7 +263,7 @@ function checkAnswer() {
 
     function buildChosenAnswers() {
         chosenAnswers.push(selections[i].innerText);
-        console.log(chosenAnswers);
+        // console.log(chosenAnswers);
 
         if (chosenAnswers.length == 10) {
             
