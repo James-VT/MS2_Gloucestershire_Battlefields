@@ -171,7 +171,7 @@ function myMap() {
 
     $("#nibley-button").click(function() {
         $(".battle-title").text(`Battle of Nibley Green`);
-        $(".battle-date").text(`20th March 1470`)
+        $(".battle-date").text(`20th March 1470`);
         $(".battle-combatants").text(`Thomas Talbot, 2nd Viscount Lisle versus William Berkeley, 2nd Baron Berkeley`);
         $(".battle-outcome").text(`William Berkely, 2nd Baron Berkeley, victorious`);
         $(".battle-detailed").text(`The Battle of Nibley Green was fought near North Nibley in Gloucestershire on 20 March 1470, between the troops of Thomas Talbot, 
