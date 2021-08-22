@@ -83,7 +83,6 @@ function myMap() {
         marker.addListener("click", () => {
             map.setZoom(9);
             map.panTo(marker.getPosition());
-            // console.log(battleMarks.LatLng);
             $(".battle-title").text(`${battleMarks[i].name}`);
             $(".battle-date").text(`${battleMarks[i].date}`);
             $(".battle-combatants").text(`${battleMarks[i].combatants}`);
