@@ -116,9 +116,6 @@ Another way of getting your own local version to work on is to clone the reposit
 * Balsamiq
     * Balsamiq was used to create the wireframes for this project. [Balsamiq](https://balsamiq.com/)
 
-* Bootstrap
-    * Bootstrap 5 was used for some HTML component templates and CSS styling. [Bootstrap 5.](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
-
 * Git
     * Git was used for version control and saving work in the repository, using the GitPod extension in Google Chrome to commit to GitHub. [Git](https://git-scm.com/)
 
@@ -134,9 +131,6 @@ Another way of getting your own local version to work on is to clone the reposit
 * Coolors
     * The colour palette for this site was chosen using Coolors. [Coolors](https://coolors.co/)
 
-* JQuery
-    * JQuery is used in this project via CDN to provide the option of simplifying JavaScript code. [JQuery](https://jquery.com/download/#using-jquery-with-a-cdn)
-
 * GeoHack
     * GeoHack is a service I've used via Wikipedia to source the coordinates for the battlefields in order to place the map markers correctly. [GeoHack](https://geohack.toolforge.org/)
 
@@ -145,6 +139,24 @@ Another way of getting your own local version to work on is to clone the reposit
 
 * Favicon
     * Favicon was used to create the icon for this site. [favicon](https://favicon.io/favicon-generator/)
+
+## External libraries
+
+* JQuery
+    * JQuery is used in this project via CDN to provide the option of simplifying JavaScript code. [JQuery](https://jquery.com/download/#using-jquery-with-a-cdn)
+* Why JQuery?
+    * The benefit of JQuery is that it allows a developer to use JavaScript functionality without the verbosity of writing pure JavaScript. I primarily used it in sections where there wasn't much to write in the first place such as the small amount of responsiveness in index.html. It is used in other places as well - notably for the buttons in the map page - partly because the simple nature of the tasks behind the scenes allowed for it, and partly for the simple reason that I wanted to spread my wings and get to grips with it.
+
+* Bootstrap
+    * Bootstrap 5 was used for some HTML component templates and CSS styling. [Bootstrap 5.](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+* Why Bootstrap?
+    * Bootstrap provides out-of-the-box features which make certain commonly-found features of web design quick and easy. Primarily, I used it to build my headers and footers, and the carousel on the home page. One of the main benefits of Bootstrap is that it provides a lot of easy responsiveness for different screen sizes, and allows for the positioning of elements with this in mind.
+
+## APIs
+
+### Google Maps API
+* In this project, I used the Google Maps API to provide the interactivity on the maps.html page. In so doing, the site owners are able to relay to users the locations of the battlefields they look after.
+    * To use this yourself, create an account at https://console.developers.google.com. Build the key you want from the options available (we just want the Maps JavaScript API), and set up billing information. Make sure you restrict the key to Maps JavaScript API, and set it to only accept calls from your site, and your test site if applicable (for us, it is applicable). Malicious use is possible, and you don't want to get stung with the bill.
 
 # Credits
 
