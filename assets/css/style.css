@@ -74,16 +74,6 @@ div {
     font-family: 'Balsamiq Sans', cursive !important;
 }
 
-/* .centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 300%;
-    font-family: 'Balsamiq Sans', cursive !important;
-} */
-
 /* ----------------------Carousel */
 .carousel-holder {
     width: 200px;
@@ -324,6 +314,25 @@ div {
 /* ----------------------Contact form */
 #error-messages {
     color: #c80815;
+}
+
+#contact-background {
+    background-color: #70997b;
+}
+
+#contact-container {
+    box-sizing: border-box;
+    background-color: white;
+    width: 90%;
+    /* height: 65vh; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px 2px;
+    padding-bottom: 40px;
+    padding-top: 40px;
 }
 
 

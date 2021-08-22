@@ -53,109 +53,115 @@
         </nav>
     </header>
 
-    <div>
-      <!--The action feature for this form has been linked to the Code Institute formdump for testing purposes, as Gloucestershire Battlefields is a fictional organisation.-->
-      <form action="https://formdump.codeinstitute.net/" method="POST" id="form">
-        <div>
-          <label for="full-name">Full name</label>
-          <input id="full-name" name="full-name" type="text" placeholder="Mrs A N Onymous">
-        </div>
-        <div>
-          <label for="organisation-name">Organisation name</label>
-          <input id="organisation-name" name="organisation-name" type="text">
-        </div>
-        <div>
-          <label for="emailaddress">Email address</label>
-          <input type="email" id="emailaddress" name="contact-email" placeholder="example@domain.com">
-        </div>
-        <div>
-          <label for="phonenumber">Contact number</label>
-          <input type="number" id="phonenumber" name="contact-number">
-        </div>
-        <!--Below, a user can select the subject they are contacting about-->
-        <div>
-          <label for="site-select">To which site does your inquiry relate?</label>
-          <select id="site-select" name="site-select" aria-describedby="aboutWhichSite">
-            <option>None</option>
-            <option>Tewkesbury</option>
-            <option>Crickley Hill</option>
-            <option>Stow-on-the-Wold</option>
-            <option>Nibley Green</option>
-            <option>Beverston Castle</option>
-            <option>Deorham</option>
-          </select>
-        </div>
-        <div>
-          <label for="inquiry-type">What is the nature of your inquiry?</label>
-          <select id="inquiry-type" name="inquiry-type" aria-describedby="reasonForInquiry">
-            <option>General query</option>
-            <option>Book a tour</option>
-            <option>Research</option>
-            <option>Report a problem at a site</option>
-          </select>
-        </div>
-        <div>
-          <label for="message-box">Your message</label>
-          <textarea rows="5" id="message-box" name="message-box" placeholder="Write your message here"></textarea>
-        </div>
-        
-        <div id="error-messages"></div>
-        <button type="submit">Submit</button>
-      </form>
-    </div>
+    <div id="contact-background">
+      <div id="contact-container">
+        <div class="introduction">
+          <h1>Contact form</h1>
+          <h2>Questions? Comments? Looking to book a tour? Get in touch using our form below.</h2>
+      </div>
+        <!--The action feature for this form has been linked to the Code Institute formdump for testing purposes, as Gloucestershire Battlefields is a fictional organisation.-->
+        <form action="https://formdump.codeinstitute.net/" method="POST" id="form">
+          <div class="form-element">
+            <label for="full-name">Full name</label>
+            <input id="full-name" name="full-name" type="text" placeholder="Mrs A N Onymous">
+          </div>
+          <div class="form-element">
+            <label for="organisation-name">Organisation name</label>
+            <input id="organisation-name" name="organisation-name" type="text">
+          </div>
+          <div class="form-element">
+            <label for="emailaddress">Email address</label>
+            <input type="email" id="emailaddress" name="contact-email" placeholder="example@domain.com">
+          </div>
+          <div class="form-element">
+            <label for="phonenumber">Contact number</label>
+            <input type="number" id="phonenumber" name="contact-number">
+          </div>
+          <!--Below, a user can select the subject they are contacting about-->
+          <div class="form-element">
+            <label for="site-select">To which site does your inquiry relate?</label>
+            <select id="site-select" name="site-select" aria-describedby="aboutWhichSite">
+              <option>None</option>
+              <option>Tewkesbury</option>
+              <option>Crickley Hill</option>
+              <option>Stow-on-the-Wold</option>
+              <option>Nibley Green</option>
+              <option>Beverston Castle</option>
+              <option>Deorham</option>
+            </select>
+          </div>
+          <div class="form-element">
+            <label for="inquiry-type">What is the nature of your inquiry?</label>
+            <select id="inquiry-type" name="inquiry-type" aria-describedby="reasonForInquiry">
+              <option>General query</option>
+              <option>Book a tour</option>
+              <option>Research</option>
+              <option>Report a problem at a site</option>
+            </select>
+          </div>
+          <div class="form-element">
+            <label for="message-box">Your message</label>
+            <textarea rows="5" id="message-box" name="message-box" placeholder="Write your message here"></textarea>
+          </div>
+          
+          <div id="error-messages" class="form-element"></div>
+          <button type="submit" class="form-element">Submit</button>
+        </form>
+      </div>
 
-    <!--The classes for the footer below are Bootstrap components. Link here: https://getbootstrap.com/docs/5.0/examples/sticky-footer/ -->
-    <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col col-md-6">
-            Follow us on:
-            <!--Below I've used the list-inline class from Bootstrap 5 to position my social media icons in a row.-->
-            <ul class="list-inline iconstyle inline-block">
-              <li class="list-inline-item">
-                <a href="https://www.facebook.com" target="_blank" rel="noreferrer">
-                  <i class="fab fa-facebook-square" aria-hidden="true"></i>
-                  <span class="sr-only">
-                    Facebook
-                  </span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://www.twitter.com" target="_blank" rel="noreferrer">
-                  <i class="fab fa-twitter-square" aria-hidden="true"></i>
-                  <span class="sr-only">
-                    Twitter
-                  </span>
-                </a>
-              </li>
+      <!--The classes for the footer below are Bootstrap components. Link here: https://getbootstrap.com/docs/5.0/examples/sticky-footer/ -->
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col col-md-6">
+              Follow us on:
+              <!--Below I've used the list-inline class from Bootstrap 5 to position my social media icons in a row.-->
+              <ul class="list-inline iconstyle inline-block">
                 <li class="list-inline-item">
-                  <a href="https://www.instagram.com" target="_blank" rel="noreferrer">
-                    <i class="fab fa-instagram-square" aria-hidden="true"></i>
+                  <a href="https://www.facebook.com" target="_blank" rel="noreferrer">
+                    <i class="fab fa-facebook-square" aria-hidden="true"></i>
                     <span class="sr-only">
-                      Instagram
+                      Facebook
                     </span>
                   </a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="https://www.blogger.com/about/?bpli=1" target="_blank" rel="noreferrer">
-                    <i class="fab fa-blogger" aria-hidden="true"></i>
+                  <a href="https://www.twitter.com" target="_blank" rel="noreferrer">
+                    <i class="fab fa-twitter-square" aria-hidden="true"></i>
+                    <span class="sr-only">
+                      Twitter
+                    </span>
+                  </a>
+                </li>
+                  <li class="list-inline-item">
+                    <a href="https://www.instagram.com" target="_blank" rel="noreferrer">
+                      <i class="fab fa-instagram-square" aria-hidden="true"></i>
                       <span class="sr-only">
-                        Blogger
+                        Instagram
                       </span>
-                  </a>
-                </li>
-            </ul>
-            </div>
-            <div class="col col-md-6">
-              <ul class="list-unstyled">
-                <li class="footer-text">Registered charity no. 000000</li>
-                <li>
-                  <i class="fas fa-envelope-square"></i> <a href="mailto:glosba@sites.org" class="email-link footer-text">
-                    glosba@sites.org
-                  </a>
-                </li>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="https://www.blogger.com/about/?bpli=1" target="_blank" rel="noreferrer">
+                      <i class="fab fa-blogger" aria-hidden="true"></i>
+                        <span class="sr-only">
+                          Blogger
+                        </span>
+                    </a>
+                  </li>
               </ul>
-            </div>
+              </div>
+              <div class="col col-md-6">
+                <ul class="list-unstyled">
+                  <li class="footer-text">Registered charity no. 000000</li>
+                  <li>
+                    <i class="fas fa-envelope-square"></i> <a href="mailto:glosba@sites.org" class="email-link footer-text">
+                      glosba@sites.org
+                    </a>
+                  </li>
+                </ul>
+              </div>
+          </div>
         </div>
       </div>
     </footer>
