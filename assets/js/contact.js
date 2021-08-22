@@ -50,7 +50,7 @@ form.addEventListener("submit", (e) => {
     if (errorMessages.length > 0) {
         e.preventDefault();
         errorElement.innerText = errorMessages.join(", ");
-    }
+    } 
     console.log(errorMessages);
 })
 
@@ -58,7 +58,7 @@ form.addEventListener("submit", (e) => {
  * I have edited to make use of my project's parameters.
  */
 
-function sendMail(contactForm) {
+function sendEmail(contactForm) {
     emailjs.send("service_wvkwl78","template_dtsj6ch", {
         "from_name": contactForm.fullname.value,
         "from_email": contactForm.emailaddress.value,
@@ -70,9 +70,10 @@ function sendMail(contactForm) {
     .then(
     function(response) {
         console.log("SUCCESS", response);
+        alert("Thank you for your email. We will get back to you as soon as we can.")
         },
     function(error) {
         console.log("FAILED", error);
     })
-    return false;
+    // return false;
 }

@@ -68,28 +68,30 @@
         </div>
         <hr>
         <!--action="https://formdump.codeinstitute.net/"method="POST" The action feature for this form has been linked to the Code Institute formdump for testing purposes, as Gloucestershire Battlefields is a fictional organisation.-->
-        <form id="form" onsubmit="return sendMail(this);">
+        <form id="form" onsubmit="return sendEmail(this);">
           <div class="form-element">
             <label for="fullname">Full name (required)</label>
             <input id="fullname" name="fullname" type="text" placeholder="Mrs A N Onymous">
           </div>
           <div class="form-element">
-            <label for="organisationtype">Organisation type</label>
-            <select id="organisationtype" name="organisationtype" type="text">
-              <option>Personal</option>
-              <option>Business</option>
-              <option>Charity</option>
-              <option>Leisure group</option>
-          </div>
-          <div class="form-element">
             <label for="emailaddress">Email address (required)</label>
             <input type="email" id="emailaddress" name="emailaddress" placeholder="example@domain.com">
           </div>
+          <div class="form-element">
+            <label for="organisationtype">Organisation type</label>
+            <select id="organisationtype" name="organisationtype" aria-describedby="typeOfOrganisation">
+              <option>Private individual</option>
+              <option>Business</option>
+              <option>Charity</option>
+              <option>Leisure group</option>
+            </select>
+          </div>
+          
           <!--Below, a user can select the subject they are contacting about-->
           <div class="form-element">
             <label for="siteselect">To which site does your inquiry relate?</label>
             <select id="siteselect" name="siteselect" aria-describedby="aboutWhichSite">
-              <option>None</option>
+              <option>No particular site</option>
               <option>Tewkesbury</option>
               <option>Crickley Hill</option>
               <option>Stow-on-the-Wold</option>
