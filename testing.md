@@ -199,6 +199,12 @@ https://developers.google.com/web/tools/lighthouse
 
 ![Image of Lighthouse test for quiz.html](docs/testing/lighthousetesting/lighthousequiz.png)
 
+### Lighthouse test for map.html
+
+![Image of Lighthouse test for map.html](docs/testing/lighthousetesting/lighthousemap.png)
+
+The Lighthouse test for map.html flagged an error to the console, hence the slightly lower "best practices" score than I would've liked. A member of the Code Institute team (Eventyret_mentor) informed me that this is currently an unavoidable problem with Chrome to do with favicon, he believes.
+
 ## Testing JavaScript with JSHint.
 
 The JavaScript files used in this project were tested using JSHint (link in README, technologies used section).
