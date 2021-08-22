@@ -26,7 +26,10 @@ div {
     margin-left: 40px;
     margin-right: 40px;
     text-align: center;
-    
+}
+
+.text-reveal {
+    color: black;
 }
 
 .picture-menu {
@@ -88,6 +91,7 @@ div {
     max-width: 50vw; */
     margin-right: auto;
     margin-left: auto;
+    background-color: black;
 }
 
 /* ----------------------Map */
