@@ -1,5 +1,7 @@
 /*We've used box-shadow quite a lot here, which I took from the styling in this 
-tutorial: https://www.youtube.com/watch?v=riDzcEQbX6k&t=379s */
+tutorial: https://www.youtube.com/watch?v=riDzcEQbX6k&t=379s
+Much of the accompanying styling where this is used is from the same source, though
+often adapted for our use. */
 
 /* Below is the font we're using for this project. It needs a tag of !important or the body's default font will override it. */
 body {
@@ -350,6 +352,7 @@ military history.*/
     background-color: #f1d6b8;
 }
 
+/*The below two styles smarten our fontawesome icons and their positioning*/
 .iconstyle {
     margin-left: -50px;
 }
@@ -388,7 +391,7 @@ military history.*/
     }
 }
 
-/*I've paired these two together as their problems start at precisely the same width.
+/*I've paired these two together as their problems start at precisely the same width.*/
 @media screen and (max-width: 375px) {
     .quiz-inner {
         margin-right: 0;
