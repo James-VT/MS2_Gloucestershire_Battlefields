@@ -14,6 +14,7 @@ const messageBox = document.getElementById("messagebox");
 
 /**The below function checks our form for the required fields - name, email and message. If one of these is not filled in, the form will not submit. */
 form.addEventListener("submit", (e) => {
+    console.log(this);
     let errorMessages = [];
     if (fullName.value === "" || fullName.value == null) {
         errorMessages.push("Your name is required");
