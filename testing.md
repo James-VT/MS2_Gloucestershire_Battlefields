@@ -270,3 +270,10 @@ The results for the map page are even worse. What's frustrating here is not that
 
 
 ![Image of WAVE results for quiz.html]()
+
+## Jigsaw
+https://jigsaw.w3.org/css-validator/
+
+Jigsaw is used to validate CSS. Below are the results of style.css in this project.
+
+![Image of Jigsaw results](docs/testing/jigsawcss.png)

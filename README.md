@@ -140,6 +140,12 @@ Another way of getting your own local version to work on is to clone the reposit
 * Favicon
     * Favicon was used to create the icon for this site. [favicon](https://favicon.io/favicon-generator/)
 
+* Autoprefixer CSS online
+
+    * Autoprefixer was used to run my CSS through and get any various vendor prefixes (so, webkit prefixes) that I needed to make my pages consistent across browsers. [Autoprefixer](https://autoprefixer.github.io/)
+
+---
+
 ## External libraries
 
 * JQuery

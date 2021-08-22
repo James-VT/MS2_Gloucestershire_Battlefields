@@ -1,3 +1,11 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+
 /*We've used box-shadow quite a lot here, which I took from the styling in this 
 tutorial: https://www.youtube.com/watch?v=riDzcEQbX6k&t=379s
 Much of the accompanying styling where this is used is from the same source, though
@@ -5,454 +13,491 @@ often adapted for our use. */
 
 /* Below is the font we're using for this project. It needs a tag of !important or the body's default font will override it. */
 body {
-font-family: sans-serif !important;
-}
-
-div {
-    display: block;
-}
-
-/* ----------------------Intro */
-.intro-outer {
-    box-sizing: border-box;
-    background-color: #70997b;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px 2px;
-    padding-bottom: 40px;
-}
-
-.introduction {
-    margin-left: 40px;
-    margin-right: 40px;
-    text-align: center;
-}
-
-/*The below is necessary to avoid contrast issues in WAVE. Seems odd to have to 
-make link text black, but this is apparently preferable to blue in this case. */
-.text-reveal {
-    color: black;
-}
-
-.picture-menu {
-    position: relative;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.index-menu-image {
-    width: 400px;
-    height: 300px;
-    margin-top: 20px;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 5px;
-    border: 2px solid black;
-}
-
-.index-menu-holder {
-    text-align: center;
-}
-
-/* Some of the code from .holder and .imagetext styling were taken from https://www.tutorialrepublic.com/faq/how-to-position-text-over-an-image-using-css.php */
-
-.holder {
-    position: relative;
-    display: inline-block;
-}
-
-.image-text {
-    position: absolute;
-    z-index: 999;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    top: 40%; /* Adjust this value to move the positioned div up and down */
-    text-align: center;
-    width: 60%; /* Set the width of the positioned div */
-    color: white;
-    font-size: 300%;
-    font-family: 'Balsamiq Sans', cursive !important;
-}
-
-/* ----------------------Carousel */
-/*The image captions for the carousel were ditched, but I've kept the background colour 
-as it works well to contrast from the green*/
-.carousel-holder {
-    width: 200px;
-    display: inline;
-    max-height: 700px;
-    background-color: black;
-}
-
-.carousel-image {
-    margin-right: auto;
-    margin-left: auto;
-    background-color: black;
-}
-
-/* ----------------------Map */
-#map {
-    width: 100%;
-    height: 500px;
-    border: 2px solid #2f2f2f;
-}
-
-/* ---------------------Map page */
-.battle-brief {
-    text-align: center;
-}
-
-.battle-detailed {
-    text-align: center;
-}
-
-.map-intro {
-    text-align: center;
-    background-color: #70997b;
-    border: 2px #2f2f2f solid;
-}
-
-.battlefield-button-container {
-    background-color: #f1d6b8;
-}
-
-.map-holder-text {
-    font-size: 200%;
-    font-family: 'Balsamiq Sans', cursive !important;
-}
-
-.info-outer {
-    box-sizing: border-box;
-    background-color: #70997b;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px 2px;
-    padding-bottom: 40px;
-    padding-top: 40px;
-}
-
-.info-inner {
-    box-sizing: border-box;
-    background-color: #f1d6b8;
-    position: relative;
-    height: auto;
-    min-height: 30vh;
-    margin-right: 40px;
-    margin-left: 40px;
-    border: 1px solid black;
-    padding: 10px;
-}
-
-/* ---------------------Header */
-
-.nav-style {
-    background-color: #f1d6b8;
-}
-
-
-/*----------------------Quiz */
-#quiz-heading {
-    font-size: 2.5rem;
-    padding-top: 2px;
-}
-
-.quiz-text {
-    text-align: center;
-    align-items: center;
-}
-
-.quiz-outer {
-    box-sizing: border-box;
-    background-color: #B594B6;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px 2px;
-    padding-bottom: 40px;
-}
-
-.quiz-inner {
-    box-sizing: border-box;
-    background-color: #f1d6b8;
-    position: relative;
-    height: auto;
-    min-height: 30vh;
-    margin-right: 40px;
-    margin-left: 40px;
-    border: 1px solid black;
-    padding: 10px;
-}
-
-#begin-button-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
-
-#quiz-question {
-    margin-top: 10px;
-}
-
-/*Some of the buttons, especially this one, required separate styling. This affects 
-both the begin and restart buttons, since they're the same button with different text*/
-#begin-button {
-    max-width: 10vw;
-    margin-top: 30px;
-    clear: both;
-}
-
-#question-text {
-    font-family: 'Balsamiq Sans', cursive !important;
-    font-size: 200%;
-}
-
-#next-button {
-    display: block;
-}
-
-.quiz-button {
-    width: 55%;
-    height: 60px;
-    min-width: 100px;
-    margin-top: 30px;
-    align-items: center;
-    text-align: center;
-    clear: both;
-    margin: 20px auto;
-    background-color: #2f2f2f;
-    border-radius: 8px;
-    color: white;
-    display: block;
-}
-
-#score-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    clear: both;
-}
-
-#begin-score-wrapper {
-    flex-wrap: wrap;
-}
-
-.quiz-image {
-    width: 100%;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-    padding: 5px;
-    border: 1px solid #ccc;
-    display: block;
-    align-items: center;
-    text-align: center;
-    clear: both;
-}
-
-.hide {
-    display: none;
-}
-
-/* This keeps the results table where it should be, but we have a media query for 
-big screens below*/
-.results-table{
-    table-layout: fixed;
-    text-align: center;
-    margin-top: 40px;
-}
-
-#reenactment-caption {
-    text-align: center;
-}
-
-/* ----------------------Buttons */
-.button {
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    margin: 20px auto;
-    background-color: #2f2f2f;
-    border-radius: 8px;
-    color: white;
-}
-
-.button-quiz {
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    margin: 20px auto;
-    background-color: #2f2f2f;
-    border-radius: 8px;
-    color: white;
-}
-
-.move-down {
-    margin-top: 50px;
-}
-
-/* ----------------------Contact form */
-/*We've used Venetian Red for the error message colour for its connection with British 
-military history.*/
-#error-messages {
-    color: #c80815;
-}
-
-#contact-background {
-    background-color: #70997b;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-#contact-container {
-    box-sizing: border-box;
-    background-color: white;
-    width: 90%;
-    /* height: 65vh; */
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px 2px;
-    padding-bottom: 40px;
-    padding-top: 40px;
-}
-
-.form-element {
-    font-size: 150%;
-    padding-left: 40px;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    padding-right: 10px;
-}
-
-#submit-button {
-    max-width: 110px;
-}
-
-/* ---------------------Footer */
-.footer {
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #f1d6b8;
-}
-
-/*The below two styles smarten our fontawesome icons and their positioning*/
-.iconstyle {
-    margin-left: -50px;
-}
-
-.iconstyle i {
-    color: #2f2f2f;
-    font-size: 50px;
-    padding: 10px 20px 0px 20px;
-}
-
-.email-link {
-    font-family: 'Balsamiq Sans', cursive !important;
-    font-size: 130%
-}
-
-.footer-text {
-    font-family: 'Balsamiq Sans', cursive !important;
-    font-size: 200%;
-}
-
-/* ---------------------404 */
-#text404 {
-    padding-top: 5px;
-}
-
-#footer404 {
-    position: fixed;
-}
-
-/* ---------------------Media queries */
-/* The below code centres the page headings in the drop-down nav menu */
-@media screen and (max-width: 985px) {
-    .drop-center {
-        text-align: center;
-        align-items: center;
+    font-family: sans-serif !important;
     }
-}
-
-/*I've paired these two together as their problems start at precisely the same width.*/
-@media screen and (max-width: 375px) {
-    .quiz-inner {
-        margin-right: 0;
-        margin-left: 0;
-        padding: 0;
-    }
-
-    .form-element {
-        padding-left: 10px;
-    }
-}
-
-/*This media query is sort of coupled with the one after it. Both look after the index images*/
-@media screen and (max-width: 1350px) {
-    .index-menu-holder {
-        text-align: center;
+    
+    div {
         display: block;
+    }
+    
+    /* ----------------------Intro */
+    .intro-outer {
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        background-color: #70997b;
+        width: 90%;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        -webkit-box-shadow: 0 0 10px 2px;
+                box-shadow: 0 0 10px 2px;
+        padding-bottom: 40px;
     }
-}
-
-/* The below code makes the index menu images responsive at smaller screen widths */
-@media screen and (max-width: 600px) {
+    
+    .introduction {
+        margin-left: 40px;
+        margin-right: 40px;
+        text-align: center;
+    }
+    
+    /*The below is necessary to avoid contrast issues in WAVE. Seems odd to have to 
+    make link text black, but this is apparently preferable to blue in this case. */
+    .text-reveal {
+        color: black;
+    }
+    
+    .picture-menu {
+        position: relative;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
     .index-menu-image {
-        max-width: 100%;
+        width: 400px;
+        height: 300px;
+        margin-top: 20px;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 5px;
+        border: 2px solid black;
+    }
+    
+    .index-menu-holder {
+        text-align: center;
+    }
+    
+    /* Some of the code from .holder and .imagetext styling were taken from https://www.tutorialrepublic.com/faq/how-to-position-text-over-an-image-using-css.php */
+    
+    .holder {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .image-text {
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        top: 40%; /* Adjust this value to move the positioned div up and down */
+        text-align: center;
+        width: 60%; /* Set the width of the positioned div */
+        color: white;
+        font-size: 300%;
+        font-family: 'Balsamiq Sans', cursive !important;
+    }
+    
+    /* ----------------------Carousel */
+    /*The image captions for the carousel were ditched, but I've kept the background colour 
+    as it works well to contrast from the green*/
+    .carousel-holder {
+        width: 200px;
+        display: inline;
+        max-height: 700px;
+        background-color: black;
+    }
+    
+    .carousel-image {
+        margin-right: auto;
+        margin-left: auto;
+        background-color: black;
+    }
+    
+    /* ----------------------Map */
+    #map {
+        width: 100%;
+        height: 500px;
+        border: 2px solid #2f2f2f;
+    }
+    
+    /* ---------------------Map page */
+    .battle-brief {
+        text-align: center;
+    }
+    
+    .battle-detailed {
+        text-align: center;
+    }
+    
+    .map-intro {
+        text-align: center;
+        background-color: #70997b;
+        border: 2px #2f2f2f solid;
+    }
+    
+    .battlefield-button-container {
+        background-color: #f1d6b8;
+    }
+    
+    .map-holder-text {
+        font-size: 200%;
+        font-family: 'Balsamiq Sans', cursive !important;
+    }
+    
+    .info-outer {
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        background-color: #70997b;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        -webkit-box-shadow: 0 0 10px 2px;
+                box-shadow: 0 0 10px 2px;
+        padding-bottom: 40px;
+        padding-top: 40px;
+    }
+    
+    .info-inner {
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        background-color: #f1d6b8;
+        position: relative;
         height: auto;
+        min-height: 30vh;
+        margin-right: 40px;
+        margin-left: 40px;
+        border: 1px solid black;
+        padding: 10px;
     }
-}
-
-/*Centered keeps our images where they should be*/
-@media screen and (max-width: 450px) {
-    .centered {
-        justify-content: center;
+    
+    /* ---------------------Header */
+    
+    .nav-style {
+        background-color: #f1d6b8;
     }
-}
-
-/*The below is coupled with the media query just after it, but goes up to larger screens to fine-tune positioning*/
-@media screen and (max-width: 575px) {
-    .iconstyle {
-        margin-left: 10px;
+    
+    
+    /*----------------------Quiz */
+    #quiz-heading {
+        font-size: 2.5rem;
+        padding-top: 2px;
     }
-}
-
-/*The below is to keep the social media icons on their best behaviour on small screens*/
-@media screen and (max-width: 510px) {
-    .iconstyle i {
-        padding: 10px 10px 0px 10px;
+    
+    .quiz-text {
+        text-align: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
-}
-
-/*The below code keeps the results table where it should be on large screens*/
-@media screen and (min-width: 1700px) {
+    
+    .quiz-outer {
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        background-color: #B594B6;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        -webkit-box-shadow: 0 0 10px 2px;
+                box-shadow: 0 0 10px 2px;
+        padding-bottom: 40px;
+    }
+    
+    .quiz-inner {
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        background-color: #f1d6b8;
+        position: relative;
+        height: auto;
+        min-height: 30vh;
+        margin-right: 40px;
+        margin-left: 40px;
+        border: 1px solid black;
+        padding: 10px;
+    }
+    
+    #begin-button-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin-top: 20px;
+    }
+    
+    #quiz-question {
+        margin-top: 10px;
+    }
+    
+    /*Some of the buttons, especially this one, required separate styling. This affects 
+    both the begin and restart buttons, since they're the same button with different text*/
+    #begin-button {
+        max-width: 10vw;
+        margin-top: 30px;
+        clear: both;
+    }
+    
+    #question-text {
+        font-family: 'Balsamiq Sans', cursive !important;
+        font-size: 200%;
+    }
+    
+    #next-button {
+        display: block;
+    }
+    
+    .quiz-button {
+        width: 55%;
+        height: 60px;
+        min-width: 100px;
+        margin-top: 30px;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        text-align: center;
+        clear: both;
+        margin: 20px auto;
+        background-color: #2f2f2f;
+        border-radius: 8px;
+        color: white;
+        display: block;
+    }
+    
+    #score-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        clear: both;
+    }
+    
+    #begin-score-wrapper {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+    
+    .quiz-image {
+        width: 100%;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        padding: 5px;
+        border: 1px solid #ccc;
+        display: block;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        text-align: center;
+        clear: both;
+    }
+    
+    .hide {
+        display: none;
+    }
+    
+    /* This keeps the results table where it should be, but we have a media query for 
+    big screens below*/
     .results-table{
-        margin-left: 100px;
+        table-layout: fixed;
+        text-align: center;
+        margin-top: 40px;
     }
-}
-
-/*This keeps things from overhanging their divs on the form on small screens*/
-@media screen and (max-width: 350px) {
+    
+    #reenactment-caption {
+        text-align: center;
+    }
+    
+    /* ----------------------Buttons */
+    .button {
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        text-align: center;
+        width: 100%;
+        margin: 20px auto;
+        background-color: #2f2f2f;
+        border-radius: 8px;
+        color: white;
+    }
+    
+    .button-quiz {
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        text-align: center;
+        width: 100%;
+        margin: 20px auto;
+        background-color: #2f2f2f;
+        border-radius: 8px;
+        color: white;
+    }
+    
+    .move-down {
+        margin-top: 50px;
+    }
+    
+    /* ----------------------Contact form */
+    /*We've used Venetian Red for the error message colour for its connection with British 
+    military history.*/
+    #error-messages {
+        color: #c80815;
+    }
+    
+    #contact-background {
+        background-color: #70997b;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    #contact-container {
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        background-color: white;
+        width: 90%;
+        /* height: 65vh; */
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        -webkit-box-shadow: 0 0 10px 2px;
+                box-shadow: 0 0 10px 2px;
+        padding-bottom: 40px;
+        padding-top: 40px;
+    }
+    
     .form-element {
-        font-size: 110%;
+        font-size: 150%;
+        padding-left: 40px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding-right: 10px;
     }
-}
+    
+    #submit-button {
+        max-width: 110px;
+    }
+    
+    /* ---------------------Footer */
+    .footer {
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #f1d6b8;
+    }
+    
+    /*The below two styles smarten our fontawesome icons and their positioning*/
+    .iconstyle {
+        margin-left: -50px;
+    }
+    
+    .iconstyle i {
+        color: #2f2f2f;
+        font-size: 50px;
+        padding: 10px 20px 0px 20px;
+    }
+    
+    .email-link {
+        font-family: 'Balsamiq Sans', cursive !important;
+        font-size: 130%
+    }
+    
+    .footer-text {
+        font-family: 'Balsamiq Sans', cursive !important;
+        font-size: 200%;
+    }
+    
+    /* ---------------------404 */
+    #text404 {
+        padding-top: 5px;
+    }
+    
+    #footer404 {
+        position: fixed;
+    }
+    
+    /* ---------------------Media queries */
+    /* The below code centres the page headings in the drop-down nav menu */
+    @media screen and (max-width: 985px) {
+        .drop-center {
+            text-align: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+        }
+    }
+    
+    /*I've paired these two together as their problems start at precisely the same width.*/
+    @media screen and (max-width: 375px) {
+        .quiz-inner {
+            margin-right: 0;
+            margin-left: 0;
+            padding: 0;
+        }
+    
+        .form-element {
+            padding-left: 10px;
+        }
+    }
+    
+    /*This media query is sort of coupled with the one after it. Both look after the index images*/
+    @media screen and (max-width: 1350px) {
+        .index-menu-holder {
+            text-align: center;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    
+    /* The below code makes the index menu images responsive at smaller screen widths */
+    @media screen and (max-width: 600px) {
+        .index-menu-image {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    
+    /*Centered keeps our images where they should be*/
+    @media screen and (max-width: 450px) {
+        .centered {
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+        }
+    }
+    
+    /*The below is coupled with the media query just after it, but goes up to larger screens to fine-tune positioning*/
+    @media screen and (max-width: 575px) {
+        .iconstyle {
+            margin-left: 10px;
+        }
+    }
+    
+    /*The below is to keep the social media icons on their best behaviour on small screens*/
+    @media screen and (max-width: 510px) {
+        .iconstyle i {
+            padding: 10px 10px 0px 10px;
+        }
+    }
+    
+    /*The below code keeps the results table where it should be on large screens*/
+    @media screen and (min-width: 1700px) {
+        .results-table{
+            margin-left: 100px;
+        }
+    }
+    
+    /*This keeps things from overhanging their divs on the form on small screens*/
+    @media screen and (max-width: 350px) {
+        .form-element {
+            font-size: 110%;
+        }
+    }
