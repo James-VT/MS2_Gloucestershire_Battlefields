@@ -158,6 +158,10 @@ Another way of getting your own local version to work on is to clone the reposit
 * In this project, I used the Google Maps API to provide the interactivity on the maps.html page. In so doing, the site owners are able to relay to users the locations of the battlefields they look after.
     * To use this yourself, create an account at https://console.developers.google.com. Build the key you want from the options available (we just want the Maps JavaScript API), and set up billing information. Make sure you restrict the key to Maps JavaScript API, and set it to only accept calls from your site, and your test site if applicable (for us, it is applicable). Malicious use is possible, and you don't want to get stung with the bill.
 
+### EmailJS
+* This project uses EmailJS to handle the transfer of information a user has entered into the contact form to the site owners.
+    * To use EmailJS, head to https://www.emailjs.com/ and sign up. You can create a new template, or edit your default one. Head to Integration and click browser for the method I've used. There you'll find the code snippet you need, complete with your user key ready to go. You'll also find your access token further down. You'll also want to grab your service code and the template code while you're there.
+
 # Credits
 
 ## Wikipedia
