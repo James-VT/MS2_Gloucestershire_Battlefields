@@ -16,7 +16,10 @@ const messageBox = document.getElementById("messagebox");
  * @param e below is the submit button.
  */
 form.addEventListener("submit", (e) => {
-    console.log(e.target);
+    /**The e.preventDefault() below is to stop the form from refreshing before it reaches the if/else statement that determines whether any error messages will 
+     * prevent it from sending below.
+     */
+    e.preventDefault();
     let errorMessages = [];
     if (fullName.value === "" || fullName.value == null) {
         errorMessages.push("Your name is required");
@@ -54,11 +57,11 @@ form.addEventListener("submit", (e) => {
         e.preventDefault();
         errorElement.innerText = errorMessages.join(", ");
     } else {
+        /**The e.preventDefault() below stops the form refreshing before the email can be sent via email.js*/
         e.preventDefault();
+        /**@ param e = e is the submit button, while e.target is the form itself. This is how we get it to send. */
         sendEmail(e.target);
-        console.log("ELSE TRIGGERED, NO ERROR MESSAGES")
     }
-    console.log(errorMessages);
 })
 
 /**Much of the code in the below function came from Code Institute's tutorial in the CV project: https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+IFD101+2017_T3/courseware/03d3f6524ad249d9b33e3336d156dfd0/e4710f80cdf34bffbd607bc102482d5c/
