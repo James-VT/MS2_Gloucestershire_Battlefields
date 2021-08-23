@@ -297,4 +297,13 @@ For our map page, the icon problem was repeated and will continue to be ignored.
 
 ### contacus.html results in NuHTML
 
-![Image of contact form results in NuHTML]()
+![Image of contact form results in NuHTML](docs/testing/nuhtml/nuhtmlcontact.png)
+
+Same favicon problem again. This time we also have a warning that the type attribute isn't necessary. It may not be necessary for functionality, but I consider it helpful for explaining to a co-developer what it does and what it links to, so I see more reason to keep it.
+
+### quiz.html results in NuHTML
+
+![Image of quiz results in NuHTML](docs/testing/nuhtml/nuhtmlquiz.png)
+
+Other than the predictable favicon objection, we have no problems on the quiz.html page.
+
