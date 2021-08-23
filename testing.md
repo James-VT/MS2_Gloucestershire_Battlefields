@@ -277,3 +277,24 @@ https://jigsaw.w3.org/css-validator/
 Jigsaw is used to validate CSS. Below are the results of style.css in this project.
 
 ![Image of Jigsaw results](docs/testing/jigsawcss.png)
+
+## NuHTML
+https://validator.w3.org/nu/
+
+NuHTML is used to check HTML for best practices. I have used it to validate the HTML of my site.
+
+### Index.html results in NuHTML
+
+![Image of index results in nuHTML](docs/testing/nuhtml/nuhtmlindex.png)
+
+The only problem our index html had was that it showed an error for favicon's use of rel="icon," which NuHTML didn't like. However, the favicon doesn't show without it and it does not effect the user experience so it stays.
+
+### map.html results in NuHTML
+
+![Image of map results in NuHTML](docs/testing/nuhtml/nuhtmlmap.png)
+
+For our map page, the icon problem was repeated and will continue to be ignored. It also flagged problems with the empty headings in the area that is filled with the map information upon clicking a marker or a button. As these fields are filled user interaction and this is explained in the text of the page, we can move on.
+
+### contacus.html results in NuHTML
+
+![Image of contact form results in NuHTML]()
