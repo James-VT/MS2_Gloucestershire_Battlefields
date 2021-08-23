@@ -347,26 +347,6 @@ One warning remains on this one, about a function declared within a loop possibl
 
 Three warnings and two instances of an undefinded variable remain in this file. JSHint appears to read "errorMessage.splice[i, 1]" as an expression rather thasn as a function. I have not tried to change these, as the file's functionality works fine with them there. Similarly, the undefined variable is emailjs which is used throughout with the API.
 
-## WAVE testing
-
-https://wave.webaim.org/
-
-WAVE stands for Web Accessibility Evalutation Tool. While it has its limits, it can be useful for judging the accessibility of a site for individuals with disabilities. I tested each page against it.
-
-![Image of WAVE results for index.html](docs/testing/wavetesting/waveindex.png)
-
-Our first result is an example of why it can be imperfect. It shows the page as still having four contrast errors but cannot tell me where these ones are. On first attempt it showed seven and was able to identify three of them, which I removed. But as the other four do not show, there isn't much I can do. It also shows four alets. Three of these are suggestions for where headings could go - in this case, in our image links below the carousel. I do not need them there, so can ignore these. It has a point about the redundant link, but the ability to highlight the "Home" link and set it as active to assist screenreaders means it's more useful to keep it than get rid of it.
-
-![Image of WAVE results for map.html](docs/testing/wavetesting/wavemap.png)
-
-The results for the map page are even worse. What's frustrating here is not that the missing alternative text warnings won't tell me where they are on the page. I can assume it is referring to the map markers (of which there are six, not nine). However, the map markers do have text to explain what they refer to. Again, perhaps this is my lack of experience but as it won't show me where the issue is, I am uncertain how to fix this. The same is true of the empty headings (which are not empty once a battlefield is selected, as the placeholder text makes clear). Of the alerts, the same must be said - it is not made clear where these problems are on the page.
-
-![Image of WAVE results for contactus.html]()
-
-
-
-![Image of WAVE results for quiz.html]()
-
 ## Jigsaw
 https://jigsaw.w3.org/css-validator/
 
