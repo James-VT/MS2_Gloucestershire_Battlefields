@@ -4,6 +4,41 @@
 
 ## The live site of the Gloucesteshire Battlefields Society can be accessed [here.](https://james-vt.github.io/MS2_Gloucestershire_Battlefields/)
 
+## Table of Contents
+
+* ### [Project Overview](https://github.com/James-VT/MS2_Gloucestershire_Battlefields#project-overview)
+
+* ### [UX](https://github.com/James-VT/MS2_Gloucestershire_Battlefields#ux)
+    * [User Stories](https://github.com/James-VT/MS2_Gloucestershire_Battlefields#user-stories)
+
+* ### [Design Choices](https://github.com/James-VT/MS2_Gloucestershire_Battlefields#design-choices)
+    * ### [The Five Planes of User Experience Development](https://github.com/James-VT/MS2_Gloucestershire_Battlefields#the-five-planes-of-user-experience-development)
+    * ### [Colour Scheme](https://github.com/James-VT/MS2_Gloucestershire_Battlefields#the-five-planes-of-user-experience-development)
+
+* ### [Deployment](https://github.com/James-VT/MS2_Gloucestershire_Battlefields#deployment)
+
+* ### [Features](https://github.com/James-VT/MS2_Gloucestershire_Battlefields#features)
+
+* ### [Testing](https://github.com/James-VT/MS2_Gloucestershire_Battlefields#testing)
+
+* ### [Technologies Used](https://github.com/James-VT/MS2_Gloucestershire_Battlefields#technologies-used)
+
+* ### [External Libraries](https://github.com/James-VT/MS2_Gloucestershire_Battlefields#external-libraries)
+
+* ### [APIs](https://github.com/James-VT/MS2_Gloucestershire_Battlefields#apis)
+    * ### [Google Maps API](https://github.com/James-VT/MS2_Gloucestershire_Battlefields#google-maps-api)
+    * ### [EmailJS](https://github.com/James-VT/MS2_Gloucestershire_Battlefields#emailjs)
+
+* ### [Credits](https://github.com/James-VT/MS2_Gloucestershire_Battlefields#credits)
+
+* ### [Image credits](https://github.com/James-VT/MS2_Gloucestershire_Battlefields#image-credits)
+
+* ### [Tutorials](https://github.com/James-VT/MS2_Gloucestershire_Battlefields#tutorials)
+
+This project uses a separate file for the various tests completed as part of its development:
+
+[Access the testing file here](https://github.com/James-VT/MS2_Gloucestershire_Battlefields/blob/master/testing.md)
+
 # Project overview
 
 This website serves as the main page of a small, charitable organisation that looks after, researches and provides information on sites of historical military significance in Gloucestershire and neighbouring areas. The aims of the site owners are to relay information on battles and battlefields, provide information to site visitors about which sites they can visit and how to do so, and to generate revenue through donations. A visitor to the site will want to learn information about the county's military history and its significant sites, which ones they can visit and how to do so, and will potentially want to donate after a good experience.
@@ -32,22 +67,22 @@ The primary aim of the Gloucestershire Battlefields website is information - for
 
 Here I will explain my choices.
 
-# The Five Planes of User Experience Development
+## The Five Planes of User Experience Development
 As part of the planning for this project, I have run through the stages of User Experience Design, as proposed by Jesse James Garrett.
 
-## The Strategy plane
+### The Strategy plane
 Beginning with the strategy plane, considered who might use this website and why; both site visitors and site owners. The goal of the site owners is to raise awareness of battlefields and sites of historical military significance within Gloucestershire and the surrounding area, and potentially to generate some revenue via donations. Visitors come to the site because they want to learn about specific battlefields and parts of history.
 
-## The Scope Plane
+### The Scope Plane
 The project's scope is chiefly threefold: the primary objective is the exchange of information about Gloucestershire's battlefields between site owner and site user. The second is the raising of revenue for the charity via donations, but this is achieved off the back of the first objective. The third is the relaying of information about the charity themselves.
 
-## The Structure Plane
+### The Structure Plane
 My wireframes can be found below. These have been constructed with the idea that mobile design should come first, and that the main aim from the point of the view of the site owner is the relaying of information in an interactive fashion that presents the basic facts, a narrative of the events, and the location on a map.
 
-## The Skeleton Plane
+### The Skeleton Plane
 The site's information is structured in such a way as to make the map primary; it is the first thing a user will see upon loading the page, and the cascading information resulting from clicking a button or location of a battle appears underneath the map itself. The difference at smaller screen sizes may be (depending on the precise size) the changing of the layout of the buttons. 
 
-## The Surface Plane
+### The Surface Plane
 The colours chosen have been partnered based on suggestions from Coolors (credit below). Russian green has a nice military olive look to it, and from there I accepted or refused suggestions of pairings.
 
 ## Colour scheme
@@ -60,6 +95,10 @@ The colours chosen have been partnered based on suggestions from Coolors (credit
 I have made these choices based on the recommendations of Coolors' system after seaching for colours to match Russian Green, a colour I decided on early on. Although pink may seem a weird colour for a website on military history, the territory of the British Empire was coloured pink on maps so I decided to stick with that particular suggestion. Jet's a sleek choice that pairs well with pretty much anything, even moreso than black for not being as dark. Finally, Peach Puff seemed an appropriate colour to use for a site about the history of a county in which a great many houses are built from the local limestone, which is this colour.
 
 As well as the colours pictured above, Venetian Red is used in two places - the tab icon and the error messages on the contact form. These uses would've red anyway, but due to the colour's association with British military history, I decided to go with that red in particular.
+
+### Wireframes
+
+The wireframes developed for this project can be found [here](assets/milestone2wireframes.pdf). They were built using Balsamiq (credit in Technologies section).
 
 # Deployment
  Here I'll explain how to deploy/how I deployed the website to GitHub and how to run it locally. 
@@ -95,9 +134,21 @@ Another way of getting your own local version to work on is to clone the reposit
 6. Then you want to type "git clone https://github.com/James-VT/MS2_Gloucestershire_Battlefields", the same URL as before.
 7. Hit Enter. You're good to go!
 
+---
+
 # Features
 
-The features of this website are documented, along with their development, in the testing.md file for this project where I explain which user stories are fulfilled by their design and ensure they work.
+The features of this website are documented, along with their development, in the separate testing file for this project where I explain which user stories are fulfilled by their design and ensure they work.
+
+[Access the testing file here](https://github.com/James-VT/MS2_Gloucestershire_Battlefields/blob/master/testing.md)
+
+---
+
+# Testing
+
+Testing for the features of this website, the bugs, and the validators used are all in the testing.md file mentioned above.
+
+[Access the testing file here](https://github.com/James-VT/MS2_Gloucestershire_Battlefields/blob/master/testing.md)
 
 ---
 
@@ -223,7 +274,3 @@ The information about the Battle of Nibley Green used for this site was taken fr
 ### Tutorials
 
 [Build A Quiz App With JavaScript](https://www.youtube.com/watch?v=riDzcEQbX6k&t=379s) from the channel Web Dev Simplified was extremely helpful for the creation of the site's quiz. I have edited the code heavily while building the quiz in quiz.js but I begun by taking some ideas from that tutorial and building from there.
-
-### Wireframes
-
-The wireframes developed for this project can be found [here](assets/milestone2wireframes.pdf). They were built using Balsamiq (credit in Technologies section).
