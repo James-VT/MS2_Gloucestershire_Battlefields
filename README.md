@@ -20,9 +20,9 @@ The primary aim of the Gloucestershire Battlefields website is information - for
 5. Review their answers to the quiz via feedback, to see where they went wrong if applicable.
 
 ### A site owner will want to:
-6. Relay information about the battlefields the charity promotes according to user input.
+6. Responsively relay information about the battlefields the charity promotes according to user input.
 7. Visually display the locations of battlefields on the interactive map according to user input.
-8. Provide the opportunity for visitors to contact the charity via an interactive feedback form.
+8. Provide the opportunity for visitors to contact the charity via an interactive feedback form that validates user input in case of empty required fields.
 9. Present visitors with a fun and working interactive quiz that feeds back their results.
 10. Relay to visitors the purpose and nature of the charity.
 
