@@ -1,6 +1,8 @@
 # Gloucestershire Battlefields
 
-https://james-vt.github.io/MS2_Gloucestershire_Battlefields/
+![Image of responsive site](docs/responsiveimage.png)
+
+## The live site of the Gloucesteshire Battlefields Society can be accessed [here.](https://james-vt.github.io/MS2_Gloucestershire_Battlefields/)
 
 # Project overview
 
@@ -136,6 +138,9 @@ The features of this website are documented, along with their development, in th
 * Autoprefixer CSS online
 
     * Autoprefixer was used to run my CSS through and get any various vendor prefixes (so, webkit prefixes) that I needed to make my pages consistent across browsers. [Autoprefixer](https://autoprefixer.github.io/)
+
+* Am I Responsive?
+    * Am I Responsive is used to create the header image for the README but exists to prove the responsiveness of a site. [Am I Responsive?](http://ami.responsivedesign.is/#)
 
 ---
 
