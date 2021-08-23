@@ -359,7 +359,7 @@ body {
     #contact-container {
         -webkit-box-sizing: border-box;
                 box-sizing: border-box;
-        background-color: white;
+        background-color: #f1d6b8;
         width: 90%;
         /* height: 65vh; */
         margin-left: auto;
