@@ -363,7 +363,7 @@ NuHTML is used to check HTML for best practices. I have used it to validate the 
 
 ![Image of index results in nuHTML](docs/testing/nuhtml/nuhtmlindex.png)
 
-The only problem our index html had was that it showed an error for favicon's use of rel="icon," which NuHTML didn't like. However, the favicon doesn't show without it and it does not effect the user experience so it stays.
+The only problem our index html had was that it showed an error for favicon's use of rel="icon," which NuHTML didn't like. However, the favicon doesn't show without it and it does not effect the user experience. W3 - the group that created and runs Nu HTML - actually recommend that favicon rel has this setting (evidence below). I can only assume this flagging up as an error is a glitch or an oversight.
 
 ### map.html results in NuHTML
 
@@ -383,3 +383,6 @@ Same favicon problem again. This time we also have a warning that the type attri
 
 Other than the predictable favicon objection, we have no problems on the quiz.html page.
 
+### Evidence of W3 recommendation of how to use rel="icon" for favicon
+
+![Image of W3's advice for favicon](docs/w3faviconrel.png)
