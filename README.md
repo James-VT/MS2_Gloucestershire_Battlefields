@@ -273,4 +273,10 @@ The information about the Battle of Nibley Green used for this site was taken fr
 
 ### Tutorials
 
-[Build A Quiz App With JavaScript](https://www.youtube.com/watch?v=riDzcEQbX6k&t=379s) from the channel Web Dev Simplified was extremely helpful for the creation of the site's quiz. I have edited the code heavily while building the quiz in quiz.js but I begun by taking some ideas from that tutorial and building from there.
+[Build A Quiz App With JavaScript](https://www.youtube.com/watch?v=riDzcEQbX6k&t=379s) from the channel Web Dev Simplified was extremely helpful for the creation of the site's quiz. I have edited the code heavily while building the quiz in quiz.js but I begun by taking some ideas from that tutorial and building from there. While the addition of a score counter and image are my own work - with the exception of the use of an array to populate the table - the basic code for the quiz itself must be credited to this tutorial.
+
+[StackOverflow](https://stackoverflow.com/questions/47999155/how-to-create-html-table-rows-from-multiple-arrays-of-data-in-javascript). This thread helped massively with the population of the results table from the arrays.
+
+[JavaScript Form Validation](https://www.youtube.com/watch?v=In0nB0ABaUk) from the channel Web Dev Simplified was a video I consulted to get started with form validation. The video is actually about validating a log-in form, but many of the principles are the same so I started with that and worked from there. As such, some lines of code or variable names may look similar.
+
+Eamonn Smyth, a fellow student at Code Institute, wrote a tutorial for students looking to use Google Maps in their JavaScript projects. I have been unable to reach him for permission to link it here, but much credit goes to his excellent guide for getting me started on using the Google Maps API.
