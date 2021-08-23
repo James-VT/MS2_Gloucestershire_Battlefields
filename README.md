@@ -14,7 +14,7 @@ The primary aim of the Gloucestershire Battlefields website is information - for
 ## User stories
 ### A visitor to the site will want to:
 1. Learn the history of a specific battlefield chosen by interacting with the map.
-2. Select a specific battlefield on the interactive map or from the button menu in order to see information about it feed back on the page.
+2. Change the clicked battlefield on the interactive map or from the button menu in order to see information about it feed back on the page, while removing the information from the previous selection.
 3. Contact the organisation behind the website, and receive confirmation that their correspondence has been sent.
 4. Test their knowledge with a quiz they can initiate on the subject that feeds back their score.
 5. Review their answers to the quiz via feedback, to see where they went wrong if applicable.
@@ -95,14 +95,7 @@ Another way of getting your own local version to work on is to clone the reposit
 
 # Features
 
-* ## Intro text w/ optional extra text
-    * As an early bit of JQuery for my project, I spotted an opporunity to give the user the option not to have to have all of the intro text on the screen. On smaller devices, it's quite a lot of information and, attention spans being what they are, it might put people off the site. As a result, the bare essentials are there with an option to click for the rest of the intro. A first time user who is really interested would probably click this, while a returning user might have already read it and so not need to, and instead move on to the links below.
-
-    User story goal achieved by this feature | How was this achieved?
-    --- | ---
-    10 Relay to visitors the purpose and nature of the charity. | The into text provides a first impression of the organisation behind the website, informing a visitor of what the site is for and the things they can do on it.
-
-![Image of index.html intro text with click to expand option](docs/testing/userstorytesting/userstoryindex.png)
+The features of this website are documented, along with their development, in the testing.md file for this project where I explain which user stories are fulfilled by their design and ensure they work.
 
 ---
 

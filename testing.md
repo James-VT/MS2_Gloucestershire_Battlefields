@@ -23,11 +23,33 @@ As you can see from the image below of the map page during development, the test
 
 ---
 
+# Feature testing
+
+Below I will demonstrate the development, function and purpose of the site's features. I wll also explain my methods for testing whether or not these all worked. Then, for each feature I will
+
+## Intro text w/ optional extra text
+
+As an early bit of JQuery for my project, I spotted an opporunity to give the user the option not to have to have all of the intro text on the screen. On smaller devices, it's quite a lot of information and, attention spans being what they are, it might put people off the site. As a result, the bare essentials are there with an option to click for the rest of the intro. A first time user who is really interested would probably click this, while a returning user might have already read it and so not need to, and instead move on to the links below.
+
+User story goal achieved by this feature | How was this achieved?
+--- | ---
+10 Relay to visitors the purpose and nature of the charity. | The into text provides a first impression of the organisation behind the website, informing a visitor of what the site is for and the things they can do on it.
+
+![Image of index.html intro text with click to expand option](docs/testing/userstorytesting/userstoryindex.png)
+
+---
+
+## Quiz
+
+The quiz presents an opportunity for the visitor to test their knowledge, and for the site owner to foster interest in the sites they look after. By clicking the button to begin the quiz and then submitting their answers via further button clicks, the user can interact with the quiz and follow their progress via the score counter.
+
 ### Quiz data testing
 
 To ensure the correct data was being collected throughout the development of the quiz, I added a number of console.logs to its various functions and arrays. In the screenshot below, you can see how this built up the information towards the end of the quiz. We have the questions, the correct answers and the submitted answers, in that order.
 
 ![Image of the console logs of the quiz](docs/testing/featuretesting/quiztesting.png)
+
+### Quiz feedback testing
 
 The final outcome of all this is the results table, shown to the player at the end of the quiz. Not only does it display the answers chosen vs. the correct ones, but the message and picture presented to the user are different depending on their score.
 
@@ -35,9 +57,18 @@ The final outcome of all this is the results table, shown to the player at the e
 
 Here we can see the player achieved a score of 5/10, and received the message "Oh dear! Retreat!" and a picture of the Zaparozhian cossacks as a result. This is the functionality working as it should.
 
----
+User story goal achieved by this feature | How was this achieved?
+--- | ---
+4 Test their knowledge with a quiz they can initiate on the subject that feeds back their score. | The quiz is initiated by a user interacting with it by clicking the "begin" button. The score counter, seen in the pictures, relays to the user their score.
+5 Review their answers to the quiz via feedback, to see where they went wrong if applicable. | The user is presented with a list of questions at the end, their answers, and the correct answers. In this way they can review their answers and see if/where they went wrong.
+9 Present visitors with a fun and working interactive quiz that feeds back their results. | The quiz is made available to visitors from the very first page of the site. Extensive testing was done on the quiz to ensure it works and is interactive. Results are fed back to the visitor upon completion of the quiz.
 
-### Contact form validation testing
+---
+## Contact form
+
+The contact form allows a user to interact with the site owner. They can make inquiries on various subjects and get confirmation when they've submitted their message and details that these have sent successfully. They will also receive notification if they have left required fields unfilled or entered an invalid email address, in which case the email will not send. Open successful submission, an email is sent to the site owner via emailJS.
+
+## Contact form validation testing
 
 Here we have an example of the contact form during development:
 
@@ -53,9 +84,7 @@ As you can see from the image above, it worked like a charm. The error messages 
 
 Result! Here we can see the Code Institute formdump success screen, which confirms submission of the form along with the precise data sent. Success!
 
----
-
-### Contact form error message removal testing
+## Contact form error message removal testing
 
 In the above test, we made sure that the form would not send if the required fields were not filled in and that error messages would display to the user, telling them what they had done wrong. But what if the user later corrected their mistake and submitted the form with the required fields filled in this time? Or what if they correctly filled in a section they had got wrong the first time, but still had a mistake in the other required field? We needed a way of removing the messages in order to keep the feedback of errors up to date. In order to do this, I added splice methods to remove the error messages from the array when corrections had been made. To test this worked, I used a console.log. Below you can see how I made sure it worked:
 
@@ -67,13 +96,80 @@ Addendum: I later added a requirement for the message field as well. Here's the 
 
 ![Image of the successful building of an array including the message box](docs/testing/featuretesting/contactmessagetest.png)
 
+## Contact form confirmation testing
+
+Finally, I added email.js to the project to send me an email confirming the contact form was working, and communicating with me as a site owner. The user will see a message confirming their correspondence has been sent successfully, provided the required fields are filled in.
+
+![Image of successful confirmation message](docs/testing/featuretesting/contactconfirmationtest.png)
+
+Above, you can see what the user sees when their message has sent successfully. Note that the form does not refresh - this is because the form was refreshing before the message was sending, preventing it from functioning properly. This means the information remains on the form, but this is no bad thing as it allows a user to review what they have submitted.
+
+![Image of email of sent via email.js from contact form](docs/testing/featuretesting/contactemail.png)
+
+Above, you can see that we were successful as our contact form has generated an email sent via email.js.
+
+User story goal achieved by this feature | How was this achieved?
+--- | ---
+3 Contact the organisation behind the website, and receive confirmation that their correspondence has been sent. | The contact form provides the facility to contact the Gloucestershire Battlefields Society. In the event of successful form submission, an alert reassures the user that their form has been sent.
+8 Provide the opportunity for visitors to contact the charity via an interactive feedback form that validates user input in case of empty required fields.| The addition of a contact form allows the site owner to facilitate contact from visitors. If required fields are left unfilled when the user clicks "submit," the form submission fails and the user is presented with error messages explaining what they've missed.
+
 ---
 
-## Testing against user stories
+## Interactive map
 
-I have tested each user story against the various features of the site to ensure that each of them are met in some way.
+Our interactive map was added to the site using the Google Maps JavaScript API It allows a user to learn about the battlefields the site owners look after in two ways: they can either click the map markers, or select a site via the buttons. Either way, the same information appears in the info fields depending on which site was selected.
 
-### First time user stories:
+## Linked script and map button testing
+
+As you can see in the picture, the first function in my map - in fact, in the entire website - that I tested was whether the buttons registered a click properly. This was partly to test the buttons themselves, but also to test whether I had correctly linked my JavaScript file to my index.html file. As such, I wrote the code below in battlefields.js:
+
+```
+// The below is to test whether this file in linked properly to the index.html file
+// and its button elements
+
+let button = document.getElementById("tewkesbury-button");
+
+function buttonTest() {
+    console.log("button clicked");
+}
+
+button.addEventListener('click', buttonTest);
+```
+
+As you can see from the image below of the map page during development, the test was successful.
+
+![Image of successful button test](docs/testing/firstbuttontest.png)
+
+Below you can see another image demonstrating the success of the map buttons, taken much further along in the page's development.
+
+![Image of the results of a button selection](docs/testing/featuretesting/mapbuttontesting.png)
+
+## Map marker selection testing
+
+In the below picture, we can see the development of the page much further along. I have made the selection a different way this time - by using the map markers. Upon clicking a marker, the map pans to centre the selected site and the information appears in the box below the buttons. As we can see, this was successful.
+
+![Image of selection made via map marker](docs/testing/featuretesting/maptesting.png)
+
+
+
+
+
+
+
+User story goal achieved by this feature | How was this achieved?
+--- | ---
+1 Learn the history of a specific battlefield chosen by interacting with the map. | Selecting a map marker will pan the map to centre the chosen site, and the information will appear in the box below.
+2 Change the clicked battlefield on the interactive map or from the button menu in order to see information about it feed back on the page, while removing the information from the previous selection. | Selecting a new battlefield with either the markers or the buttons will clear the previous selection entirely, and replace it with information from the new selection.
+6 Responsively relay information about the battlefields the charity promotes according to user input. | The site owner is able to provide the user with the desired information as requested by a button click or a map marker click.
+7 Visually display the locations of battlefields on the interactive map according to user input. | Selecting either a marker visible on the map or a button from the menu will cause the map to pan to that location, allowing the site owner to relay the location of a site to the user.
+
+---
+
+# Testing against user stories
+
+Above, we reviewed each page and its features, and explored which user stories each satisfied. For certainty's sake I have done the same here in summary, but backwards. I have tested each user story against the various features of the site to ensure that each of them are met in some way, and provided evidence.
+
+## Visitor user stories:
 
 User Story Number | A first time user will want to: | How was this achieved? | Evidence of user story having been met
 ------ | ------ | ------ | ------
@@ -84,7 +180,7 @@ User Story Number | A first time user will want to: | How was this achieved? | E
 5 | Review their answers to the quiz via feedback, to see where they went wrong if applicable. | A table of results and correct answers is presented to the user at the end of the quiz. | [Results table](docs/testing/userstorytesting/userstoryresults.png)
 
 ------
-### Site owner stories:
+## Site owner user stories:
 
 User Story Number | A site owner will want to: | How was this achieved? | Evidence
 ------ | ------ | ------ | ------
