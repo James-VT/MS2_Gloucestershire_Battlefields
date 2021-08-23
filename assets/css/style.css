@@ -1,10 +1,9 @@
-/*
-* Prefixed by https://autoprefixer.github.io
+/* For purposes of cross-browser compatibility, this CSS file was:
+* Prefixed (and formatted) by https://autoprefixer.github.io
 * PostCSS: v8.3.6,
 * Autoprefixer: v10.3.1
 * Browsers: last 4 version
 */
-
 
 /*We've used box-shadow quite a lot here, which I took from the styling in this 
 tutorial: https://www.youtube.com/watch?v=riDzcEQbX6k&t=379s
@@ -417,10 +416,15 @@ body {
     /* ---------------------404 */
     #text404 {
         padding-top: 5px;
+        text-align: center;
     }
     
     #footer404 {
         position: fixed;
+    }
+
+    .message-404 {
+        background-color: #B594B6;
     }
     
     /* ---------------------Media queries */
@@ -499,5 +503,12 @@ body {
     @media screen and (max-width: 350px) {
         .form-element {
             font-size: 110%;
+        }
+    }
+
+    /*This prevents the image showing on the 404 page at small screen heights*/
+    @media screen and (max-height: 700px) {
+        .image-404 {
+            display: none;
         }
     }
