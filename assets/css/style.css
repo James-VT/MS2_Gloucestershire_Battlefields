@@ -425,6 +425,7 @@ body {
 
     .message-404 {
         background-color: #B594B6;
+        height: 100vh;
     }
     
     /* ---------------------Media queries */

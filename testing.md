@@ -1,27 +1,6 @@
 # Testing
 
-### Linked script testing
-
-As you can see in the picture, the first function in my site that I tested was whether the buttons registered a click properly. This was partly to test the buttons themselves, but also to test whether I had correctly linked my JavaScript file to my index.html file. As such, I wrote the code below in battlefields.js:
-
-```
-// The below is to test whether this file in linked properly to the index.html file
-// and its button elements
-
-let button = document.getElementById("tewkesbury-button");
-
-function buttonTest() {
-    console.log("button clicked");
-}
-
-button.addEventListener('click', buttonTest);
-```
-
-As you can see from the image below of the map page during development, the test was successful.
-
-![Image of successful test](docs/testing/firstbuttontest.png)
-
----
+In this file I have tested the features, the user stories, and the site validity.
 
 # Feature testing
 
@@ -281,10 +260,6 @@ if (selectedButton.dataset = correct) {
 
 This was flagged by JSHint (see: Testing JavaScript with JSHint) as an warning because the first line functions as both conditional expression and assignment. However, attempts to fix this using == or ===, or to put the word correct in quotations, cause the function to fail. As a result, it remains. With more time, I would seek other options to fix this but the functionality itself works, I have allowed it to stand for now.
 
-### WAVE index.html results
-
-We also have the unsolved issue of index.html's unresolved contrast issues. See below for details. I consider this is an unfixed bug rather than an error of WAVE's part because it is more likely down to my inexperience than a machine error. But as WAVE will not tell me where the issues actually are on the page, I cannot fix them for now.
-
 ---
 
 ## Testing pages with Lighthouse
@@ -371,7 +346,7 @@ Index.html passed through without a hitch.
 
 For our map page, NuHTML flagged problems with the empty headings in the area that is filled with the map information upon clicking a marker or a button. As these fields are filled user interaction and this is explained in the text of the page, we can move on.
 
-### contacus.html results in NuHTML
+### contactus.html results in NuHTML
 
 ![Image of contact form results in NuHTML](docs/testing/nuhtml/nuhtmlcontact.png)
 
@@ -382,3 +357,9 @@ This time we have a warning that the type attribute isn't necessary. It may not 
 ![Image of quiz results in NuHTML](docs/testing/nuhtml/nuhtmlquiz.png)
 
 We have no problems on the quiz.html page.
+
+### 404.html results in NuHTML
+
+![Image of 404 results in NuHTML](docs/testing/nuhtml/nuhtml404.png)
+
+Figured I'd run even the 404 page through because why not?
