@@ -363,26 +363,22 @@ NuHTML is used to check HTML for best practices. I have used it to validate the 
 
 ![Image of index results in nuHTML](docs/testing/nuhtml/nuhtmlindex.png)
 
-The only problem our index html had was that it showed an error for favicon's use of rel="icon," which NuHTML didn't like. However, the favicon doesn't show without it and it does not effect the user experience. W3 - the group that created and runs Nu HTML - actually recommend that favicon rel has this setting (evidence below). I can only assume this flagging up as an error is a glitch or an oversight.
+Index.html passed through without a hitch.
 
 ### map.html results in NuHTML
 
 ![Image of map results in NuHTML](docs/testing/nuhtml/nuhtmlmap.png)
 
-For our map page, the icon problem was repeated and will continue to be ignored. It also flagged problems with the empty headings in the area that is filled with the map information upon clicking a marker or a button. As these fields are filled user interaction and this is explained in the text of the page, we can move on.
+For our map page, NuHTML flagged problems with the empty headings in the area that is filled with the map information upon clicking a marker or a button. As these fields are filled user interaction and this is explained in the text of the page, we can move on.
 
 ### contacus.html results in NuHTML
 
 ![Image of contact form results in NuHTML](docs/testing/nuhtml/nuhtmlcontact.png)
 
-Same favicon problem again. This time we also have a warning that the type attribute isn't necessary. It may not be necessary for functionality, but I consider it helpful for explaining to a co-developer what it does and what it links to, so I see more reason to keep it.
+This time we have a warning that the type attribute isn't necessary. It may not be necessary for functionality, but I consider it helpful for explaining to a co-developer what it does and what it links to, so I see more reason to keep it than to get rid.
 
 ### quiz.html results in NuHTML
 
 ![Image of quiz results in NuHTML](docs/testing/nuhtml/nuhtmlquiz.png)
 
-Other than the predictable favicon objection, we have no problems on the quiz.html page.
-
-### Evidence of W3 recommendation of how to use rel="icon" for favicon
-
-![Image of W3's advice for favicon](docs/w3faviconrel.png)
+We have no problems on the quiz.html page.
