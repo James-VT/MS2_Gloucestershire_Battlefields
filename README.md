@@ -98,7 +98,7 @@ As well as the colours pictured above, Venetian Red is used in two places - the 
 
 ### Wireframes
 
-The wireframes developed for this project can be found [here](assets/milestone2wireframes.pdf). They were built using Balsamiq (credit in Technologies section).
+The wireframes developed for this project can be found [here](docs/milestone2wireframes.pdf). They were built using Balsamiq (credit in Technologies section).
 
 # Deployment
  Here I'll explain how to deploy/how I deployed the website to GitHub and how to run it locally. 
