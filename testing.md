@@ -77,15 +77,15 @@ Addendum: I later added a requirement for the message field as well. Here's the 
 
 ## Contact form confirmation testing
 
-Finally, I added email.js to the project to send me an email confirming the contact form was working, and communicating with me as a site owner. The user will see a message confirming their correspondence has been sent successfully, provided the required fields are filled in.
+Finally, I added emailJS to the project to send me an email confirming the contact form was working, and communicating with me as a site owner. The user will see a message confirming their correspondence has been sent successfully, provided the required fields are filled in.
 
 ![Image of successful confirmation message](docs/testing/featuretesting/contactconfirmationtest.png)
 
 Above, you can see what the user sees when their message has sent successfully. Note that the form does not refresh - this is because the form was refreshing before the message was sending, preventing it from functioning properly. This means the information remains on the form, but this is no bad thing as it allows a user to review what they have submitted.
 
-![Image of email of sent via email.js from contact form](docs/testing/featuretesting/contactemail.png)
+![Image of email of sent via emailJS from contact form](docs/testing/featuretesting/contactemail.png)
 
-Above, you can see that we were successful as our contact form has generated an email sent via email.js.
+Above, you can see that we were successful as our contact form has generated an email sent via emailJS.
 
 User story goal achieved by this feature | How was this achieved?
 --- | ---
@@ -128,12 +128,6 @@ Below you can see another image demonstrating the success of the map buttons, ta
 In the below picture, we can see the development of the page much further along. I have made the selection a different way this time - by using the map markers. Upon clicking a marker, the map pans to centre the selected site and the information appears in the box below the buttons. As we can see, this was successful.
 
 ![Image of selection made via map marker](docs/testing/featuretesting/maptesting.png)
-
-
-
-
-
-
 
 User story goal achieved by this feature | How was this achieved?
 --- | ---

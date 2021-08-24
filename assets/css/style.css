@@ -511,3 +511,9 @@ body {
             display: none;
         }
     }
+    /*This prevents the quiz h1 overflowing the page on ridiculously small screens*/
+    @media screen and (max-width: 310px) {
+        #quiz-heading {
+            font-size: 200%;
+        }
+    }

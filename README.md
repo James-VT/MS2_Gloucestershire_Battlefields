@@ -152,6 +152,12 @@ Testing for the features of this website, the bugs, and the validators used are 
 
 ---
 
+# Future features
+
+## Progress bar
+
+A feature I'd like to add to this project in the future is a progress for the quiz, to show a user how far along they are. As things stand, a user already knows there are ten questions via the score counter, and is able to see how many correct answers they have chosen, but a progress bar would provide an additional level of feedback for them.
+
 # Technologies used
 
 * Languages:
