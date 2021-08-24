@@ -123,7 +123,6 @@ function setNextQuestion() {
 function showQuestion(question) {
     questionElement.innerText = question.question;
     questionTableArray.push(questionElement.innerText);
-    // console.log(questionTableArray);
     answerButtonsElement.classList.remove("hide");
     question.answers.forEach(answer => {
         const button = document.createElement("button");
@@ -189,7 +188,7 @@ function chooseAnswer(e) {
      */
     
     /**The below code falls foul of JSHint for being both a conditional expression and an assignment. However, trying to set it as a conditional expression causes 
-     * the code to fail. As such, I've kept it as both so that it'll work. */
+     * the code to fail. As such, I've kept it as both so that it'll work. A narrative of this can be found in testing.md*/
     if (selectedButton.dataset = correct) {
         questionElement.innerText = "Correct!";
         incrementScore();
@@ -208,7 +207,6 @@ function setStatusClass(element, correct) {
     if (correct) {
         element.classList.add("correct");
         correctAnswersArray.push(element.innerText);
-        // console.log(correctAnswersArray);
     } else {
         element.classList.add("wrong");
     }
@@ -234,7 +232,6 @@ function resultMessage() {
 
     let score = document.getElementById("score").innerText;
     quizImageHolder.classList.add("hide");
-    // console.log(score);
 
     createTable();
 
@@ -263,7 +260,6 @@ function checkAnswer() {
 
     function buildChosenAnswers() {
         chosenAnswers.push(selections[i].innerText);
-        // console.log(chosenAnswers);
 
         if (chosenAnswers.length == 10) {
             
@@ -276,7 +272,7 @@ function checkAnswer() {
 
 }
 
-/** Much of the code below is inspired from this page: https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Traversing_an_HTML_table_with_JavaScript_and_DOM_Interfaces
+/** Some of the code below is inspired from this page: https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Traversing_an_HTML_table_with_JavaScript_and_DOM_Interfaces
  * I have edited it to suit the fact I already have some of the table being built in the HTML.
  */ 
 function createTable() {

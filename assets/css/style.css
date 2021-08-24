@@ -41,8 +41,7 @@ body {
         text-align: center;
     }
     
-    /*The below is necessary to avoid contrast issues in WAVE. Seems odd to have to 
-    make link text black, but this is apparently preferable to blue in this case. */
+    /*The below colouring is to help with contrast of link text vs the colour Russian Green.*/
     .text-reveal {
         color: black;
     }
@@ -360,7 +359,6 @@ body {
                 box-sizing: border-box;
         background-color: #f1d6b8;
         width: 90%;
-        /* height: 65vh; */
         margin-left: auto;
         margin-right: auto;
         margin-top: 20px;
