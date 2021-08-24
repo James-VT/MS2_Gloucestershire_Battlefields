@@ -256,7 +256,7 @@ This was flagged by JSHint (see: Testing JavaScript with JSHint) as an warning b
 
 ---
 
-## Testing pages with Lighthouse
+## Testing pages with Lighthouse - performance and accessibility
 
 https://developers.google.com/web/tools/lighthouse
 
